@@ -3,7 +3,7 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-app.mount("/", StaticFiles(directory="public", html = True))
+# app.mount("/", StaticFiles(directory="public", html = True))
 
 @app.get("/api/")
 def api(response: Response):
