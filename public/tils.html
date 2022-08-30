@@ -1,0 +1,1178 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>calmcode - Today I Learned</title>
+<meta name="keywords" content="Code,Calmly,Python,Videos,Learn">
+<meta name="title" content="Today I Learned.">
+<meta name="description" content="Today I Learned. This section contains very short snippets of code.">
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+    <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-6">
+        <h1 class="text-4xl md:text-7xl font-bold py-2">
+            <span>Today I Learned.</span>
+        </h1>
+        <div class="hidden md:block">
+            <p class="mb-0 text-2xl text-gray-800">TIL stands for "Today I Learned".</p>
+            <p class="mb-0 text-2xl text-gray-800">This is a place for us to share TIL nuggets.</p>
+            <br>
+        </div>
+    </div>
+    <div class="pb-6" style="background-color: #edf2f7;">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-4">
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="python logo" src="/images/python.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">python</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/getpass.html">
+              getpass() vs. input()
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/import-this.html">
+              Projects that import &#34;this&#34;
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pip-git-install.html">
+              Pip install via Git
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/python-zip.html">
+              Unzip with `zip`
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/python-statistics.html">
+              Python Statistics Module
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="git logo" src="/images/git.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">git</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pip-git-install.html">
+              Pip install via Git
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/git-folder.html">
+              Running Git from Another Folder
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/git-large-clone.html">
+              Cloning Large Git Projects
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/md-diffs.html">
+              Code Diffs with Color in Markdown
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/git-differences.html">
+              Show Changed Files in Git.
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="pandas logo" src="/images/pandas.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">pandas</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-vet.html">
+              Vetting Pandas Style
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-timerange.html">
+              Pandas Timestamp Limitations
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-latex.html">
+              Pandas to Latex
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-markdown.html">
+              Pandas to Markdown
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-zip.html">
+              Zip Files for Pandas
+            </a>
+          </li>
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-max-colwidth.html">
+              Pandas Column Width
+            </a>
+          </li>
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="clean code logo" src="/images/cleancode.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">clean code</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-vet.html">
+              Vetting Pandas Style
+            </a>
+          </li>
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/deadlink.html">
+              Finding Dead Links
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/flake8-print.html">
+              Flake8 Print
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="websites logo" src="/images/web.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">websites</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/riddler.html">
+              the Riddler
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/matrix-cookbook.html">
+              Matrix Cookbook
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/emojidb.html">
+              emojidb
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/compress-svg.html">
+              SVG compression
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="markdown logo" src="/images/markdown.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">markdown</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/deadlink.html">
+              Finding Dead Links
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/md-diffs.html">
+              Code Diffs with Color in Markdown
+            </a>
+          </li>
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/pandas-markdown.html">
+              Pandas to Markdown
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/md-ticks.html">
+              Code Ticks in Markdown
+            </a>
+          </li>
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="frontend logo" src="/images/frontend.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">frontend</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/autofocus.html">
+              Autofocus
+            </a>
+          </li>
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/frontend-backgrounds.html">
+              Cool Backgrounds
+            </a>
+          </li>
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/frontend-heroicons.html">
+              Hero Icons
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/frontend-heropatterns.html">
+              Hero Patterns
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="scikit learn logo" src="/images/ml.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">scikit learn</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/scikit-diagrams.html">
+              Fancy Diagrams
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/scikit-neural-networks.html">
+              MLPClassifier
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="fastapi logo" src="/images/fastapi.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">fastapi</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/fastapi-two-decorators.html">
+              Stacking Routes
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+                <li class="col-span-1 flex shadow-sm rounded-md border-gray-800 border-t-4 mt-2 bg-white p-4">
+  <div class="relative focus-within:ring-2 focus-within:ring-indigo-500 mx-auto text-center">
+    <h2 class="text-sm font-semibold text-gray-800">
+      <img class="w-12 h-12 flex-shrink-0 mx-auto" alt="docker logo" src="/images/docker.svg" alt="">
+      <b class="mt-4 text-gray-900 text-lg font-medium">docker</b>
+    </h2>
+    <hr class="mt-4"/>
+    <ul class="pt-4">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          <li>
+            <a class="mt-1 text-md font-normal text-gray-500" href="/til/docker-prune.html">
+              Docker Prune
+            </a>
+          </li>
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </ul>
+  </div>
+</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

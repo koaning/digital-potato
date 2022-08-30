@@ -1,0 +1,311 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>Short Introduction to sh.py</title>
+
+<meta name="title" content="Short Introduction to sh.py">
+<meta name="description" content="In this short introduction we're doing to demonstrate how to use sh.py.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calmcode.io/">
+<meta property="og:title" content="Short Introduction to sh.py">
+<meta property="og:description" content="In this short introduction we're doing to demonstrate how to use sh.py.">
+<meta property="og:image" content="https://calmcode.io/images/sh.png">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://calmcode.io/">
+<meta property="twitter:title" content="Short Introduction to sh.py">
+<meta property="twitter:description" content="In this short introduction we're doing to demonstrate how to use sh.py.">
+<meta property="twitter:image" content="https://calmcode.io/images/sh.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/python.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+<div class="">
+    <br>
+    <div class="rounded-xl border-gray-400">
+        <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+            <a href="/#shorts" class="text-left">Back to main.</a><br>
+            <div class="text-center">
+                <h3 class="uppercase text-lg leading-6 font-bold text-gray-500">
+                    Calmcode Shorts
+                </h3>
+                <h1 class="text-2xl md:text-2xl font-bold py-2">
+                    <img class="w-8 md:w-12 lg:w-18 inline-block" src="/images/sh.svg" alt="sh.py logo"><span class="pl-4">sh.py</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="pb-6">
+            <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+                <div class="relative bg-white" style="padding-bottom: 56.25%;">
+                    <div class="absolute inset-0" data-vimeo-initialized="true">
+                        <div class="relative" style="padding-top: 56.25%;">
+                            <iframe src="https://player.vimeo.com/video/732939316" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" class="absolute inset-0 w-full h-full"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <article class="prose">
+                    <div class="md:text-md">
+                        <p>Python can do a lot. But sometimes it's easier to use a shell command.
+But what if you want to combine the two? There are moments where you'd
+really like to run a shell command from Python as if it were a function.</p>
+<p>Python comes with utilities to do this, but the <a href="https://github.com/amoffat/sh">sh</a> module has proven
+to be a simpler alternative to the <code>os</code> and <code>subprocess</code> modules.</p>
+<p>You can install it via;</p>
+<pre><code>python -m pip install sh
+</code></pre>
+<h2>How it works</h2>
+<p>Let's suppose that you want to run <code>ls</code> from Python. You can do so
+via:</p>
+<pre><code class="lang-python">from sh import ls
+
+ls()
+</code></pre>
+<p>You can also give it arguments, just like you would normally.</p>
+<pre><code class="lang-python">ls(&#39;-lhat&#39;)
+</code></pre>
+<h2>Any Command Line</h2>
+<p>You might think at this point that <code>sh</code> just wraps around a few well known
+shell commands. But that's not what is happening! The <code>sh</code> module relies
+from Unix system calls when you're importing a module. That means that you
+can also import any tool that you can run via the shell. The downside is
+that this tool does not support Windows.</p>
+<p>For example, just before recording this video I downloaded <code>cwebp</code>, which
+is a command line tool that can convert images. You would load that tool via:</p>
+<pre><code class="lang-python">from sh import cwebp
+</code></pre>
+<p>This is also where <code>sh</code> starts to shine, you can use it from within a forloop. You can
+pass each argument to the shell utility via the <code>*args</code>.</p>
+<pre><code class="lang-python">from sh import cwebp
+
+for i in range(10, 101, 10):
+    cwebp(&quot;-q&quot;, f&quot;{i}&quot;, &quot;cool-background.png&quot;,  &quot;-o&quot;,  f&quot;smaller-{i}.webp&quot;)
+</code></pre>
+<p>You're also able to use key-word arguments. In this case, the tool provides an <code>-o</code> and <code>-q</code> which translates to a <code>o=</code> and <code>q=</code> keyword argument.</p>
+<pre><code class="lang-python">for i in range(10, 101, 10):
+    cwebp(&quot;cool-background.png&quot;, q=f&quot;{i}&quot;, o=f&quot;smallerrr-{i}.webp&quot;)
+</code></pre>
+
+                    </div>
+                    <br>
+                    <a href="/" class="text-left">Back to main.</a>
+                    <br>
+                </article>
+            </div>
+        </div>
+        <br>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code.lang-python').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            });
+        </script>
+    </div>
+</div>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

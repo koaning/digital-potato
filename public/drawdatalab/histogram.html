@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head lang=en>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <style>
+  svg {
+    background: #dbdbdb3b;
+    cursor: crosshair;
+  }
+
+  .line {
+    cursor: crosshair;
+    fill: none;
+    stroke: #0000001f;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+  }
+
+  .btn-default {
+    padding: 10px;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn btn-default" id="reset">reset</button>
+    <button class="btn btn-default" id="copyjson">copy json</button>
+    <button class="btn btn-default" id="copycsv">copy csv</button>
+    <button class="btn btn-default" id="downloadjson">download json</button>
+    <button class="btn btn-default" id="downloadcsv">download csv</button>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="a" checked="checked">
+      <label class="form-check-label" for="inlineRadio1">A</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="b">
+      <label class="form-check-label" for="inlineRadio2">B</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="c">
+      <label class="form-check-label" for="inlineRadio3">C</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="d">
+      <label class="form-check-label" for="inlineRadio4">D</label>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div id="sketch"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v4.js"></script>
+
+  <script>
+  // based on http://bl.ocks.org/cloudshapes/5661984 by cloudshapes
+  var margin = {top: 0, right: 0, bottom: 0, left: 0},
+      width = d3.select(".container").node().clientWidth - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
+
+
+  // var npoints = 100;
+  var ptdata = [];
+  var session = [];
+  var path;
+  var points;
+  var mouse_is_down = false;
+  var drawing = false;
+
+  var color_map = {
+    "a": "#3a1f5d",
+    "b": "#64c4ed",
+    "c": "#e15249",
+    "d": "#f6d365"
+  };
+
+  var svg = d3.select("#sketch").append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+
+  svg.append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var n_rect = 40;
+
+  reset();
+
+  document.body.onmousedown = function() {
+    mouse_is_down = true;
+  }
+
+  document.body.onmouseup = function() {
+    mouse_is_down = false;
+  }
+
+  function reset(){
+    for (var i = ["a", "b", "c", "d"].length - 1; i >= 0; i--) {
+      var color_now = ["a", "b", "c", "d"][i];
+      d3.select(`g.${color_now}`).remove()
+      svg
+        .append("g")
+        .attr("class", color_now)
+        .selectAll("rect")
+        .data(d3.range(n_rect))
+        .enter()
+        .append("rect")
+        .attr("type", "valuebar")
+        .attr("color", color_now)
+        .attr("index", d => d)
+        .attr("width", width/n_rect)
+        .attr("height", (i + 1) * 10)
+        .attr("x", d => d*width/n_rect)
+        .attr("y", d => height)
+        .style("fill-opacity", 0.5)
+        .style("fill", color_map[color_now])
+    }
+
+    svg
+    .append("g")
+    .attr("class", "selectors")
+    .selectAll("rect")
+    .data(d3.range(n_rect))
+    .enter()
+    .append("rect")
+    .attr("index", d => d)
+    .attr("width", width/n_rect)
+    .attr("height", height)
+    .attr("x", d => d*width/n_rect)
+    .attr("y", d => 0)
+    .style("fill-opacity", 0)
+    .style("stroke", d => 'gray')
+    .style("stroke-opacity", d => 0.1)
+    .on("mouseover", hover_in)
+    .on("mouseout", hover_out);
+  }
+
+  function update_height(idx, yval){
+    var col = document.querySelector('input:checked').value;
+    d3.select(`rect[color='${col}'][index='${idx}']`)
+    .attr("y", yval)
+    .attr("height", height - yval)
+  }
+
+  function hover_in(e){
+    d3.select(this).style("stroke-opacity", d => 0.5);
+    if (mouse_is_down) {
+      var point = d3.mouse(this);
+      var idx = d3.select(this).attr("index");
+      update_height(idx, point[1])
+    }
+  }
+
+  function hover_out(e){
+    d3.select(this).style("stroke-opacity", d => 0.1);
+    if (mouse_is_down) {
+      var point = d3.mouse(this);
+      var idx = d3.select(this).attr("index");
+      update_height(idx, point[1])
+    }
+  }
+
+  d3.select("#reset").on("click", reset)
+  d3.select("#downloadcsv").on("click", download_csv)
+  d3.select("#downloadjson").on("click", download_json)
+  d3.select("#copycsv").on("click", clipboard_csv)
+  d3.select("#copyjson").on("click", clipboard_json)
+
+
+  // ignore default touch behavior
+  var touchEvents = ['touchstart', 'touchmove', 'touchend'];
+  touchEvents.forEach(function (eventName) {
+    document.body.addEventListener(eventName, function(e){
+      e.preventDefault();
+    });
+  });
+
+  function parse_rect(d){
+    return {
+      "x": d.getAttribute("x")/width,
+      "y": (height - d.getAttribute("y"))/height,
+      "color": d.getAttribute("color"),
+    }
+  }
+
+  function nodata(){
+    var max_val = d3.max(
+      d3.selectAll("rect[type='valuebar'")
+        .nodes()
+        .map(parse_rect)
+        .map(d =>d.y))
+    return max_val == 0
+  }
+
+  function grab_data(){
+    return ["a", "b", "c", "d"]
+      .map(d => d3.selectAll(`rect[type='valuebar'][color=${d}]`).nodes().map(parse_rect))
+      .filter(d => d3.max(d.map(d => d.y)) > 0)
+      .flatMap(d => d)
+  }
+
+  function grab_json(){
+    var data = grab_data()
+    return JSON.stringify(data);
+  }
+
+  function grab_csv(){
+    var data = grab_data()
+      .map(d => [d.x, d.y, d.color].join(",") + "\n")
+      .reduce((a, b) => a + b);
+    return 'x,y,z\n' + data;
+  }
+
+  function download_json(){
+    if (nodata()) {
+      return 1
+    }
+    var dataset = grab_json();
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:text/json;charset=utf-8,' + encodeURI(dataset);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = 'data.json';
+    document.body.appendChild(hiddenElement);
+    hiddenElement.click();
+    document.body.removeChild(hiddenElement);
+
+  }
+
+  function download_csv(){
+    if (nodata()) {
+      return 1
+    }
+    var dataset = grab_csv();
+    var hiddenElement = document.createElement('a');
+    hiddenElement.href = 'data:text/csv;charset=utf-8,' + encodeURI(dataset);
+    hiddenElement.target = '_blank';
+    hiddenElement.download = 'data.csv';
+    document.body.appendChild(hiddenElement);
+    hiddenElement.click();
+    document.body.removeChild(hiddenElement);
+  }
+
+  function clipboard_csv(){
+    if (nodata()) {
+      return 1
+    }
+    var text = grab_csv();
+    clipboard(text);
+  }
+
+  function clipboard_json(){
+    if (nodata()) {
+      return 1
+    }
+    var text = grab_json();
+    clipboard(text);
+  }
+
+  function clipboard(text) {
+    var copyTest = document.queryCommandSupported('copy');
+    var elOriginalText = text;
+
+    if (copyTest === true) {
+      var copyTextArea = document.createElement("textarea");
+      copyTextArea.value = text;
+      document.body.appendChild(copyTextArea);
+      copyTextArea.select();
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'Copied!' : 'Whoops, not copied!';
+        // el.attr('data-original-title', msg).tooltip('show');
+      } catch (err) {
+        console.log('Oops, unable to copy');
+      }
+      document.body.removeChild(copyTextArea);
+      // el.attr('data-original-title', elOriginalText);
+    } else {
+      // Fallback if browser doesn't support .execCommand('copy')
+      window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
+    }
+  }
+  </script>
+</body>
+</html>

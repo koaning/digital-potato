@@ -1,0 +1,7052 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "name": "data-aeec9566f01fea00217cd5cb0f9cfd12"
+  },
+  "datasets": {
+    "data-aeec9566f01fea00217cd5cb0f9cfd12": [
+      {
+        "births": 8486,
+        "date": "1969-01-01T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 1
+      },
+      {
+        "births": 9002,
+        "date": "1969-01-02T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 2
+      },
+      {
+        "births": 9542,
+        "date": "1969-01-03T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 3
+      },
+      {
+        "births": 8960,
+        "date": "1969-01-04T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 4
+      },
+      {
+        "births": 8390,
+        "date": "1969-01-05T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 5
+      },
+      {
+        "births": 9560,
+        "date": "1969-01-06T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 6
+      },
+      {
+        "births": 9738,
+        "date": "1969-01-07T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 7
+      },
+      {
+        "births": 9734,
+        "date": "1969-01-08T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 8
+      },
+      {
+        "births": 9434,
+        "date": "1969-01-09T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 9
+      },
+      {
+        "births": 10042,
+        "date": "1969-01-10T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 10
+      },
+      {
+        "births": 9178,
+        "date": "1969-01-11T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 11
+      },
+      {
+        "births": 8450,
+        "date": "1969-01-12T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 12
+      },
+      {
+        "births": 9834,
+        "date": "1969-01-13T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 13
+      },
+      {
+        "births": 10366,
+        "date": "1969-01-14T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 14
+      },
+      {
+        "births": 9894,
+        "date": "1969-01-15T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 15
+      },
+      {
+        "births": 9662,
+        "date": "1969-01-16T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 16
+      },
+      {
+        "births": 9974,
+        "date": "1969-01-17T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 17
+      },
+      {
+        "births": 9312,
+        "date": "1969-01-18T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 18
+      },
+      {
+        "births": 8622,
+        "date": "1969-01-19T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 19
+      },
+      {
+        "births": 9808,
+        "date": "1969-01-20T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 20
+      },
+      {
+        "births": 10474,
+        "date": "1969-01-21T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 21
+      },
+      {
+        "births": 9884,
+        "date": "1969-01-22T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 22
+      },
+      {
+        "births": 9454,
+        "date": "1969-01-23T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 23
+      },
+      {
+        "births": 9798,
+        "date": "1969-01-24T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 24
+      },
+      {
+        "births": 9022,
+        "date": "1969-01-25T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 25
+      },
+      {
+        "births": 8568,
+        "date": "1969-01-26T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 26
+      },
+      {
+        "births": 9910,
+        "date": "1969-01-27T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 27
+      },
+      {
+        "births": 10032,
+        "date": "1969-01-28T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 28
+      },
+      {
+        "births": 9380,
+        "date": "1969-01-29T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 29
+      },
+      {
+        "births": 9674,
+        "date": "1969-01-30T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 30
+      },
+      {
+        "births": 9692,
+        "date": "1969-01-31T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 31
+      },
+      {
+        "births": 9130,
+        "date": "1969-02-01T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 32
+      },
+      {
+        "births": 8814,
+        "date": "1969-02-02T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 33
+      },
+      {
+        "births": 9988,
+        "date": "1969-02-03T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 34
+      },
+      {
+        "births": 9996,
+        "date": "1969-02-04T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 35
+      },
+      {
+        "births": 9676,
+        "date": "1969-02-05T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 36
+      },
+      {
+        "births": 9728,
+        "date": "1969-02-06T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 37
+      },
+      {
+        "births": 10102,
+        "date": "1969-02-07T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 38
+      },
+      {
+        "births": 9262,
+        "date": "1969-02-08T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 39
+      },
+      {
+        "births": 8694,
+        "date": "1969-02-09T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 40
+      },
+      {
+        "births": 9954,
+        "date": "1969-02-10T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 41
+      },
+      {
+        "births": 9856,
+        "date": "1969-02-11T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 42
+      },
+      {
+        "births": 10008,
+        "date": "1969-02-12T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 43
+      },
+      {
+        "births": 9606,
+        "date": "1969-02-13T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 44
+      },
+      {
+        "births": 10354,
+        "date": "1969-02-14T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 45
+      },
+      {
+        "births": 9310,
+        "date": "1969-02-15T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 46
+      },
+      {
+        "births": 8534,
+        "date": "1969-02-16T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 47
+      },
+      {
+        "births": 9822,
+        "date": "1969-02-17T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 48
+      },
+      {
+        "births": 10176,
+        "date": "1969-02-18T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 49
+      },
+      {
+        "births": 9816,
+        "date": "1969-02-19T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 50
+      },
+      {
+        "births": 9982,
+        "date": "1969-02-20T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 51
+      },
+      {
+        "births": 9916,
+        "date": "1969-02-21T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 52
+      },
+      {
+        "births": 9152,
+        "date": "1969-02-22T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 53
+      },
+      {
+        "births": 8704,
+        "date": "1969-02-23T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 54
+      },
+      {
+        "births": 9966,
+        "date": "1969-02-24T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 55
+      },
+      {
+        "births": 10566,
+        "date": "1969-02-25T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 56
+      },
+      {
+        "births": 10048,
+        "date": "1969-02-26T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 57
+      },
+      {
+        "births": 9618,
+        "date": "1969-02-27T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 58
+      },
+      {
+        "births": 9756,
+        "date": "1969-02-28T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 59
+      },
+      {
+        "births": 9252,
+        "date": "1969-03-01T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 60
+      },
+      {
+        "births": 8632,
+        "date": "1969-03-02T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 61
+      },
+      {
+        "births": 10112,
+        "date": "1969-03-03T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 62
+      },
+      {
+        "births": 10264,
+        "date": "1969-03-04T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 63
+      },
+      {
+        "births": 10046,
+        "date": "1969-03-05T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 64
+      },
+      {
+        "births": 9704,
+        "date": "1969-03-06T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 65
+      },
+      {
+        "births": 9948,
+        "date": "1969-03-07T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 66
+      },
+      {
+        "births": 9334,
+        "date": "1969-03-08T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 67
+      },
+      {
+        "births": 8394,
+        "date": "1969-03-09T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 68
+      },
+      {
+        "births": 9892,
+        "date": "1969-03-10T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 69
+      },
+      {
+        "births": 10188,
+        "date": "1969-03-11T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 70
+      },
+      {
+        "births": 9776,
+        "date": "1969-03-12T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 71
+      },
+      {
+        "births": 9640,
+        "date": "1969-03-13T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 72
+      },
+      {
+        "births": 10034,
+        "date": "1969-03-14T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 73
+      },
+      {
+        "births": 8838,
+        "date": "1969-03-15T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 74
+      },
+      {
+        "births": 8336,
+        "date": "1969-03-16T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 75
+      },
+      {
+        "births": 10128,
+        "date": "1969-03-17T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 76
+      },
+      {
+        "births": 10136,
+        "date": "1969-03-18T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 77
+      },
+      {
+        "births": 10064,
+        "date": "1969-03-19T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 78
+      },
+      {
+        "births": 9812,
+        "date": "1969-03-20T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 79
+      },
+      {
+        "births": 9902,
+        "date": "1969-03-21T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 80
+      },
+      {
+        "births": 8962,
+        "date": "1969-03-22T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 81
+      },
+      {
+        "births": 8602,
+        "date": "1969-03-23T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 82
+      },
+      {
+        "births": 9802,
+        "date": "1969-03-24T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 83
+      },
+      {
+        "births": 10272,
+        "date": "1969-03-25T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 84
+      },
+      {
+        "births": 9818,
+        "date": "1969-03-26T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 85
+      },
+      {
+        "births": 9698,
+        "date": "1969-03-27T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 86
+      },
+      {
+        "births": 10326,
+        "date": "1969-03-28T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 87
+      },
+      {
+        "births": 8908,
+        "date": "1969-03-29T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 88
+      },
+      {
+        "births": 8186,
+        "date": "1969-03-30T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 89
+      },
+      {
+        "births": 9592,
+        "date": "1969-03-31T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 90
+      },
+      {
+        "births": 9960,
+        "date": "1969-04-01T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 91
+      },
+      {
+        "births": 9978,
+        "date": "1969-04-02T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 92
+      },
+      {
+        "births": 9530,
+        "date": "1969-04-03T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 93
+      },
+      {
+        "births": 9572,
+        "date": "1969-04-04T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 94
+      },
+      {
+        "births": 8748,
+        "date": "1969-04-05T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 95
+      },
+      {
+        "births": 8008,
+        "date": "1969-04-06T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 96
+      },
+      {
+        "births": 9374,
+        "date": "1969-04-07T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 97
+      },
+      {
+        "births": 10176,
+        "date": "1969-04-08T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 98
+      },
+      {
+        "births": 9852,
+        "date": "1969-04-09T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 99
+      },
+      {
+        "births": 9708,
+        "date": "1969-04-10T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 100
+      },
+      {
+        "births": 9920,
+        "date": "1969-04-11T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 101
+      },
+      {
+        "births": 8940,
+        "date": "1969-04-12T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 102
+      },
+      {
+        "births": 8134,
+        "date": "1969-04-13T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 103
+      },
+      {
+        "births": 9566,
+        "date": "1969-04-14T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 104
+      },
+      {
+        "births": 10428,
+        "date": "1969-04-15T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 105
+      },
+      {
+        "births": 9840,
+        "date": "1969-04-16T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 106
+      },
+      {
+        "births": 9876,
+        "date": "1969-04-17T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 107
+      },
+      {
+        "births": 9872,
+        "date": "1969-04-18T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 108
+      },
+      {
+        "births": 8994,
+        "date": "1969-04-19T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 109
+      },
+      {
+        "births": 7928,
+        "date": "1969-04-20T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 110
+      },
+      {
+        "births": 9610,
+        "date": "1969-04-21T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 111
+      },
+      {
+        "births": 10226,
+        "date": "1969-04-22T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 112
+      },
+      {
+        "births": 9868,
+        "date": "1969-04-23T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 113
+      },
+      {
+        "births": 9472,
+        "date": "1969-04-24T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 114
+      },
+      {
+        "births": 9646,
+        "date": "1969-04-25T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 115
+      },
+      {
+        "births": 8922,
+        "date": "1969-04-26T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 116
+      },
+      {
+        "births": 7966,
+        "date": "1969-04-27T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 117
+      },
+      {
+        "births": 9518,
+        "date": "1969-04-28T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 118
+      },
+      {
+        "births": 9700,
+        "date": "1969-04-29T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 119
+      },
+      {
+        "births": 9138,
+        "date": "1969-04-30T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 120
+      },
+      {
+        "births": 9258,
+        "date": "1969-05-01T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 121
+      },
+      {
+        "births": 9736,
+        "date": "1969-05-02T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 122
+      },
+      {
+        "births": 8768,
+        "date": "1969-05-03T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 123
+      },
+      {
+        "births": 8094,
+        "date": "1969-05-04T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 124
+      },
+      {
+        "births": 9930,
+        "date": "1969-05-05T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 125
+      },
+      {
+        "births": 9964,
+        "date": "1969-05-06T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 126
+      },
+      {
+        "births": 9626,
+        "date": "1969-05-07T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 127
+      },
+      {
+        "births": 9484,
+        "date": "1969-05-08T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 128
+      },
+      {
+        "births": 9362,
+        "date": "1969-05-09T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 129
+      },
+      {
+        "births": 8516,
+        "date": "1969-05-10T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 130
+      },
+      {
+        "births": 8122,
+        "date": "1969-05-11T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 131
+      },
+      {
+        "births": 9306,
+        "date": "1969-05-12T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 132
+      },
+      {
+        "births": 9862,
+        "date": "1969-05-13T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 133
+      },
+      {
+        "births": 9184,
+        "date": "1969-05-14T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 134
+      },
+      {
+        "births": 9524,
+        "date": "1969-05-15T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 135
+      },
+      {
+        "births": 9824,
+        "date": "1969-05-16T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 136
+      },
+      {
+        "births": 8946,
+        "date": "1969-05-17T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 137
+      },
+      {
+        "births": 8028,
+        "date": "1969-05-18T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 138
+      },
+      {
+        "births": 9494,
+        "date": "1969-05-19T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 139
+      },
+      {
+        "births": 10388,
+        "date": "1969-05-20T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 140
+      },
+      {
+        "births": 9766,
+        "date": "1969-05-21T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 141
+      },
+      {
+        "births": 9406,
+        "date": "1969-05-22T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 142
+      },
+      {
+        "births": 9584,
+        "date": "1969-05-23T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 143
+      },
+      {
+        "births": 8558,
+        "date": "1969-05-24T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 144
+      },
+      {
+        "births": 8226,
+        "date": "1969-05-25T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 145
+      },
+      {
+        "births": 9840,
+        "date": "1969-05-26T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 146
+      },
+      {
+        "births": 10352,
+        "date": "1969-05-27T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 147
+      },
+      {
+        "births": 9938,
+        "date": "1969-05-28T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 148
+      },
+      {
+        "births": 10190,
+        "date": "1969-05-29T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 149
+      },
+      {
+        "births": 9154,
+        "date": "1969-05-30T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 150
+      },
+      {
+        "births": 8640,
+        "date": "1969-05-31T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 151
+      },
+      {
+        "births": 8426,
+        "date": "1969-06-01T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 152
+      },
+      {
+        "births": 9862,
+        "date": "1969-06-02T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 153
+      },
+      {
+        "births": 10158,
+        "date": "1969-06-03T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 154
+      },
+      {
+        "births": 9838,
+        "date": "1969-06-04T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 155
+      },
+      {
+        "births": 9588,
+        "date": "1969-06-05T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 156
+      },
+      {
+        "births": 10006,
+        "date": "1969-06-06T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 157
+      },
+      {
+        "births": 8814,
+        "date": "1969-06-07T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 158
+      },
+      {
+        "births": 8226,
+        "date": "1969-06-08T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 159
+      },
+      {
+        "births": 9738,
+        "date": "1969-06-09T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 160
+      },
+      {
+        "births": 10320,
+        "date": "1969-06-10T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 161
+      },
+      {
+        "births": 9950,
+        "date": "1969-06-11T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 162
+      },
+      {
+        "births": 10220,
+        "date": "1969-06-12T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 163
+      },
+      {
+        "births": 9852,
+        "date": "1969-06-13T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 164
+      },
+      {
+        "births": 8920,
+        "date": "1969-06-14T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 165
+      },
+      {
+        "births": 8402,
+        "date": "1969-06-15T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 166
+      },
+      {
+        "births": 9744,
+        "date": "1969-06-16T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 167
+      },
+      {
+        "births": 10294,
+        "date": "1969-06-17T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 168
+      },
+      {
+        "births": 10220,
+        "date": "1969-06-18T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 169
+      },
+      {
+        "births": 9756,
+        "date": "1969-06-19T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 170
+      },
+      {
+        "births": 10424,
+        "date": "1969-06-20T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 171
+      },
+      {
+        "births": 9034,
+        "date": "1969-06-21T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 172
+      },
+      {
+        "births": 8612,
+        "date": "1969-06-22T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 173
+      },
+      {
+        "births": 9880,
+        "date": "1969-06-23T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 174
+      },
+      {
+        "births": 10624,
+        "date": "1969-06-24T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 175
+      },
+      {
+        "births": 10466,
+        "date": "1969-06-25T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 176
+      },
+      {
+        "births": 10344,
+        "date": "1969-06-26T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 177
+      },
+      {
+        "births": 10776,
+        "date": "1969-06-27T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 178
+      },
+      {
+        "births": 9566,
+        "date": "1969-06-28T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 179
+      },
+      {
+        "births": 8800,
+        "date": "1969-06-29T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 180
+      },
+      {
+        "births": 10588,
+        "date": "1969-06-30T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 181
+      },
+      {
+        "births": 11206,
+        "date": "1969-07-01T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 182
+      },
+      {
+        "births": 10758,
+        "date": "1969-07-02T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 183
+      },
+      {
+        "births": 10562,
+        "date": "1969-07-03T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 184
+      },
+      {
+        "births": 9168,
+        "date": "1969-07-04T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 185
+      },
+      {
+        "births": 9248,
+        "date": "1969-07-05T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 186
+      },
+      {
+        "births": 8860,
+        "date": "1969-07-06T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 187
+      },
+      {
+        "births": 10634,
+        "date": "1969-07-07T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 188
+      },
+      {
+        "births": 10842,
+        "date": "1969-07-08T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 189
+      },
+      {
+        "births": 10576,
+        "date": "1969-07-09T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 190
+      },
+      {
+        "births": 10562,
+        "date": "1969-07-10T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 191
+      },
+      {
+        "births": 10686,
+        "date": "1969-07-11T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 192
+      },
+      {
+        "births": 9472,
+        "date": "1969-07-12T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 193
+      },
+      {
+        "births": 8978,
+        "date": "1969-07-13T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 194
+      },
+      {
+        "births": 10242,
+        "date": "1969-07-14T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 195
+      },
+      {
+        "births": 11296,
+        "date": "1969-07-15T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 196
+      },
+      {
+        "births": 10698,
+        "date": "1969-07-16T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 197
+      },
+      {
+        "births": 10668,
+        "date": "1969-07-17T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 198
+      },
+      {
+        "births": 10632,
+        "date": "1969-07-18T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 199
+      },
+      {
+        "births": 9674,
+        "date": "1969-07-19T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 200
+      },
+      {
+        "births": 8940,
+        "date": "1969-07-20T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 201
+      },
+      {
+        "births": 10196,
+        "date": "1969-07-21T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 202
+      },
+      {
+        "births": 11040,
+        "date": "1969-07-22T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 203
+      },
+      {
+        "births": 10468,
+        "date": "1969-07-23T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 204
+      },
+      {
+        "births": 10430,
+        "date": "1969-07-24T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 205
+      },
+      {
+        "births": 10688,
+        "date": "1969-07-25T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 206
+      },
+      {
+        "births": 9786,
+        "date": "1969-07-26T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 207
+      },
+      {
+        "births": 9408,
+        "date": "1969-07-27T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 208
+      },
+      {
+        "births": 10548,
+        "date": "1969-07-28T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 209
+      },
+      {
+        "births": 11102,
+        "date": "1969-07-29T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 210
+      },
+      {
+        "births": 10634,
+        "date": "1969-07-30T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 211
+      },
+      {
+        "births": 10346,
+        "date": "1969-07-31T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 212
+      },
+      {
+        "births": 10730,
+        "date": "1969-08-01T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 213
+      },
+      {
+        "births": 9982,
+        "date": "1969-08-02T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 214
+      },
+      {
+        "births": 9082,
+        "date": "1969-08-03T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 215
+      },
+      {
+        "births": 10450,
+        "date": "1969-08-04T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 216
+      },
+      {
+        "births": 10944,
+        "date": "1969-08-05T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 217
+      },
+      {
+        "births": 10852,
+        "date": "1969-08-06T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 218
+      },
+      {
+        "births": 10382,
+        "date": "1969-08-07T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 219
+      },
+      {
+        "births": 11302,
+        "date": "1969-08-08T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 220
+      },
+      {
+        "births": 10092,
+        "date": "1969-08-09T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 221
+      },
+      {
+        "births": 9106,
+        "date": "1969-08-10T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 222
+      },
+      {
+        "births": 10706,
+        "date": "1969-08-11T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 223
+      },
+      {
+        "births": 11138,
+        "date": "1969-08-12T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 224
+      },
+      {
+        "births": 10802,
+        "date": "1969-08-13T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 225
+      },
+      {
+        "births": 10726,
+        "date": "1969-08-14T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 226
+      },
+      {
+        "births": 10910,
+        "date": "1969-08-15T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 227
+      },
+      {
+        "births": 9772,
+        "date": "1969-08-16T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 228
+      },
+      {
+        "births": 9124,
+        "date": "1969-08-17T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 229
+      },
+      {
+        "births": 10650,
+        "date": "1969-08-18T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 230
+      },
+      {
+        "births": 11410,
+        "date": "1969-08-19T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 231
+      },
+      {
+        "births": 10918,
+        "date": "1969-08-20T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 232
+      },
+      {
+        "births": 10184,
+        "date": "1969-08-21T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 233
+      },
+      {
+        "births": 10586,
+        "date": "1969-08-22T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 234
+      },
+      {
+        "births": 9660,
+        "date": "1969-08-23T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 235
+      },
+      {
+        "births": 9084,
+        "date": "1969-08-24T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 236
+      },
+      {
+        "births": 10586,
+        "date": "1969-08-25T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 237
+      },
+      {
+        "births": 11082,
+        "date": "1969-08-26T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 238
+      },
+      {
+        "births": 10638,
+        "date": "1969-08-27T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 239
+      },
+      {
+        "births": 10616,
+        "date": "1969-08-28T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 240
+      },
+      {
+        "births": 10714,
+        "date": "1969-08-29T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 241
+      },
+      {
+        "births": 9708,
+        "date": "1969-08-30T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 242
+      },
+      {
+        "births": 8986,
+        "date": "1969-08-31T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 243
+      },
+      {
+        "births": 9012,
+        "date": "1969-09-01T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 244
+      },
+      {
+        "births": 10686,
+        "date": "1969-09-02T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 245
+      },
+      {
+        "births": 11044,
+        "date": "1969-09-03T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 246
+      },
+      {
+        "births": 10506,
+        "date": "1969-09-04T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 247
+      },
+      {
+        "births": 10610,
+        "date": "1969-09-05T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 248
+      },
+      {
+        "births": 9710,
+        "date": "1969-09-06T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 249
+      },
+      {
+        "births": 9196,
+        "date": "1969-09-07T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 250
+      },
+      {
+        "births": 10508,
+        "date": "1969-09-08T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 251
+      },
+      {
+        "births": 10598,
+        "date": "1969-09-09T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 252
+      },
+      {
+        "births": 10450,
+        "date": "1969-09-10T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 253
+      },
+      {
+        "births": 10408,
+        "date": "1969-09-11T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 254
+      },
+      {
+        "births": 10752,
+        "date": "1969-09-12T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 255
+      },
+      {
+        "births": 9534,
+        "date": "1969-09-13T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 256
+      },
+      {
+        "births": 9204,
+        "date": "1969-09-14T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 257
+      },
+      {
+        "births": 10728,
+        "date": "1969-09-15T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 258
+      },
+      {
+        "births": 11142,
+        "date": "1969-09-16T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 259
+      },
+      {
+        "births": 10864,
+        "date": "1969-09-17T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 260
+      },
+      {
+        "births": 10876,
+        "date": "1969-09-18T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 261
+      },
+      {
+        "births": 10832,
+        "date": "1969-09-19T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 262
+      },
+      {
+        "births": 10040,
+        "date": "1969-09-20T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 263
+      },
+      {
+        "births": 9368,
+        "date": "1969-09-21T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 264
+      },
+      {
+        "births": 10970,
+        "date": "1969-09-22T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 265
+      },
+      {
+        "births": 11300,
+        "date": "1969-09-23T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 266
+      },
+      {
+        "births": 10898,
+        "date": "1969-09-24T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 267
+      },
+      {
+        "births": 10840,
+        "date": "1969-09-25T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 268
+      },
+      {
+        "births": 11154,
+        "date": "1969-09-26T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 269
+      },
+      {
+        "births": 10170,
+        "date": "1969-09-27T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 270
+      },
+      {
+        "births": 9198,
+        "date": "1969-09-28T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 271
+      },
+      {
+        "births": 10708,
+        "date": "1969-09-29T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 272
+      },
+      {
+        "births": 11138,
+        "date": "1969-09-30T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 273
+      },
+      {
+        "births": 10978,
+        "date": "1969-10-01T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 274
+      },
+      {
+        "births": 10656,
+        "date": "1969-10-02T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 275
+      },
+      {
+        "births": 10922,
+        "date": "1969-10-03T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 276
+      },
+      {
+        "births": 9710,
+        "date": "1969-10-04T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 277
+      },
+      {
+        "births": 8972,
+        "date": "1969-10-05T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 278
+      },
+      {
+        "births": 10318,
+        "date": "1969-10-06T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 279
+      },
+      {
+        "births": 10654,
+        "date": "1969-10-07T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 280
+      },
+      {
+        "births": 10510,
+        "date": "1969-10-08T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 281
+      },
+      {
+        "births": 10710,
+        "date": "1969-10-09T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 282
+      },
+      {
+        "births": 10748,
+        "date": "1969-10-10T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 283
+      },
+      {
+        "births": 9566,
+        "date": "1969-10-11T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 284
+      },
+      {
+        "births": 9014,
+        "date": "1969-10-12T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 285
+      },
+      {
+        "births": 9996,
+        "date": "1969-10-13T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 286
+      },
+      {
+        "births": 10618,
+        "date": "1969-10-14T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 287
+      },
+      {
+        "births": 10120,
+        "date": "1969-10-15T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 288
+      },
+      {
+        "births": 9918,
+        "date": "1969-10-16T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 289
+      },
+      {
+        "births": 10338,
+        "date": "1969-10-17T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 290
+      },
+      {
+        "births": 9172,
+        "date": "1969-10-18T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 291
+      },
+      {
+        "births": 8586,
+        "date": "1969-10-19T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 292
+      },
+      {
+        "births": 10148,
+        "date": "1969-10-20T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 293
+      },
+      {
+        "births": 10674,
+        "date": "1969-10-21T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 294
+      },
+      {
+        "births": 10300,
+        "date": "1969-10-22T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 295
+      },
+      {
+        "births": 9814,
+        "date": "1969-10-23T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 296
+      },
+      {
+        "births": 10010,
+        "date": "1969-10-24T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 297
+      },
+      {
+        "births": 9258,
+        "date": "1969-10-25T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 298
+      },
+      {
+        "births": 8864,
+        "date": "1969-10-26T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 299
+      },
+      {
+        "births": 10372,
+        "date": "1969-10-27T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 300
+      },
+      {
+        "births": 10640,
+        "date": "1969-10-28T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 301
+      },
+      {
+        "births": 10104,
+        "date": "1969-10-29T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 302
+      },
+      {
+        "births": 10110,
+        "date": "1969-10-30T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 303
+      },
+      {
+        "births": 10144,
+        "date": "1969-10-31T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 304
+      },
+      {
+        "births": 9342,
+        "date": "1969-11-01T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 305
+      },
+      {
+        "births": 8904,
+        "date": "1969-11-02T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 306
+      },
+      {
+        "births": 10338,
+        "date": "1969-11-03T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 307
+      },
+      {
+        "births": 10772,
+        "date": "1969-11-04T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 308
+      },
+      {
+        "births": 10020,
+        "date": "1969-11-05T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 309
+      },
+      {
+        "births": 10240,
+        "date": "1969-11-06T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 310
+      },
+      {
+        "births": 10660,
+        "date": "1969-11-07T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 311
+      },
+      {
+        "births": 9678,
+        "date": "1969-11-08T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 312
+      },
+      {
+        "births": 9022,
+        "date": "1969-11-09T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 313
+      },
+      {
+        "births": 10342,
+        "date": "1969-11-10T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 314
+      },
+      {
+        "births": 10878,
+        "date": "1969-11-11T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 315
+      },
+      {
+        "births": 10324,
+        "date": "1969-11-12T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 316
+      },
+      {
+        "births": 10100,
+        "date": "1969-11-13T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 317
+      },
+      {
+        "births": 10396,
+        "date": "1969-11-14T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 318
+      },
+      {
+        "births": 9298,
+        "date": "1969-11-15T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 319
+      },
+      {
+        "births": 8660,
+        "date": "1969-11-16T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 320
+      },
+      {
+        "births": 10286,
+        "date": "1969-11-17T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 321
+      },
+      {
+        "births": 10698,
+        "date": "1969-11-18T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 322
+      },
+      {
+        "births": 10260,
+        "date": "1969-11-19T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 323
+      },
+      {
+        "births": 10258,
+        "date": "1969-11-20T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 324
+      },
+      {
+        "births": 10168,
+        "date": "1969-11-21T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 325
+      },
+      {
+        "births": 9438,
+        "date": "1969-11-22T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 326
+      },
+      {
+        "births": 8866,
+        "date": "1969-11-23T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 327
+      },
+      {
+        "births": 10462,
+        "date": "1969-11-24T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 328
+      },
+      {
+        "births": 10864,
+        "date": "1969-11-25T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 329
+      },
+      {
+        "births": 10074,
+        "date": "1969-11-26T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 330
+      },
+      {
+        "births": 8248,
+        "date": "1969-11-27T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 331
+      },
+      {
+        "births": 9948,
+        "date": "1969-11-28T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 332
+      },
+      {
+        "births": 9332,
+        "date": "1969-11-29T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 333
+      },
+      {
+        "births": 8966,
+        "date": "1969-11-30T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 334
+      },
+      {
+        "births": 10764,
+        "date": "1969-12-01T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 335
+      },
+      {
+        "births": 10736,
+        "date": "1969-12-02T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 336
+      },
+      {
+        "births": 10300,
+        "date": "1969-12-03T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 337
+      },
+      {
+        "births": 10254,
+        "date": "1969-12-04T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 338
+      },
+      {
+        "births": 10428,
+        "date": "1969-12-05T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 339
+      },
+      {
+        "births": 9420,
+        "date": "1969-12-06T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 340
+      },
+      {
+        "births": 8740,
+        "date": "1969-12-07T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 341
+      },
+      {
+        "births": 10646,
+        "date": "1969-12-08T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 342
+      },
+      {
+        "births": 10730,
+        "date": "1969-12-09T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 343
+      },
+      {
+        "births": 10348,
+        "date": "1969-12-10T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 344
+      },
+      {
+        "births": 10300,
+        "date": "1969-12-11T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 345
+      },
+      {
+        "births": 10758,
+        "date": "1969-12-12T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 346
+      },
+      {
+        "births": 9602,
+        "date": "1969-12-13T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 347
+      },
+      {
+        "births": 8762,
+        "date": "1969-12-14T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 348
+      },
+      {
+        "births": 10898,
+        "date": "1969-12-15T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 349
+      },
+      {
+        "births": 11022,
+        "date": "1969-12-16T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 350
+      },
+      {
+        "births": 10646,
+        "date": "1969-12-17T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 351
+      },
+      {
+        "births": 10426,
+        "date": "1969-12-18T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 352
+      },
+      {
+        "births": 10912,
+        "date": "1969-12-19T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 353
+      },
+      {
+        "births": 9822,
+        "date": "1969-12-20T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 354
+      },
+      {
+        "births": 8864,
+        "date": "1969-12-21T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 355
+      },
+      {
+        "births": 10492,
+        "date": "1969-12-22T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 356
+      },
+      {
+        "births": 9856,
+        "date": "1969-12-23T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 357
+      },
+      {
+        "births": 8978,
+        "date": "1969-12-24T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 358
+      },
+      {
+        "births": 8284,
+        "date": "1969-12-25T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 359
+      },
+      {
+        "births": 9910,
+        "date": "1969-12-26T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 360
+      },
+      {
+        "births": 9304,
+        "date": "1969-12-27T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 361
+      },
+      {
+        "births": 9004,
+        "date": "1969-12-28T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 362
+      },
+      {
+        "births": 10980,
+        "date": "1969-12-29T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 363
+      },
+      {
+        "births": 12232,
+        "date": "1969-12-30T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 364
+      },
+      {
+        "births": 11122,
+        "date": "1969-12-31T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 365
+      },
+      {
+        "births": 8372,
+        "date": "1970-01-01T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 1
+      },
+      {
+        "births": 9234,
+        "date": "1970-01-02T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 2
+      },
+      {
+        "births": 9162,
+        "date": "1970-01-03T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 3
+      },
+      {
+        "births": 8620,
+        "date": "1970-01-04T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 4
+      },
+      {
+        "births": 9852,
+        "date": "1970-01-05T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 5
+      },
+      {
+        "births": 10202,
+        "date": "1970-01-06T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 6
+      },
+      {
+        "births": 10020,
+        "date": "1970-01-07T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 7
+      },
+      {
+        "births": 9756,
+        "date": "1970-01-08T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 8
+      },
+      {
+        "births": 9844,
+        "date": "1970-01-09T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 9
+      },
+      {
+        "births": 9270,
+        "date": "1970-01-10T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 10
+      },
+      {
+        "births": 9158,
+        "date": "1970-01-11T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 11
+      },
+      {
+        "births": 10474,
+        "date": "1970-01-12T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 12
+      },
+      {
+        "births": 10580,
+        "date": "1970-01-13T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 13
+      },
+      {
+        "births": 10244,
+        "date": "1970-01-14T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 14
+      },
+      {
+        "births": 9946,
+        "date": "1970-01-15T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 15
+      },
+      {
+        "births": 10276,
+        "date": "1970-01-16T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 16
+      },
+      {
+        "births": 9598,
+        "date": "1970-01-17T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 17
+      },
+      {
+        "births": 8948,
+        "date": "1970-01-18T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 18
+      },
+      {
+        "births": 10124,
+        "date": "1970-01-19T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 19
+      },
+      {
+        "births": 10524,
+        "date": "1970-01-20T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 20
+      },
+      {
+        "births": 10096,
+        "date": "1970-01-21T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 21
+      },
+      {
+        "births": 9686,
+        "date": "1970-01-22T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 22
+      },
+      {
+        "births": 10202,
+        "date": "1970-01-23T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 23
+      },
+      {
+        "births": 9470,
+        "date": "1970-01-24T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 24
+      },
+      {
+        "births": 8792,
+        "date": "1970-01-25T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 25
+      },
+      {
+        "births": 10160,
+        "date": "1970-01-26T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 26
+      },
+      {
+        "births": 10602,
+        "date": "1970-01-27T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 27
+      },
+      {
+        "births": 10188,
+        "date": "1970-01-28T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 28
+      },
+      {
+        "births": 9816,
+        "date": "1970-01-29T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 29
+      },
+      {
+        "births": 9912,
+        "date": "1970-01-30T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 30
+      },
+      {
+        "births": 9012,
+        "date": "1970-01-31T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 31
+      },
+      {
+        "births": 9042,
+        "date": "1970-02-01T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 32
+      },
+      {
+        "births": 10542,
+        "date": "1970-02-02T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 33
+      },
+      {
+        "births": 10712,
+        "date": "1970-02-03T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 34
+      },
+      {
+        "births": 10086,
+        "date": "1970-02-04T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 35
+      },
+      {
+        "births": 9766,
+        "date": "1970-02-05T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 36
+      },
+      {
+        "births": 10220,
+        "date": "1970-02-06T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 37
+      },
+      {
+        "births": 9562,
+        "date": "1970-02-07T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 38
+      },
+      {
+        "births": 9016,
+        "date": "1970-02-08T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 39
+      },
+      {
+        "births": 10226,
+        "date": "1970-02-09T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 40
+      },
+      {
+        "births": 10620,
+        "date": "1970-02-10T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 41
+      },
+      {
+        "births": 10288,
+        "date": "1970-02-11T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 42
+      },
+      {
+        "births": 10058,
+        "date": "1970-02-12T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 43
+      },
+      {
+        "births": 10110,
+        "date": "1970-02-13T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 44
+      },
+      {
+        "births": 9558,
+        "date": "1970-02-14T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 45
+      },
+      {
+        "births": 9136,
+        "date": "1970-02-15T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 46
+      },
+      {
+        "births": 10260,
+        "date": "1970-02-16T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 47
+      },
+      {
+        "births": 10676,
+        "date": "1970-02-17T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 48
+      },
+      {
+        "births": 10472,
+        "date": "1970-02-18T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 49
+      },
+      {
+        "births": 10072,
+        "date": "1970-02-19T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 50
+      },
+      {
+        "births": 10544,
+        "date": "1970-02-20T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 51
+      },
+      {
+        "births": 9314,
+        "date": "1970-02-21T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 52
+      },
+      {
+        "births": 8986,
+        "date": "1970-02-22T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 53
+      },
+      {
+        "births": 10168,
+        "date": "1970-02-23T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 54
+      },
+      {
+        "births": 10782,
+        "date": "1970-02-24T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 55
+      },
+      {
+        "births": 10574,
+        "date": "1970-02-25T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 56
+      },
+      {
+        "births": 10408,
+        "date": "1970-02-26T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 57
+      },
+      {
+        "births": 10264,
+        "date": "1970-02-27T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 58
+      },
+      {
+        "births": 9720,
+        "date": "1970-02-28T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 59
+      },
+      {
+        "births": 8964,
+        "date": "1970-03-01T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 60
+      },
+      {
+        "births": 10202,
+        "date": "1970-03-02T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 61
+      },
+      {
+        "births": 11320,
+        "date": "1970-03-03T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 62
+      },
+      {
+        "births": 10600,
+        "date": "1970-03-04T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 63
+      },
+      {
+        "births": 10258,
+        "date": "1970-03-05T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 64
+      },
+      {
+        "births": 10504,
+        "date": "1970-03-06T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 65
+      },
+      {
+        "births": 9460,
+        "date": "1970-03-07T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 66
+      },
+      {
+        "births": 8926,
+        "date": "1970-03-08T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 67
+      },
+      {
+        "births": 10340,
+        "date": "1970-03-09T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 68
+      },
+      {
+        "births": 10744,
+        "date": "1970-03-10T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 69
+      },
+      {
+        "births": 10410,
+        "date": "1970-03-11T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 70
+      },
+      {
+        "births": 10180,
+        "date": "1970-03-12T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 71
+      },
+      {
+        "births": 10140,
+        "date": "1970-03-13T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 72
+      },
+      {
+        "births": 9450,
+        "date": "1970-03-14T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 73
+      },
+      {
+        "births": 8596,
+        "date": "1970-03-15T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 74
+      },
+      {
+        "births": 10058,
+        "date": "1970-03-16T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 75
+      },
+      {
+        "births": 10694,
+        "date": "1970-03-17T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 76
+      },
+      {
+        "births": 10278,
+        "date": "1970-03-18T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 77
+      },
+      {
+        "births": 10100,
+        "date": "1970-03-19T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 78
+      },
+      {
+        "births": 10206,
+        "date": "1970-03-20T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 79
+      },
+      {
+        "births": 9390,
+        "date": "1970-03-21T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 80
+      },
+      {
+        "births": 8784,
+        "date": "1970-03-22T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 81
+      },
+      {
+        "births": 10334,
+        "date": "1970-03-23T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 82
+      },
+      {
+        "births": 10556,
+        "date": "1970-03-24T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 83
+      },
+      {
+        "births": 10148,
+        "date": "1970-03-25T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 84
+      },
+      {
+        "births": 9886,
+        "date": "1970-03-26T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 85
+      },
+      {
+        "births": 9792,
+        "date": "1970-03-27T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 86
+      },
+      {
+        "births": 8764,
+        "date": "1970-03-28T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 87
+      },
+      {
+        "births": 8314,
+        "date": "1970-03-29T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 88
+      },
+      {
+        "births": 9766,
+        "date": "1970-03-30T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 89
+      },
+      {
+        "births": 10172,
+        "date": "1970-03-31T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 90
+      },
+      {
+        "births": 10002,
+        "date": "1970-04-01T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 91
+      },
+      {
+        "births": 10134,
+        "date": "1970-04-02T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 92
+      },
+      {
+        "births": 10116,
+        "date": "1970-04-03T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 93
+      },
+      {
+        "births": 9234,
+        "date": "1970-04-04T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 94
+      },
+      {
+        "births": 8522,
+        "date": "1970-04-05T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 95
+      },
+      {
+        "births": 10052,
+        "date": "1970-04-06T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 96
+      },
+      {
+        "births": 10474,
+        "date": "1970-04-07T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 97
+      },
+      {
+        "births": 9950,
+        "date": "1970-04-08T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 98
+      },
+      {
+        "births": 9898,
+        "date": "1970-04-09T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 99
+      },
+      {
+        "births": 10072,
+        "date": "1970-04-10T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 100
+      },
+      {
+        "births": 9040,
+        "date": "1970-04-11T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 101
+      },
+      {
+        "births": 8214,
+        "date": "1970-04-12T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 102
+      },
+      {
+        "births": 9470,
+        "date": "1970-04-13T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 103
+      },
+      {
+        "births": 10100,
+        "date": "1970-04-14T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 104
+      },
+      {
+        "births": 9824,
+        "date": "1970-04-15T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 105
+      },
+      {
+        "births": 9668,
+        "date": "1970-04-16T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 106
+      },
+      {
+        "births": 9706,
+        "date": "1970-04-17T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 107
+      },
+      {
+        "births": 8786,
+        "date": "1970-04-18T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 108
+      },
+      {
+        "births": 8174,
+        "date": "1970-04-19T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 109
+      },
+      {
+        "births": 9574,
+        "date": "1970-04-20T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 110
+      },
+      {
+        "births": 10098,
+        "date": "1970-04-21T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 111
+      },
+      {
+        "births": 9714,
+        "date": "1970-04-22T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 112
+      },
+      {
+        "births": 9518,
+        "date": "1970-04-23T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 113
+      },
+      {
+        "births": 9860,
+        "date": "1970-04-24T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 114
+      },
+      {
+        "births": 8824,
+        "date": "1970-04-25T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 115
+      },
+      {
+        "births": 8278,
+        "date": "1970-04-26T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 116
+      },
+      {
+        "births": 9910,
+        "date": "1970-04-27T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 117
+      },
+      {
+        "births": 10300,
+        "date": "1970-04-28T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 118
+      },
+      {
+        "births": 9728,
+        "date": "1970-04-29T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 119
+      },
+      {
+        "births": 9684,
+        "date": "1970-04-30T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 120
+      },
+      {
+        "births": 9990,
+        "date": "1970-05-01T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 121
+      },
+      {
+        "births": 8740,
+        "date": "1970-05-02T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 122
+      },
+      {
+        "births": 8036,
+        "date": "1970-05-03T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 123
+      },
+      {
+        "births": 9752,
+        "date": "1970-05-04T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 124
+      },
+      {
+        "births": 10136,
+        "date": "1970-05-05T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 125
+      },
+      {
+        "births": 9712,
+        "date": "1970-05-06T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 126
+      },
+      {
+        "births": 9632,
+        "date": "1970-05-07T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 127
+      },
+      {
+        "births": 9836,
+        "date": "1970-05-08T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 128
+      },
+      {
+        "births": 8996,
+        "date": "1970-05-09T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 129
+      },
+      {
+        "births": 8428,
+        "date": "1970-05-10T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 130
+      },
+      {
+        "births": 10080,
+        "date": "1970-05-11T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 131
+      },
+      {
+        "births": 10436,
+        "date": "1970-05-12T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 132
+      },
+      {
+        "births": 10026,
+        "date": "1970-05-13T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 133
+      },
+      {
+        "births": 9812,
+        "date": "1970-05-14T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 134
+      },
+      {
+        "births": 10214,
+        "date": "1970-05-15T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 135
+      },
+      {
+        "births": 8946,
+        "date": "1970-05-16T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 136
+      },
+      {
+        "births": 8030,
+        "date": "1970-05-17T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 137
+      },
+      {
+        "births": 10022,
+        "date": "1970-05-18T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 138
+      },
+      {
+        "births": 10436,
+        "date": "1970-05-19T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 139
+      },
+      {
+        "births": 10044,
+        "date": "1970-05-20T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 140
+      },
+      {
+        "births": 10244,
+        "date": "1970-05-21T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 141
+      },
+      {
+        "births": 10362,
+        "date": "1970-05-22T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 142
+      },
+      {
+        "births": 9424,
+        "date": "1970-05-23T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 143
+      },
+      {
+        "births": 8718,
+        "date": "1970-05-24T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 144
+      },
+      {
+        "births": 10076,
+        "date": "1970-05-25T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 145
+      },
+      {
+        "births": 10598,
+        "date": "1970-05-26T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 146
+      },
+      {
+        "births": 10034,
+        "date": "1970-05-27T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 147
+      },
+      {
+        "births": 10040,
+        "date": "1970-05-28T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 148
+      },
+      {
+        "births": 9984,
+        "date": "1970-05-29T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 149
+      },
+      {
+        "births": 8868,
+        "date": "1970-05-30T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 150
+      },
+      {
+        "births": 8388,
+        "date": "1970-05-31T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 151
+      },
+      {
+        "births": 10124,
+        "date": "1970-06-01T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 152
+      },
+      {
+        "births": 10882,
+        "date": "1970-06-02T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 153
+      },
+      {
+        "births": 10270,
+        "date": "1970-06-03T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 154
+      },
+      {
+        "births": 9964,
+        "date": "1970-06-04T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 155
+      },
+      {
+        "births": 10060,
+        "date": "1970-06-05T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 156
+      },
+      {
+        "births": 9516,
+        "date": "1970-06-06T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 157
+      },
+      {
+        "births": 8500,
+        "date": "1970-06-07T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 158
+      },
+      {
+        "births": 9946,
+        "date": "1970-06-08T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 159
+      },
+      {
+        "births": 10764,
+        "date": "1970-06-09T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 160
+      },
+      {
+        "births": 10330,
+        "date": "1970-06-10T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 161
+      },
+      {
+        "births": 10518,
+        "date": "1970-06-11T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 162
+      },
+      {
+        "births": 10774,
+        "date": "1970-06-12T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 163
+      },
+      {
+        "births": 9212,
+        "date": "1970-06-13T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 164
+      },
+      {
+        "births": 8614,
+        "date": "1970-06-14T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 165
+      },
+      {
+        "births": 10216,
+        "date": "1970-06-15T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 166
+      },
+      {
+        "births": 10878,
+        "date": "1970-06-16T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 167
+      },
+      {
+        "births": 10610,
+        "date": "1970-06-17T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 168
+      },
+      {
+        "births": 10520,
+        "date": "1970-06-18T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 169
+      },
+      {
+        "births": 10390,
+        "date": "1970-06-19T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 170
+      },
+      {
+        "births": 9600,
+        "date": "1970-06-20T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 171
+      },
+      {
+        "births": 8568,
+        "date": "1970-06-21T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 172
+      },
+      {
+        "births": 10352,
+        "date": "1970-06-22T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 173
+      },
+      {
+        "births": 10678,
+        "date": "1970-06-23T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 174
+      },
+      {
+        "births": 10644,
+        "date": "1970-06-24T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 175
+      },
+      {
+        "births": 10326,
+        "date": "1970-06-25T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 176
+      },
+      {
+        "births": 10622,
+        "date": "1970-06-26T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 177
+      },
+      {
+        "births": 9672,
+        "date": "1970-06-27T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 178
+      },
+      {
+        "births": 8728,
+        "date": "1970-06-28T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 179
+      },
+      {
+        "births": 10506,
+        "date": "1970-06-29T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 180
+      },
+      {
+        "births": 11378,
+        "date": "1970-06-30T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 181
+      },
+      {
+        "births": 11136,
+        "date": "1970-07-01T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 182
+      },
+      {
+        "births": 11234,
+        "date": "1970-07-02T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 183
+      },
+      {
+        "births": 10516,
+        "date": "1970-07-03T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 184
+      },
+      {
+        "births": 9380,
+        "date": "1970-07-04T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 185
+      },
+      {
+        "births": 9020,
+        "date": "1970-07-05T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 186
+      },
+      {
+        "births": 10518,
+        "date": "1970-07-06T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 187
+      },
+      {
+        "births": 11292,
+        "date": "1970-07-07T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 188
+      },
+      {
+        "births": 10896,
+        "date": "1970-07-08T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 189
+      },
+      {
+        "births": 10716,
+        "date": "1970-07-09T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 190
+      },
+      {
+        "births": 10862,
+        "date": "1970-07-10T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 191
+      },
+      {
+        "births": 9690,
+        "date": "1970-07-11T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 192
+      },
+      {
+        "births": 9184,
+        "date": "1970-07-12T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 193
+      },
+      {
+        "births": 10568,
+        "date": "1970-07-13T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 194
+      },
+      {
+        "births": 11828,
+        "date": "1970-07-14T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 195
+      },
+      {
+        "births": 11078,
+        "date": "1970-07-15T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 196
+      },
+      {
+        "births": 11048,
+        "date": "1970-07-16T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 197
+      },
+      {
+        "births": 10938,
+        "date": "1970-07-17T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 198
+      },
+      {
+        "births": 9966,
+        "date": "1970-07-18T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 199
+      },
+      {
+        "births": 9520,
+        "date": "1970-07-19T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 200
+      },
+      {
+        "births": 10982,
+        "date": "1970-07-20T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 201
+      },
+      {
+        "births": 11448,
+        "date": "1970-07-21T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 202
+      },
+      {
+        "births": 10682,
+        "date": "1970-07-22T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 203
+      },
+      {
+        "births": 10844,
+        "date": "1970-07-23T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 204
+      },
+      {
+        "births": 10956,
+        "date": "1970-07-24T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 205
+      },
+      {
+        "births": 9866,
+        "date": "1970-07-25T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 206
+      },
+      {
+        "births": 9466,
+        "date": "1970-07-26T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 207
+      },
+      {
+        "births": 11052,
+        "date": "1970-07-27T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 208
+      },
+      {
+        "births": 11858,
+        "date": "1970-07-28T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 209
+      },
+      {
+        "births": 11354,
+        "date": "1970-07-29T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 210
+      },
+      {
+        "births": 11056,
+        "date": "1970-07-30T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 211
+      },
+      {
+        "births": 11300,
+        "date": "1970-07-31T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 212
+      },
+      {
+        "births": 10416,
+        "date": "1970-08-01T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 213
+      },
+      {
+        "births": 9282,
+        "date": "1970-08-02T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 214
+      },
+      {
+        "births": 11180,
+        "date": "1970-08-03T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 215
+      },
+      {
+        "births": 11180,
+        "date": "1970-08-04T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 216
+      },
+      {
+        "births": 10872,
+        "date": "1970-08-05T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 217
+      },
+      {
+        "births": 10836,
+        "date": "1970-08-06T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 218
+      },
+      {
+        "births": 11022,
+        "date": "1970-08-07T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 219
+      },
+      {
+        "births": 10232,
+        "date": "1970-08-08T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 220
+      },
+      {
+        "births": 9458,
+        "date": "1970-08-09T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 221
+      },
+      {
+        "births": 10846,
+        "date": "1970-08-10T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 222
+      },
+      {
+        "births": 11566,
+        "date": "1970-08-11T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 223
+      },
+      {
+        "births": 11484,
+        "date": "1970-08-12T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 224
+      },
+      {
+        "births": 11060,
+        "date": "1970-08-13T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 225
+      },
+      {
+        "births": 11538,
+        "date": "1970-08-14T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 226
+      },
+      {
+        "births": 10236,
+        "date": "1970-08-15T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 227
+      },
+      {
+        "births": 9616,
+        "date": "1970-08-16T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 228
+      },
+      {
+        "births": 11032,
+        "date": "1970-08-17T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 229
+      },
+      {
+        "births": 11648,
+        "date": "1970-08-18T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 230
+      },
+      {
+        "births": 11134,
+        "date": "1970-08-19T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 231
+      },
+      {
+        "births": 10868,
+        "date": "1970-08-20T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 232
+      },
+      {
+        "births": 11050,
+        "date": "1970-08-21T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 233
+      },
+      {
+        "births": 9958,
+        "date": "1970-08-22T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 234
+      },
+      {
+        "births": 9274,
+        "date": "1970-08-23T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 235
+      },
+      {
+        "births": 10456,
+        "date": "1970-08-24T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 236
+      },
+      {
+        "births": 11384,
+        "date": "1970-08-25T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 237
+      },
+      {
+        "births": 11306,
+        "date": "1970-08-26T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 238
+      },
+      {
+        "births": 10664,
+        "date": "1970-08-27T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 239
+      },
+      {
+        "births": 11004,
+        "date": "1970-08-28T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 240
+      },
+      {
+        "births": 10042,
+        "date": "1970-08-29T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 241
+      },
+      {
+        "births": 9392,
+        "date": "1970-08-30T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 242
+      },
+      {
+        "births": 11078,
+        "date": "1970-08-31T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 243
+      },
+      {
+        "births": 11350,
+        "date": "1970-09-01T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 244
+      },
+      {
+        "births": 10936,
+        "date": "1970-09-02T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 245
+      },
+      {
+        "births": 11088,
+        "date": "1970-09-03T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 246
+      },
+      {
+        "births": 11366,
+        "date": "1970-09-04T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 247
+      },
+      {
+        "births": 10216,
+        "date": "1970-09-05T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 248
+      },
+      {
+        "births": 9486,
+        "date": "1970-09-06T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 249
+      },
+      {
+        "births": 9564,
+        "date": "1970-09-07T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 250
+      },
+      {
+        "births": 11310,
+        "date": "1970-09-08T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 251
+      },
+      {
+        "births": 11860,
+        "date": "1970-09-09T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 252
+      },
+      {
+        "births": 11654,
+        "date": "1970-09-10T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 253
+      },
+      {
+        "births": 11592,
+        "date": "1970-09-11T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 254
+      },
+      {
+        "births": 10218,
+        "date": "1970-09-12T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 255
+      },
+      {
+        "births": 9544,
+        "date": "1970-09-13T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 256
+      },
+      {
+        "births": 11304,
+        "date": "1970-09-14T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 257
+      },
+      {
+        "births": 11904,
+        "date": "1970-09-15T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 258
+      },
+      {
+        "births": 11704,
+        "date": "1970-09-16T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 259
+      },
+      {
+        "births": 11472,
+        "date": "1970-09-17T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 260
+      },
+      {
+        "births": 11546,
+        "date": "1970-09-18T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 261
+      },
+      {
+        "births": 10492,
+        "date": "1970-09-19T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 262
+      },
+      {
+        "births": 9976,
+        "date": "1970-09-20T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 263
+      },
+      {
+        "births": 11614,
+        "date": "1970-09-21T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 264
+      },
+      {
+        "births": 12466,
+        "date": "1970-09-22T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 265
+      },
+      {
+        "births": 11798,
+        "date": "1970-09-23T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 266
+      },
+      {
+        "births": 11448,
+        "date": "1970-09-24T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 267
+      },
+      {
+        "births": 11916,
+        "date": "1970-09-25T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 268
+      },
+      {
+        "births": 10404,
+        "date": "1970-09-26T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 269
+      },
+      {
+        "births": 9816,
+        "date": "1970-09-27T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 270
+      },
+      {
+        "births": 11340,
+        "date": "1970-09-28T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 271
+      },
+      {
+        "births": 11564,
+        "date": "1970-09-29T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 272
+      },
+      {
+        "births": 11244,
+        "date": "1970-09-30T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 273
+      },
+      {
+        "births": 10856,
+        "date": "1970-10-01T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 274
+      },
+      {
+        "births": 11210,
+        "date": "1970-10-02T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 275
+      },
+      {
+        "births": 10492,
+        "date": "1970-10-03T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 276
+      },
+      {
+        "births": 9372,
+        "date": "1970-10-04T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 277
+      },
+      {
+        "births": 11048,
+        "date": "1970-10-05T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 278
+      },
+      {
+        "births": 11582,
+        "date": "1970-10-06T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 279
+      },
+      {
+        "births": 11020,
+        "date": "1970-10-07T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 280
+      },
+      {
+        "births": 10772,
+        "date": "1970-10-08T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 281
+      },
+      {
+        "births": 11196,
+        "date": "1970-10-09T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 282
+      },
+      {
+        "births": 9790,
+        "date": "1970-10-10T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 283
+      },
+      {
+        "births": 9214,
+        "date": "1970-10-11T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 284
+      },
+      {
+        "births": 11016,
+        "date": "1970-10-12T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 285
+      },
+      {
+        "births": 11236,
+        "date": "1970-10-13T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 286
+      },
+      {
+        "births": 10882,
+        "date": "1970-10-14T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 287
+      },
+      {
+        "births": 10644,
+        "date": "1970-10-15T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 288
+      },
+      {
+        "births": 10704,
+        "date": "1970-10-16T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 289
+      },
+      {
+        "births": 9490,
+        "date": "1970-10-17T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 290
+      },
+      {
+        "births": 8924,
+        "date": "1970-10-18T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 291
+      },
+      {
+        "births": 10500,
+        "date": "1970-10-19T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 292
+      },
+      {
+        "births": 11138,
+        "date": "1970-10-20T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 293
+      },
+      {
+        "births": 10716,
+        "date": "1970-10-21T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 294
+      },
+      {
+        "births": 10478,
+        "date": "1970-10-22T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 295
+      },
+      {
+        "births": 10654,
+        "date": "1970-10-23T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 296
+      },
+      {
+        "births": 9598,
+        "date": "1970-10-24T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 297
+      },
+      {
+        "births": 9266,
+        "date": "1970-10-25T00:00:00",
+        "month": 10,
+        "wday": "Sun",
+        "yday": 298
+      },
+      {
+        "births": 10616,
+        "date": "1970-10-26T00:00:00",
+        "month": 10,
+        "wday": "Mon",
+        "yday": 299
+      },
+      {
+        "births": 10956,
+        "date": "1970-10-27T00:00:00",
+        "month": 10,
+        "wday": "Tues",
+        "yday": 300
+      },
+      {
+        "births": 10262,
+        "date": "1970-10-28T00:00:00",
+        "month": 10,
+        "wday": "Wed",
+        "yday": 301
+      },
+      {
+        "births": 10122,
+        "date": "1970-10-29T00:00:00",
+        "month": 10,
+        "wday": "Thurs",
+        "yday": 302
+      },
+      {
+        "births": 10614,
+        "date": "1970-10-30T00:00:00",
+        "month": 10,
+        "wday": "Fri",
+        "yday": 303
+      },
+      {
+        "births": 9592,
+        "date": "1970-10-31T00:00:00",
+        "month": 10,
+        "wday": "Sat",
+        "yday": 304
+      },
+      {
+        "births": 9070,
+        "date": "1970-11-01T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 305
+      },
+      {
+        "births": 10568,
+        "date": "1970-11-02T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 306
+      },
+      {
+        "births": 11146,
+        "date": "1970-11-03T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 307
+      },
+      {
+        "births": 10622,
+        "date": "1970-11-04T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 308
+      },
+      {
+        "births": 10454,
+        "date": "1970-11-05T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 309
+      },
+      {
+        "births": 10722,
+        "date": "1970-11-06T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 310
+      },
+      {
+        "births": 9460,
+        "date": "1970-11-07T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 311
+      },
+      {
+        "births": 9132,
+        "date": "1970-11-08T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 312
+      },
+      {
+        "births": 10562,
+        "date": "1970-11-09T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 313
+      },
+      {
+        "births": 11328,
+        "date": "1970-11-10T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 314
+      },
+      {
+        "births": 10612,
+        "date": "1970-11-11T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 315
+      },
+      {
+        "births": 10704,
+        "date": "1970-11-12T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 316
+      },
+      {
+        "births": 10850,
+        "date": "1970-11-13T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 317
+      },
+      {
+        "births": 9828,
+        "date": "1970-11-14T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 318
+      },
+      {
+        "births": 9282,
+        "date": "1970-11-15T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 319
+      },
+      {
+        "births": 10690,
+        "date": "1970-11-16T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 320
+      },
+      {
+        "births": 11182,
+        "date": "1970-11-17T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 321
+      },
+      {
+        "births": 10914,
+        "date": "1970-11-18T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 322
+      },
+      {
+        "births": 10828,
+        "date": "1970-11-19T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 323
+      },
+      {
+        "births": 11126,
+        "date": "1970-11-20T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 324
+      },
+      {
+        "births": 9926,
+        "date": "1970-11-21T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 325
+      },
+      {
+        "births": 8926,
+        "date": "1970-11-22T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 326
+      },
+      {
+        "births": 10940,
+        "date": "1970-11-23T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 327
+      },
+      {
+        "births": 11152,
+        "date": "1970-11-24T00:00:00",
+        "month": 11,
+        "wday": "Tues",
+        "yday": 328
+      },
+      {
+        "births": 10542,
+        "date": "1970-11-25T00:00:00",
+        "month": 11,
+        "wday": "Wed",
+        "yday": 329
+      },
+      {
+        "births": 8712,
+        "date": "1970-11-26T00:00:00",
+        "month": 11,
+        "wday": "Thurs",
+        "yday": 330
+      },
+      {
+        "births": 10038,
+        "date": "1970-11-27T00:00:00",
+        "month": 11,
+        "wday": "Fri",
+        "yday": 331
+      },
+      {
+        "births": 9670,
+        "date": "1970-11-28T00:00:00",
+        "month": 11,
+        "wday": "Sat",
+        "yday": 332
+      },
+      {
+        "births": 9190,
+        "date": "1970-11-29T00:00:00",
+        "month": 11,
+        "wday": "Sun",
+        "yday": 333
+      },
+      {
+        "births": 11126,
+        "date": "1970-11-30T00:00:00",
+        "month": 11,
+        "wday": "Mon",
+        "yday": 334
+      },
+      {
+        "births": 11362,
+        "date": "1970-12-01T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 335
+      },
+      {
+        "births": 11180,
+        "date": "1970-12-02T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 336
+      },
+      {
+        "births": 10368,
+        "date": "1970-12-03T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 337
+      },
+      {
+        "births": 10872,
+        "date": "1970-12-04T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 338
+      },
+      {
+        "births": 9610,
+        "date": "1970-12-05T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 339
+      },
+      {
+        "births": 9272,
+        "date": "1970-12-06T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 340
+      },
+      {
+        "births": 10720,
+        "date": "1970-12-07T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 341
+      },
+      {
+        "births": 11220,
+        "date": "1970-12-08T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 342
+      },
+      {
+        "births": 10708,
+        "date": "1970-12-09T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 343
+      },
+      {
+        "births": 10756,
+        "date": "1970-12-10T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 344
+      },
+      {
+        "births": 10704,
+        "date": "1970-12-11T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 345
+      },
+      {
+        "births": 10040,
+        "date": "1970-12-12T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 346
+      },
+      {
+        "births": 9204,
+        "date": "1970-12-13T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 347
+      },
+      {
+        "births": 11070,
+        "date": "1970-12-14T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 348
+      },
+      {
+        "births": 11884,
+        "date": "1970-12-15T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 349
+      },
+      {
+        "births": 11586,
+        "date": "1970-12-16T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 350
+      },
+      {
+        "births": 11234,
+        "date": "1970-12-17T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 351
+      },
+      {
+        "births": 11708,
+        "date": "1970-12-18T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 352
+      },
+      {
+        "births": 10518,
+        "date": "1970-12-19T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 353
+      },
+      {
+        "births": 9322,
+        "date": "1970-12-20T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 354
+      },
+      {
+        "births": 11372,
+        "date": "1970-12-21T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 355
+      },
+      {
+        "births": 11008,
+        "date": "1970-12-22T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 356
+      },
+      {
+        "births": 10070,
+        "date": "1970-12-23T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 357
+      },
+      {
+        "births": 9120,
+        "date": "1970-12-24T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 358
+      },
+      {
+        "births": 8490,
+        "date": "1970-12-25T00:00:00",
+        "month": 12,
+        "wday": "Fri",
+        "yday": 359
+      },
+      {
+        "births": 9366,
+        "date": "1970-12-26T00:00:00",
+        "month": 12,
+        "wday": "Sat",
+        "yday": 360
+      },
+      {
+        "births": 9314,
+        "date": "1970-12-27T00:00:00",
+        "month": 12,
+        "wday": "Sun",
+        "yday": 361
+      },
+      {
+        "births": 11640,
+        "date": "1970-12-28T00:00:00",
+        "month": 12,
+        "wday": "Mon",
+        "yday": 362
+      },
+      {
+        "births": 12448,
+        "date": "1970-12-29T00:00:00",
+        "month": 12,
+        "wday": "Tues",
+        "yday": 363
+      },
+      {
+        "births": 11932,
+        "date": "1970-12-30T00:00:00",
+        "month": 12,
+        "wday": "Wed",
+        "yday": 364
+      },
+      {
+        "births": 11210,
+        "date": "1970-12-31T00:00:00",
+        "month": 12,
+        "wday": "Thurs",
+        "yday": 365
+      },
+      {
+        "births": 8848,
+        "date": "1971-01-01T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 1
+      },
+      {
+        "births": 9226,
+        "date": "1971-01-02T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 2
+      },
+      {
+        "births": 8798,
+        "date": "1971-01-03T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 3
+      },
+      {
+        "births": 10044,
+        "date": "1971-01-04T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 4
+      },
+      {
+        "births": 10538,
+        "date": "1971-01-05T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 5
+      },
+      {
+        "births": 10146,
+        "date": "1971-01-06T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 6
+      },
+      {
+        "births": 10030,
+        "date": "1971-01-07T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 7
+      },
+      {
+        "births": 10486,
+        "date": "1971-01-08T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 8
+      },
+      {
+        "births": 9280,
+        "date": "1971-01-09T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 9
+      },
+      {
+        "births": 9116,
+        "date": "1971-01-10T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 10
+      },
+      {
+        "births": 10824,
+        "date": "1971-01-11T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 11
+      },
+      {
+        "births": 11064,
+        "date": "1971-01-12T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 12
+      },
+      {
+        "births": 10664,
+        "date": "1971-01-13T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 13
+      },
+      {
+        "births": 10364,
+        "date": "1971-01-14T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 14
+      },
+      {
+        "births": 10874,
+        "date": "1971-01-15T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 15
+      },
+      {
+        "births": 9590,
+        "date": "1971-01-16T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 16
+      },
+      {
+        "births": 8806,
+        "date": "1971-01-17T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 17
+      },
+      {
+        "births": 10974,
+        "date": "1971-01-18T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 18
+      },
+      {
+        "births": 11020,
+        "date": "1971-01-19T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 19
+      },
+      {
+        "births": 10598,
+        "date": "1971-01-20T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 20
+      },
+      {
+        "births": 10492,
+        "date": "1971-01-21T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 21
+      },
+      {
+        "births": 10730,
+        "date": "1971-01-22T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 22
+      },
+      {
+        "births": 9802,
+        "date": "1971-01-23T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 23
+      },
+      {
+        "births": 8994,
+        "date": "1971-01-24T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 24
+      },
+      {
+        "births": 10558,
+        "date": "1971-01-25T00:00:00",
+        "month": 1,
+        "wday": "Mon",
+        "yday": 25
+      },
+      {
+        "births": 10996,
+        "date": "1971-01-26T00:00:00",
+        "month": 1,
+        "wday": "Tues",
+        "yday": 26
+      },
+      {
+        "births": 10442,
+        "date": "1971-01-27T00:00:00",
+        "month": 1,
+        "wday": "Wed",
+        "yday": 27
+      },
+      {
+        "births": 10392,
+        "date": "1971-01-28T00:00:00",
+        "month": 1,
+        "wday": "Thurs",
+        "yday": 28
+      },
+      {
+        "births": 10274,
+        "date": "1971-01-29T00:00:00",
+        "month": 1,
+        "wday": "Fri",
+        "yday": 29
+      },
+      {
+        "births": 9772,
+        "date": "1971-01-30T00:00:00",
+        "month": 1,
+        "wday": "Sat",
+        "yday": 30
+      },
+      {
+        "births": 9064,
+        "date": "1971-01-31T00:00:00",
+        "month": 1,
+        "wday": "Sun",
+        "yday": 31
+      },
+      {
+        "births": 10410,
+        "date": "1971-02-01T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 32
+      },
+      {
+        "births": 10804,
+        "date": "1971-02-02T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 33
+      },
+      {
+        "births": 10296,
+        "date": "1971-02-03T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 34
+      },
+      {
+        "births": 10170,
+        "date": "1971-02-04T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 35
+      },
+      {
+        "births": 10868,
+        "date": "1971-02-05T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 36
+      },
+      {
+        "births": 9478,
+        "date": "1971-02-06T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 37
+      },
+      {
+        "births": 9038,
+        "date": "1971-02-07T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 38
+      },
+      {
+        "births": 10266,
+        "date": "1971-02-08T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 39
+      },
+      {
+        "births": 10778,
+        "date": "1971-02-09T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 40
+      },
+      {
+        "births": 10354,
+        "date": "1971-02-10T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 41
+      },
+      {
+        "births": 10372,
+        "date": "1971-02-11T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 42
+      },
+      {
+        "births": 10786,
+        "date": "1971-02-12T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 43
+      },
+      {
+        "births": 9314,
+        "date": "1971-02-13T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 44
+      },
+      {
+        "births": 9068,
+        "date": "1971-02-14T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 45
+      },
+      {
+        "births": 10056,
+        "date": "1971-02-15T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 46
+      },
+      {
+        "births": 10514,
+        "date": "1971-02-16T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 47
+      },
+      {
+        "births": 10442,
+        "date": "1971-02-17T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 48
+      },
+      {
+        "births": 10228,
+        "date": "1971-02-18T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 49
+      },
+      {
+        "births": 10472,
+        "date": "1971-02-19T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 50
+      },
+      {
+        "births": 9502,
+        "date": "1971-02-20T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 51
+      },
+      {
+        "births": 9194,
+        "date": "1971-02-21T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 52
+      },
+      {
+        "births": 10752,
+        "date": "1971-02-22T00:00:00",
+        "month": 2,
+        "wday": "Mon",
+        "yday": 53
+      },
+      {
+        "births": 10782,
+        "date": "1971-02-23T00:00:00",
+        "month": 2,
+        "wday": "Tues",
+        "yday": 54
+      },
+      {
+        "births": 10532,
+        "date": "1971-02-24T00:00:00",
+        "month": 2,
+        "wday": "Wed",
+        "yday": 55
+      },
+      {
+        "births": 10402,
+        "date": "1971-02-25T00:00:00",
+        "month": 2,
+        "wday": "Thurs",
+        "yday": 56
+      },
+      {
+        "births": 10738,
+        "date": "1971-02-26T00:00:00",
+        "month": 2,
+        "wday": "Fri",
+        "yday": 57
+      },
+      {
+        "births": 9586,
+        "date": "1971-02-27T00:00:00",
+        "month": 2,
+        "wday": "Sat",
+        "yday": 58
+      },
+      {
+        "births": 8810,
+        "date": "1971-02-28T00:00:00",
+        "month": 2,
+        "wday": "Sun",
+        "yday": 59
+      },
+      {
+        "births": 10284,
+        "date": "1971-03-01T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 60
+      },
+      {
+        "births": 10400,
+        "date": "1971-03-02T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 61
+      },
+      {
+        "births": 10640,
+        "date": "1971-03-03T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 62
+      },
+      {
+        "births": 10326,
+        "date": "1971-03-04T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 63
+      },
+      {
+        "births": 10452,
+        "date": "1971-03-05T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 64
+      },
+      {
+        "births": 9460,
+        "date": "1971-03-06T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 65
+      },
+      {
+        "births": 8744,
+        "date": "1971-03-07T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 66
+      },
+      {
+        "births": 10156,
+        "date": "1971-03-08T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 67
+      },
+      {
+        "births": 10766,
+        "date": "1971-03-09T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 68
+      },
+      {
+        "births": 10470,
+        "date": "1971-03-10T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 69
+      },
+      {
+        "births": 10300,
+        "date": "1971-03-11T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 70
+      },
+      {
+        "births": 10474,
+        "date": "1971-03-12T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 71
+      },
+      {
+        "births": 9408,
+        "date": "1971-03-13T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 72
+      },
+      {
+        "births": 8838,
+        "date": "1971-03-14T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 73
+      },
+      {
+        "births": 10348,
+        "date": "1971-03-15T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 74
+      },
+      {
+        "births": 10438,
+        "date": "1971-03-16T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 75
+      },
+      {
+        "births": 10234,
+        "date": "1971-03-17T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 76
+      },
+      {
+        "births": 9798,
+        "date": "1971-03-18T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 77
+      },
+      {
+        "births": 10476,
+        "date": "1971-03-19T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 78
+      },
+      {
+        "births": 9164,
+        "date": "1971-03-20T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 79
+      },
+      {
+        "births": 8688,
+        "date": "1971-03-21T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 80
+      },
+      {
+        "births": 10142,
+        "date": "1971-03-22T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 81
+      },
+      {
+        "births": 10340,
+        "date": "1971-03-23T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 82
+      },
+      {
+        "births": 9808,
+        "date": "1971-03-24T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 83
+      },
+      {
+        "births": 9954,
+        "date": "1971-03-25T00:00:00",
+        "month": 3,
+        "wday": "Thurs",
+        "yday": 84
+      },
+      {
+        "births": 9870,
+        "date": "1971-03-26T00:00:00",
+        "month": 3,
+        "wday": "Fri",
+        "yday": 85
+      },
+      {
+        "births": 8796,
+        "date": "1971-03-27T00:00:00",
+        "month": 3,
+        "wday": "Sat",
+        "yday": 86
+      },
+      {
+        "births": 8672,
+        "date": "1971-03-28T00:00:00",
+        "month": 3,
+        "wday": "Sun",
+        "yday": 87
+      },
+      {
+        "births": 10220,
+        "date": "1971-03-29T00:00:00",
+        "month": 3,
+        "wday": "Mon",
+        "yday": 88
+      },
+      {
+        "births": 10416,
+        "date": "1971-03-30T00:00:00",
+        "month": 3,
+        "wday": "Tues",
+        "yday": 89
+      },
+      {
+        "births": 10224,
+        "date": "1971-03-31T00:00:00",
+        "month": 3,
+        "wday": "Wed",
+        "yday": 90
+      },
+      {
+        "births": 9756,
+        "date": "1971-04-01T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 91
+      },
+      {
+        "births": 10266,
+        "date": "1971-04-02T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 92
+      },
+      {
+        "births": 8876,
+        "date": "1971-04-03T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 93
+      },
+      {
+        "births": 8334,
+        "date": "1971-04-04T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 94
+      },
+      {
+        "births": 9982,
+        "date": "1971-04-05T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 95
+      },
+      {
+        "births": 10442,
+        "date": "1971-04-06T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 96
+      },
+      {
+        "births": 9746,
+        "date": "1971-04-07T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 97
+      },
+      {
+        "births": 9762,
+        "date": "1971-04-08T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 98
+      },
+      {
+        "births": 9756,
+        "date": "1971-04-09T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 99
+      },
+      {
+        "births": 8662,
+        "date": "1971-04-10T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 100
+      },
+      {
+        "births": 8090,
+        "date": "1971-04-11T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 101
+      },
+      {
+        "births": 9706,
+        "date": "1971-04-12T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 102
+      },
+      {
+        "births": 10296,
+        "date": "1971-04-13T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 103
+      },
+      {
+        "births": 9944,
+        "date": "1971-04-14T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 104
+      },
+      {
+        "births": 9610,
+        "date": "1971-04-15T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 105
+      },
+      {
+        "births": 9934,
+        "date": "1971-04-16T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 106
+      },
+      {
+        "births": 8914,
+        "date": "1971-04-17T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 107
+      },
+      {
+        "births": 8180,
+        "date": "1971-04-18T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 108
+      },
+      {
+        "births": 9918,
+        "date": "1971-04-19T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 109
+      },
+      {
+        "births": 10272,
+        "date": "1971-04-20T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 110
+      },
+      {
+        "births": 9948,
+        "date": "1971-04-21T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 111
+      },
+      {
+        "births": 9712,
+        "date": "1971-04-22T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 112
+      },
+      {
+        "births": 9784,
+        "date": "1971-04-23T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 113
+      },
+      {
+        "births": 8838,
+        "date": "1971-04-24T00:00:00",
+        "month": 4,
+        "wday": "Sat",
+        "yday": 114
+      },
+      {
+        "births": 7984,
+        "date": "1971-04-25T00:00:00",
+        "month": 4,
+        "wday": "Sun",
+        "yday": 115
+      },
+      {
+        "births": 9956,
+        "date": "1971-04-26T00:00:00",
+        "month": 4,
+        "wday": "Mon",
+        "yday": 116
+      },
+      {
+        "births": 10472,
+        "date": "1971-04-27T00:00:00",
+        "month": 4,
+        "wday": "Tues",
+        "yday": 117
+      },
+      {
+        "births": 9664,
+        "date": "1971-04-28T00:00:00",
+        "month": 4,
+        "wday": "Wed",
+        "yday": 118
+      },
+      {
+        "births": 9712,
+        "date": "1971-04-29T00:00:00",
+        "month": 4,
+        "wday": "Thurs",
+        "yday": 119
+      },
+      {
+        "births": 9752,
+        "date": "1971-04-30T00:00:00",
+        "month": 4,
+        "wday": "Fri",
+        "yday": 120
+      },
+      {
+        "births": 8832,
+        "date": "1971-05-01T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 121
+      },
+      {
+        "births": 7910,
+        "date": "1971-05-02T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 122
+      },
+      {
+        "births": 9372,
+        "date": "1971-05-03T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 123
+      },
+      {
+        "births": 9840,
+        "date": "1971-05-04T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 124
+      },
+      {
+        "births": 9310,
+        "date": "1971-05-05T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 125
+      },
+      {
+        "births": 9156,
+        "date": "1971-05-06T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 126
+      },
+      {
+        "births": 9754,
+        "date": "1971-05-07T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 127
+      },
+      {
+        "births": 8610,
+        "date": "1971-05-08T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 128
+      },
+      {
+        "births": 8258,
+        "date": "1971-05-09T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 129
+      },
+      {
+        "births": 9636,
+        "date": "1971-05-10T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 130
+      },
+      {
+        "births": 10000,
+        "date": "1971-05-11T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 131
+      },
+      {
+        "births": 9718,
+        "date": "1971-05-12T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 132
+      },
+      {
+        "births": 9402,
+        "date": "1971-05-13T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 133
+      },
+      {
+        "births": 9654,
+        "date": "1971-05-14T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 134
+      },
+      {
+        "births": 8424,
+        "date": "1971-05-15T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 135
+      },
+      {
+        "births": 7932,
+        "date": "1971-05-16T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 136
+      },
+      {
+        "births": 9796,
+        "date": "1971-05-17T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 137
+      },
+      {
+        "births": 10342,
+        "date": "1971-05-18T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 138
+      },
+      {
+        "births": 9818,
+        "date": "1971-05-19T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 139
+      },
+      {
+        "births": 9568,
+        "date": "1971-05-20T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 140
+      },
+      {
+        "births": 9480,
+        "date": "1971-05-21T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 141
+      },
+      {
+        "births": 8380,
+        "date": "1971-05-22T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 142
+      },
+      {
+        "births": 7822,
+        "date": "1971-05-23T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 143
+      },
+      {
+        "births": 9798,
+        "date": "1971-05-24T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 144
+      },
+      {
+        "births": 10234,
+        "date": "1971-05-25T00:00:00",
+        "month": 5,
+        "wday": "Tues",
+        "yday": 145
+      },
+      {
+        "births": 9622,
+        "date": "1971-05-26T00:00:00",
+        "month": 5,
+        "wday": "Wed",
+        "yday": 146
+      },
+      {
+        "births": 9552,
+        "date": "1971-05-27T00:00:00",
+        "month": 5,
+        "wday": "Thurs",
+        "yday": 147
+      },
+      {
+        "births": 9776,
+        "date": "1971-05-28T00:00:00",
+        "month": 5,
+        "wday": "Fri",
+        "yday": 148
+      },
+      {
+        "births": 8592,
+        "date": "1971-05-29T00:00:00",
+        "month": 5,
+        "wday": "Sat",
+        "yday": 149
+      },
+      {
+        "births": 7884,
+        "date": "1971-05-30T00:00:00",
+        "month": 5,
+        "wday": "Sun",
+        "yday": 150
+      },
+      {
+        "births": 8424,
+        "date": "1971-05-31T00:00:00",
+        "month": 5,
+        "wday": "Mon",
+        "yday": 151
+      },
+      {
+        "births": 9912,
+        "date": "1971-06-01T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 152
+      },
+      {
+        "births": 9826,
+        "date": "1971-06-02T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 153
+      },
+      {
+        "births": 9932,
+        "date": "1971-06-03T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 154
+      },
+      {
+        "births": 10328,
+        "date": "1971-06-04T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 155
+      },
+      {
+        "births": 8944,
+        "date": "1971-06-05T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 156
+      },
+      {
+        "births": 8362,
+        "date": "1971-06-06T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 157
+      },
+      {
+        "births": 9780,
+        "date": "1971-06-07T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 158
+      },
+      {
+        "births": 10032,
+        "date": "1971-06-08T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 159
+      },
+      {
+        "births": 9832,
+        "date": "1971-06-09T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 160
+      },
+      {
+        "births": 9424,
+        "date": "1971-06-10T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 161
+      },
+      {
+        "births": 9814,
+        "date": "1971-06-11T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 162
+      },
+      {
+        "births": 8824,
+        "date": "1971-06-12T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 163
+      },
+      {
+        "births": 8096,
+        "date": "1971-06-13T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 164
+      },
+      {
+        "births": 9810,
+        "date": "1971-06-14T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 165
+      },
+      {
+        "births": 9938,
+        "date": "1971-06-15T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 166
+      },
+      {
+        "births": 9750,
+        "date": "1971-06-16T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 167
+      },
+      {
+        "births": 9388,
+        "date": "1971-06-17T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 168
+      },
+      {
+        "births": 9944,
+        "date": "1971-06-18T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 169
+      },
+      {
+        "births": 8702,
+        "date": "1971-06-19T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 170
+      },
+      {
+        "births": 8194,
+        "date": "1971-06-20T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 171
+      },
+      {
+        "births": 9720,
+        "date": "1971-06-21T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 172
+      },
+      {
+        "births": 10122,
+        "date": "1971-06-22T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 173
+      },
+      {
+        "births": 9600,
+        "date": "1971-06-23T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 174
+      },
+      {
+        "births": 9684,
+        "date": "1971-06-24T00:00:00",
+        "month": 6,
+        "wday": "Thurs",
+        "yday": 175
+      },
+      {
+        "births": 10286,
+        "date": "1971-06-25T00:00:00",
+        "month": 6,
+        "wday": "Fri",
+        "yday": 176
+      },
+      {
+        "births": 8936,
+        "date": "1971-06-26T00:00:00",
+        "month": 6,
+        "wday": "Sat",
+        "yday": 177
+      },
+      {
+        "births": 8050,
+        "date": "1971-06-27T00:00:00",
+        "month": 6,
+        "wday": "Sun",
+        "yday": 178
+      },
+      {
+        "births": 9986,
+        "date": "1971-06-28T00:00:00",
+        "month": 6,
+        "wday": "Mon",
+        "yday": 179
+      },
+      {
+        "births": 10132,
+        "date": "1971-06-29T00:00:00",
+        "month": 6,
+        "wday": "Tues",
+        "yday": 180
+      },
+      {
+        "births": 10126,
+        "date": "1971-06-30T00:00:00",
+        "month": 6,
+        "wday": "Wed",
+        "yday": 181
+      },
+      {
+        "births": 10138,
+        "date": "1971-07-01T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 182
+      },
+      {
+        "births": 10014,
+        "date": "1971-07-02T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 183
+      },
+      {
+        "births": 8696,
+        "date": "1971-07-03T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 184
+      },
+      {
+        "births": 8126,
+        "date": "1971-07-04T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 185
+      },
+      {
+        "births": 8646,
+        "date": "1971-07-05T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 186
+      },
+      {
+        "births": 10180,
+        "date": "1971-07-06T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 187
+      },
+      {
+        "births": 10542,
+        "date": "1971-07-07T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 188
+      },
+      {
+        "births": 10176,
+        "date": "1971-07-08T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 189
+      },
+      {
+        "births": 10496,
+        "date": "1971-07-09T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 190
+      },
+      {
+        "births": 9160,
+        "date": "1971-07-10T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 191
+      },
+      {
+        "births": 8474,
+        "date": "1971-07-11T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 192
+      },
+      {
+        "births": 9928,
+        "date": "1971-07-12T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 193
+      },
+      {
+        "births": 10506,
+        "date": "1971-07-13T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 194
+      },
+      {
+        "births": 10494,
+        "date": "1971-07-14T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 195
+      },
+      {
+        "births": 10064,
+        "date": "1971-07-15T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 196
+      },
+      {
+        "births": 10550,
+        "date": "1971-07-16T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 197
+      },
+      {
+        "births": 9424,
+        "date": "1971-07-17T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 198
+      },
+      {
+        "births": 8608,
+        "date": "1971-07-18T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 199
+      },
+      {
+        "births": 9974,
+        "date": "1971-07-19T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 200
+      },
+      {
+        "births": 10460,
+        "date": "1971-07-20T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 201
+      },
+      {
+        "births": 10414,
+        "date": "1971-07-21T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 202
+      },
+      {
+        "births": 10264,
+        "date": "1971-07-22T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 203
+      },
+      {
+        "births": 10540,
+        "date": "1971-07-23T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 204
+      },
+      {
+        "births": 9454,
+        "date": "1971-07-24T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 205
+      },
+      {
+        "births": 8650,
+        "date": "1971-07-25T00:00:00",
+        "month": 7,
+        "wday": "Sun",
+        "yday": 206
+      },
+      {
+        "births": 10256,
+        "date": "1971-07-26T00:00:00",
+        "month": 7,
+        "wday": "Mon",
+        "yday": 207
+      },
+      {
+        "births": 10786,
+        "date": "1971-07-27T00:00:00",
+        "month": 7,
+        "wday": "Tues",
+        "yday": 208
+      },
+      {
+        "births": 10330,
+        "date": "1971-07-28T00:00:00",
+        "month": 7,
+        "wday": "Wed",
+        "yday": 209
+      },
+      {
+        "births": 10274,
+        "date": "1971-07-29T00:00:00",
+        "month": 7,
+        "wday": "Thurs",
+        "yday": 210
+      },
+      {
+        "births": 10572,
+        "date": "1971-07-30T00:00:00",
+        "month": 7,
+        "wday": "Fri",
+        "yday": 211
+      },
+      {
+        "births": 9308,
+        "date": "1971-07-31T00:00:00",
+        "month": 7,
+        "wday": "Sat",
+        "yday": 212
+      },
+      {
+        "births": 8574,
+        "date": "1971-08-01T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 213
+      },
+      {
+        "births": 10324,
+        "date": "1971-08-02T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 214
+      },
+      {
+        "births": 10940,
+        "date": "1971-08-03T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 215
+      },
+      {
+        "births": 10532,
+        "date": "1971-08-04T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 216
+      },
+      {
+        "births": 9980,
+        "date": "1971-08-05T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 217
+      },
+      {
+        "births": 10258,
+        "date": "1971-08-06T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 218
+      },
+      {
+        "births": 9448,
+        "date": "1971-08-07T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 219
+      },
+      {
+        "births": 9104,
+        "date": "1971-08-08T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 220
+      },
+      {
+        "births": 10336,
+        "date": "1971-08-09T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 221
+      },
+      {
+        "births": 11164,
+        "date": "1971-08-10T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 222
+      },
+      {
+        "births": 10846,
+        "date": "1971-08-11T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 223
+      },
+      {
+        "births": 10282,
+        "date": "1971-08-12T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 224
+      },
+      {
+        "births": 10368,
+        "date": "1971-08-13T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 225
+      },
+      {
+        "births": 9620,
+        "date": "1971-08-14T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 226
+      },
+      {
+        "births": 8836,
+        "date": "1971-08-15T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 227
+      },
+      {
+        "births": 10178,
+        "date": "1971-08-16T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 228
+      },
+      {
+        "births": 10626,
+        "date": "1971-08-17T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 229
+      },
+      {
+        "births": 10442,
+        "date": "1971-08-18T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 230
+      },
+      {
+        "births": 10386,
+        "date": "1971-08-19T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 231
+      },
+      {
+        "births": 10870,
+        "date": "1971-08-20T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 232
+      },
+      {
+        "births": 9654,
+        "date": "1971-08-21T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 233
+      },
+      {
+        "births": 8866,
+        "date": "1971-08-22T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 234
+      },
+      {
+        "births": 10398,
+        "date": "1971-08-23T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 235
+      },
+      {
+        "births": 10704,
+        "date": "1971-08-24T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 236
+      },
+      {
+        "births": 10334,
+        "date": "1971-08-25T00:00:00",
+        "month": 8,
+        "wday": "Wed",
+        "yday": 237
+      },
+      {
+        "births": 10544,
+        "date": "1971-08-26T00:00:00",
+        "month": 8,
+        "wday": "Thurs",
+        "yday": 238
+      },
+      {
+        "births": 10394,
+        "date": "1971-08-27T00:00:00",
+        "month": 8,
+        "wday": "Fri",
+        "yday": 239
+      },
+      {
+        "births": 9524,
+        "date": "1971-08-28T00:00:00",
+        "month": 8,
+        "wday": "Sat",
+        "yday": 240
+      },
+      {
+        "births": 8720,
+        "date": "1971-08-29T00:00:00",
+        "month": 8,
+        "wday": "Sun",
+        "yday": 241
+      },
+      {
+        "births": 10068,
+        "date": "1971-08-30T00:00:00",
+        "month": 8,
+        "wday": "Mon",
+        "yday": 242
+      },
+      {
+        "births": 10766,
+        "date": "1971-08-31T00:00:00",
+        "month": 8,
+        "wday": "Tues",
+        "yday": 243
+      },
+      {
+        "births": 10416,
+        "date": "1971-09-01T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 244
+      },
+      {
+        "births": 10218,
+        "date": "1971-09-02T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 245
+      },
+      {
+        "births": 10788,
+        "date": "1971-09-03T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 246
+      },
+      {
+        "births": 9566,
+        "date": "1971-09-04T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 247
+      },
+      {
+        "births": 8852,
+        "date": "1971-09-05T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 248
+      },
+      {
+        "births": 9252,
+        "date": "1971-09-06T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 249
+      },
+      {
+        "births": 10854,
+        "date": "1971-09-07T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 250
+      },
+      {
+        "births": 10988,
+        "date": "1971-09-08T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 251
+      },
+      {
+        "births": 10982,
+        "date": "1971-09-09T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 252
+      },
+      {
+        "births": 10910,
+        "date": "1971-09-10T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 253
+      },
+      {
+        "births": 9542,
+        "date": "1971-09-11T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 254
+      },
+      {
+        "births": 8916,
+        "date": "1971-09-12T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 255
+      },
+      {
+        "births": 10582,
+        "date": "1971-09-13T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 256
+      },
+      {
+        "births": 11034,
+        "date": "1971-09-14T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 257
+      },
+      {
+        "births": 10716,
+        "date": "1971-09-15T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 258
+      },
+      {
+        "births": 10780,
+        "date": "1971-09-16T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 259
+      },
+      {
+        "births": 11004,
+        "date": "1971-09-17T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 260
+      },
+      {
+        "births": 9882,
+        "date": "1971-09-18T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 261
+      },
+      {
+        "births": 9110,
+        "date": "1971-09-19T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 262
+      },
+      {
+        "births": 10702,
+        "date": "1971-09-20T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 263
+      },
+      {
+        "births": 11064,
+        "date": "1971-09-21T00:00:00",
+        "month": 9,
+        "wday": "Tues",
+        "yday": 264
+      },
+      {
+        "births": 10586,
+        "date": "1971-09-22T00:00:00",
+        "month": 9,
+        "wday": "Wed",
+        "yday": 265
+      },
+      {
+        "births": 10708,
+        "date": "1971-09-23T00:00:00",
+        "month": 9,
+        "wday": "Thurs",
+        "yday": 266
+      },
+      {
+        "births": 10862,
+        "date": "1971-09-24T00:00:00",
+        "month": 9,
+        "wday": "Fri",
+        "yday": 267
+      },
+      {
+        "births": 9584,
+        "date": "1971-09-25T00:00:00",
+        "month": 9,
+        "wday": "Sat",
+        "yday": 268
+      },
+      {
+        "births": 9380,
+        "date": "1971-09-26T00:00:00",
+        "month": 9,
+        "wday": "Sun",
+        "yday": 269
+      },
+      {
+        "births": 10786,
+        "date": "1971-09-27T00:00:00",
+        "month": 9,
+        "wday": "Mon",
+        "yday": 270
+      }
+    ]
+  },
+  "encoding": {
+    "color": {
+      "field": "wday",
+      "sort": [
+        "Mon",
+        "Tues",
+        "Wed",
+        "Thurs",
+        "Fri",
+        "Sat",
+        "Sun"
+      ],
+      "type": "nominal"
+    },
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y": {
+      "field": "births",
+      "type": "quantitative"
+    }
+  },
+  "height": 225,
+  "mark": "line",
+  "selection": {
+    "selector006": {
+      "bind": "scales",
+      "encodings": [
+        "x",
+        "y"
+      ],
+      "type": "interval"
+    }
+  },
+  "width": 600
+}

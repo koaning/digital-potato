@@ -1,0 +1,10 @@
+{"name":"Bulbasaur","type":["Grass","Poison"],"total":318,"hp":45,"attack":49}
+{"name":"Ivysaur","type":["Grass","Poison"],"total":405,"hp":60,"attack":62}
+{"name":"Venusaur","type":["Grass","Poison"],"total":525,"hp":80,"attack":82}
+{"name":"VenusaurMega Venusaur","type":["Grass","Poison"],"total":625,"hp":80,"attack":100}
+{"name":"Charmander","type":["Fire"],"total":309,"hp":39,"attack":52}
+{"name":"Charmeleon","type":["Fire"],"total":405,"hp":58,"attack":64}
+{"name":"Charizard","type":["Fire","Flying"],"total":534,"hp":78,"attack":84}
+{"name":"CharizardMega Charizard X","type":["Fire","Dragon"],"total":634,"hp":78,"attack":130}
+{"name":"CharizardMega Charizard Y","type":["Fire","Flying"],"total":634,"hp":78,"attack":104}
+{"name":"Squirtle","type":["Water"],"total":314,"hp":44,"attack":48}

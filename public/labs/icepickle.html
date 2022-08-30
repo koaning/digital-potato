@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>Introducing Icepickle from Calmcode Labs</title>
+
+<meta name="title" content="Saving Linear Models">
+<meta name="description" content="Our 7th experiment involves saving simple ML models.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calmcode.io/">
+<meta property="og:title" content="Saving Linear Models">
+<meta property="og:description" content="Our 7th experiment involves saving simple ML models.">
+<meta property="og:image" content="https://calmcode.io/images/pickle.png">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://calmcode.io/">
+<meta property="twitter:title" content="Saving Linear Models">
+<meta property="twitter:description" content="Our 7th experiment involves saving simple ML models.">
+<meta property="twitter:image" content="https://calmcode.io/images/pickle.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/python.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+<div class="">
+    <br>
+    <div class="rounded-xl border-gray-400">
+        <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+            <a href="/labs.html" class="text-left">Back to labs main.</a><br>
+            <div class="text-center">
+                <h3 class="uppercase text-lg leading-6 font-bold text-gray-500">
+                    Calmcode Labs Presents
+                </h3>
+                <h1 class="text-2xl md:text-7xl font-bold py-2">
+                    <img class="w-8 md:w-12 lg:w-18 inline-block" src="/images/pickle.svg" alt="icepickle logo"><span class="pl-4">icepickle.</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl py-2 text-gray-500">
+                    Our 7th experiment involves saving simple ML models.
+                </h2>
+            </div>
+        </div>
+
+        <div class="pb-6">
+            <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+                <article class="prose">
+                    <div class="md:text-md">
+                        <p>Scikit-Learn allows you to save models by pickling them. This
+is a universal method for Python objects but it's also unsafe!
+You really need to be sure that there's no "man in the middle"
+when you load a saved model, which is a reason for concern.</p>
+<p>We made a small <a href="https://calmcode.io/scikit-save/introduction.html">course on the topic</a> that explains
+how you might use the <a href="https://onnx.ai/">onnx framework</a> for saving and deploying models.
+The <a href="http://onnx.ai/sklearn-onnx/">scikit-onnx framework</a> offers
+support for many scikit-learn tools but we noticed that there was
+one downside. The moment that you save your model in the ONNX format
+it's no longer usable from scikit-learn. Usually, this isn't an issue
+because the model is already trained. But there is a breed of models
+for which this does become an issue: models with <code>partial_fit</code>.</p>
+<p>These models can learn on batches of data, which means that you'd be able to pre-train a model to finetune it later! You may want to check <a href="https://calmcode.io/partial_fit/introduction.html">course on these models</a></p>
+<h2>Enter <code>icepickle</code></h2>
+<p><img src="imgs/icepickle.png" width="100%"></p>
+<p>This is why we wrote <a href="https://github.com/koaning/icepickle">icepickle</a>.
+Icepickle allows you to safely store and load linear scikit-learn models.
+This includes the <code>partial_fit</code>-models like <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDClassifier.html">SGDClassifier</a> and <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.SGDRegressor.html?highlight=sgdregressor#sklearn.linear_model.SGDRegressor">SGDRegressor</a> as well as the standard <code>LinearRegression</code> and <code>LogisticRegression</code> models.</p>
+<p>Suppose you have a trained linear model, like below:</p>
+<pre><code class="lang-python">from sklearn.linear_model import LogisticRegression
+from sklearn.datasets import load_wine
+
+X, y = load_wine(return_X_y=True)
+
+clf = LogisticRegression()
+clf.fit(X, y)
+</code></pre>
+<p>Then <code>icepickle</code> offers methods to load and save the model state.</p>
+<pre><code class="lang-python">from icepickle.linear_model import save_coefficients, load_coefficients
+
+# You can save the classifier.
+save_coefficients(clf, &#39;classifier.h5&#39;)
+
+# You can create a new model, with new hyperparams.
+clf_reloaded = LogisticRegression()
+
+# Load the previously trained weights in.
+load_coefficients(clf_reloaded, &#39;classifier.h5&#39;)
+</code></pre>
+<p>The coefficients are stored in <code>.h5</code> files, which are mere data containers.
+That means that we won't need to worry about arbitrary Python code
+running when we load it in.</p>
+<h2>Stateless Models</h2>
+<p>Although this library supports only linear models, it does allow us
+to do something that you cannot easily do via onnx: you can build
+pre-trained text classification models that others may finetune!</p>
+<p>Assuming that you use a stateless featurizer in your pipeline,
+such as <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.HashingVectorizer.html#sklearn.feature_extraction.text.HashingVectorizer">HashingVectorizer</a> or language models from <a href="https://koaning.github.io/whatlies/api/language/universal_sentence/">whatlies</a>, you can choose to pre-train your scikit-learn model beforehand and fine-tune it later using models that offer the <code>.partial_fit()</code>-api.</p>
+<p>This library also comes with utilities that makes it easier to finetune systems via the <code>.partial_fit()</code> API. In particular we offer partial pipeline components via the <code>icepickle.pipeline</code> submodule.</p>
+<pre><code class="lang-python">import pandas as pd
+from sklearn.linear_model import SGDClassifier
+from sklearn.feature_extraction.text import HashingVectorizer
+
+from icepickle.linear_model import save_coefficients, load_coefficients
+from icepickle.pipeline import make_partial_pipeline
+
+url = &quot;https://raw.githubusercontent.com/koaning/icepickle/main/datasets/imdb_subset.csv&quot;
+df = pd.read_csv(url)
+X, y = list(df[&#39;text&#39;]), df[&#39;label&#39;]
+
+# Construct a pipeline that can handle `.partial_fit`
+pretrained = SGDClassifier(loss=&quot;log&quot;)
+pipe = make_partial_pipeline(HashingVectorizer(), pretrained)
+
+# Train a pre-trained model.
+pipe.fit(X, y)
+
+# Save the coefficients, safely.
+save_coefficients(pretrained, &#39;pretrained.h5&#39;)
+
+# Create a new model using pre-trained weights.
+finetuned = SGDClassifier(loss=&quot;log&quot;)
+load_coefficients(finetuned, &#39;pretrained.h5&#39;)
+new_pipe = make_partial_pipeline(HashingVectorizer(), finetuned)
+
+# This new model can be used for fine-tuning.
+for i in range(10):
+    # Inside this for-loop you could consider doing data-augmentation.
+    new_pipe.partial_fit(X, y)
+</code></pre>
+<h2>Experiment!</h2>
+<p>This library allows for an experimental finetuning mechanic using simple
+lightweight models in scikit-learn. We think this is an interesting approach
+to consider because it allows you to keep things <em>much</em> more lightweight than
+many of the text classification models hosted on <a href="https://huggingface.co/models?pipeline_tag=text-classification&amp;sort=downloads">huggingface</a>.</p>
+<p>We do want to stress though that it's meant as a lightweight tool. It's very unlikely
+to give you state of the art results, but it might be enough to keep your stack
+in the realm of scikit-learn.</p>
+
+                    </div>
+                    <br>
+                    <a href="/labs.html" class="text-left">Back to labs main.</a>
+                    <br>
+                </article>
+            </div>
+        </div>
+        <br>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code.lang-python').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            });
+        </script>
+    </div>
+</div>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

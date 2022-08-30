@@ -1,0 +1,4451 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 400
+    }
+  },
+  "data": {
+    "name": "data-3ca80d1888bf1f0cc6bc998cc66cf963"
+  },
+  "datasets": {
+    "data-3ca80d1888bf1f0cc6bc998cc66cf963": [
+      {
+        "births": 1230,
+        "date": "1987-01-02T00:00:00",
+        "rolling_births": 1230.0,
+        "state": "CA"
+      },
+      {
+        "births": 1178,
+        "date": "1987-01-03T00:00:00",
+        "rolling_births": 1204.0,
+        "state": "CA"
+      },
+      {
+        "births": 1087,
+        "date": "1987-01-04T00:00:00",
+        "rolling_births": 1165.0,
+        "state": "CA"
+      },
+      {
+        "births": 1300,
+        "date": "1987-01-05T00:00:00",
+        "rolling_births": 1198.75,
+        "state": "CA"
+      },
+      {
+        "births": 1415,
+        "date": "1987-01-06T00:00:00",
+        "rolling_births": 1242.0,
+        "state": "CA"
+      },
+      {
+        "births": 1318,
+        "date": "1987-01-07T00:00:00",
+        "rolling_births": 1254.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1310,
+        "date": "1987-01-08T00:00:00",
+        "rolling_births": 1262.5714285714287,
+        "state": "CA"
+      },
+      {
+        "births": 1430,
+        "date": "1987-01-09T00:00:00",
+        "rolling_births": 1283.5,
+        "state": "CA"
+      },
+      {
+        "births": 1131,
+        "date": "1987-01-10T00:00:00",
+        "rolling_births": 1266.5555555555557,
+        "state": "CA"
+      },
+      {
+        "births": 1123,
+        "date": "1987-01-11T00:00:00",
+        "rolling_births": 1252.2,
+        "state": "CA"
+      },
+      {
+        "births": 1371,
+        "date": "1987-01-12T00:00:00",
+        "rolling_births": 1263.0,
+        "state": "CA"
+      },
+      {
+        "births": 1401,
+        "date": "1987-01-13T00:00:00",
+        "rolling_births": 1274.5,
+        "state": "CA"
+      },
+      {
+        "births": 1393,
+        "date": "1987-01-14T00:00:00",
+        "rolling_births": 1283.6153846153845,
+        "state": "CA"
+      },
+      {
+        "births": 1314,
+        "date": "1987-01-15T00:00:00",
+        "rolling_births": 1285.7857142857142,
+        "state": "CA"
+      },
+      {
+        "births": 1396,
+        "date": "1987-01-16T00:00:00",
+        "rolling_births": 1293.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1210,
+        "date": "1987-01-17T00:00:00",
+        "rolling_births": 1287.9375,
+        "state": "CA"
+      },
+      {
+        "births": 1072,
+        "date": "1987-01-18T00:00:00",
+        "rolling_births": 1275.235294117647,
+        "state": "CA"
+      },
+      {
+        "births": 1319,
+        "date": "1987-01-19T00:00:00",
+        "rolling_births": 1277.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1303,
+        "date": "1987-01-20T00:00:00",
+        "rolling_births": 1279.0,
+        "state": "CA"
+      },
+      {
+        "births": 1401,
+        "date": "1987-01-21T00:00:00",
+        "rolling_births": 1285.1,
+        "state": "CA"
+      },
+      {
+        "births": 1315,
+        "date": "1987-01-22T00:00:00",
+        "rolling_births": 1286.5238095238096,
+        "state": "CA"
+      },
+      {
+        "births": 1400,
+        "date": "1987-01-23T00:00:00",
+        "rolling_births": 1291.6818181818182,
+        "state": "CA"
+      },
+      {
+        "births": 1194,
+        "date": "1987-01-24T00:00:00",
+        "rolling_births": 1287.4347826086957,
+        "state": "CA"
+      },
+      {
+        "births": 1124,
+        "date": "1987-01-25T00:00:00",
+        "rolling_births": 1280.625,
+        "state": "CA"
+      },
+      {
+        "births": 1399,
+        "date": "1987-01-26T00:00:00",
+        "rolling_births": 1285.36,
+        "state": "CA"
+      },
+      {
+        "births": 1451,
+        "date": "1987-01-27T00:00:00",
+        "rolling_births": 1291.7307692307693,
+        "state": "CA"
+      },
+      {
+        "births": 1403,
+        "date": "1987-01-28T00:00:00",
+        "rolling_births": 1295.851851851852,
+        "state": "CA"
+      },
+      {
+        "births": 1395,
+        "date": "1987-01-29T00:00:00",
+        "rolling_births": 1299.392857142857,
+        "state": "CA"
+      },
+      {
+        "births": 1455,
+        "date": "1987-01-30T00:00:00",
+        "rolling_births": 1304.7586206896551,
+        "state": "CA"
+      },
+      {
+        "births": 1230,
+        "date": "1987-01-31T00:00:00",
+        "rolling_births": 1302.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1149,
+        "date": "1987-02-01T00:00:00",
+        "rolling_births": 1299.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1360,
+        "date": "1987-02-02T00:00:00",
+        "rolling_births": 1305.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1426,
+        "date": "1987-02-03T00:00:00",
+        "rolling_births": 1316.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1350,
+        "date": "1987-02-04T00:00:00",
+        "rolling_births": 1318.6,
+        "state": "CA"
+      },
+      {
+        "births": 1392,
+        "date": "1987-02-05T00:00:00",
+        "rolling_births": 1317.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1382,
+        "date": "1987-02-06T00:00:00",
+        "rolling_births": 1319.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1177,
+        "date": "1987-02-07T00:00:00",
+        "rolling_births": 1315.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1067,
+        "date": "1987-02-08T00:00:00",
+        "rolling_births": 1303.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1321,
+        "date": "1987-02-09T00:00:00",
+        "rolling_births": 1309.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1489,
+        "date": "1987-02-10T00:00:00",
+        "rolling_births": 1321.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1339,
+        "date": "1987-02-11T00:00:00",
+        "rolling_births": 1320.9,
+        "state": "CA"
+      },
+      {
+        "births": 1381,
+        "date": "1987-02-12T00:00:00",
+        "rolling_births": 1320.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1274,
+        "date": "1987-02-13T00:00:00",
+        "rolling_births": 1316.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1243,
+        "date": "1987-02-14T00:00:00",
+        "rolling_births": 1313.9,
+        "state": "CA"
+      },
+      {
+        "births": 1093,
+        "date": "1987-02-15T00:00:00",
+        "rolling_births": 1303.8,
+        "state": "CA"
+      },
+      {
+        "births": 1250,
+        "date": "1987-02-16T00:00:00",
+        "rolling_births": 1305.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1398,
+        "date": "1987-02-17T00:00:00",
+        "rolling_births": 1316.0,
+        "state": "CA"
+      },
+      {
+        "births": 1462,
+        "date": "1987-02-18T00:00:00",
+        "rolling_births": 1320.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1305,
+        "date": "1987-02-19T00:00:00",
+        "rolling_births": 1320.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1425,
+        "date": "1987-02-20T00:00:00",
+        "rolling_births": 1321.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1191,
+        "date": "1987-02-21T00:00:00",
+        "rolling_births": 1317.5,
+        "state": "CA"
+      },
+      {
+        "births": 1131,
+        "date": "1987-02-22T00:00:00",
+        "rolling_births": 1308.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1453,
+        "date": "1987-02-23T00:00:00",
+        "rolling_births": 1317.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1385,
+        "date": "1987-02-24T00:00:00",
+        "rolling_births": 1325.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1434,
+        "date": "1987-02-25T00:00:00",
+        "rolling_births": 1327.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1416,
+        "date": "1987-02-26T00:00:00",
+        "rolling_births": 1325.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1503,
+        "date": "1987-02-27T00:00:00",
+        "rolling_births": 1329.2,
+        "state": "CA"
+      },
+      {
+        "births": 1167,
+        "date": "1987-02-28T00:00:00",
+        "rolling_births": 1321.6,
+        "state": "CA"
+      },
+      {
+        "births": 1069,
+        "date": "1987-03-01T00:00:00",
+        "rolling_births": 1308.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1403,
+        "date": "1987-03-02T00:00:00",
+        "rolling_births": 1314.5,
+        "state": "CA"
+      },
+      {
+        "births": 1453,
+        "date": "1987-03-03T00:00:00",
+        "rolling_births": 1324.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1366,
+        "date": "1987-03-04T00:00:00",
+        "rolling_births": 1324.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1419,
+        "date": "1987-03-05T00:00:00",
+        "rolling_births": 1324.6,
+        "state": "CA"
+      },
+      {
+        "births": 1390,
+        "date": "1987-03-06T00:00:00",
+        "rolling_births": 1325.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1199,
+        "date": "1987-03-07T00:00:00",
+        "rolling_births": 1319.5,
+        "state": "CA"
+      },
+      {
+        "births": 1137,
+        "date": "1987-03-08T00:00:00",
+        "rolling_births": 1311.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1388,
+        "date": "1987-03-09T00:00:00",
+        "rolling_births": 1318.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1385,
+        "date": "1987-03-10T00:00:00",
+        "rolling_births": 1328.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1424,
+        "date": "1987-03-11T00:00:00",
+        "rolling_births": 1332.4,
+        "state": "CA"
+      },
+      {
+        "births": 1431,
+        "date": "1987-03-12T00:00:00",
+        "rolling_births": 1330.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1410,
+        "date": "1987-03-13T00:00:00",
+        "rolling_births": 1332.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1165,
+        "date": "1987-03-14T00:00:00",
+        "rolling_births": 1325.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1132,
+        "date": "1987-03-15T00:00:00",
+        "rolling_births": 1320.9,
+        "state": "CA"
+      },
+      {
+        "births": 1401,
+        "date": "1987-03-16T00:00:00",
+        "rolling_births": 1326.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1463,
+        "date": "1987-03-17T00:00:00",
+        "rolling_births": 1338.5,
+        "state": "CA"
+      },
+      {
+        "births": 1400,
+        "date": "1987-03-18T00:00:00",
+        "rolling_births": 1343.5,
+        "state": "CA"
+      },
+      {
+        "births": 1419,
+        "date": "1987-03-19T00:00:00",
+        "rolling_births": 1344.2,
+        "state": "CA"
+      },
+      {
+        "births": 1480,
+        "date": "1987-03-20T00:00:00",
+        "rolling_births": 1344.8,
+        "state": "CA"
+      },
+      {
+        "births": 1281,
+        "date": "1987-03-21T00:00:00",
+        "rolling_births": 1344.0,
+        "state": "CA"
+      },
+      {
+        "births": 1080,
+        "date": "1987-03-22T00:00:00",
+        "rolling_births": 1332.5,
+        "state": "CA"
+      },
+      {
+        "births": 1399,
+        "date": "1987-03-23T00:00:00",
+        "rolling_births": 1339.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1440,
+        "date": "1987-03-24T00:00:00",
+        "rolling_births": 1349.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1499,
+        "date": "1987-03-25T00:00:00",
+        "rolling_births": 1351.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1500,
+        "date": "1987-03-26T00:00:00",
+        "rolling_births": 1355.1,
+        "state": "CA"
+      },
+      {
+        "births": 1481,
+        "date": "1987-03-27T00:00:00",
+        "rolling_births": 1356.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1148,
+        "date": "1987-03-28T00:00:00",
+        "rolling_births": 1347.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1144,
+        "date": "1987-03-29T00:00:00",
+        "rolling_births": 1335.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1374,
+        "date": "1987-03-30T00:00:00",
+        "rolling_births": 1342.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1490,
+        "date": "1987-03-31T00:00:00",
+        "rolling_births": 1356.7,
+        "state": "CA"
+      },
+      {
+        "births": 1367,
+        "date": "1987-04-01T00:00:00",
+        "rolling_births": 1355.5,
+        "state": "CA"
+      },
+      {
+        "births": 1548,
+        "date": "1987-04-02T00:00:00",
+        "rolling_births": 1358.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1457,
+        "date": "1987-04-03T00:00:00",
+        "rolling_births": 1361.7,
+        "state": "CA"
+      },
+      {
+        "births": 1216,
+        "date": "1987-04-04T00:00:00",
+        "rolling_births": 1354.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1073,
+        "date": "1987-04-05T00:00:00",
+        "rolling_births": 1344.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1392,
+        "date": "1987-04-06T00:00:00",
+        "rolling_births": 1350.8,
+        "state": "CA"
+      },
+      {
+        "births": 1570,
+        "date": "1987-04-07T00:00:00",
+        "rolling_births": 1365.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1450,
+        "date": "1987-04-08T00:00:00",
+        "rolling_births": 1367.3,
+        "state": "CA"
+      },
+      {
+        "births": 1525,
+        "date": "1987-04-09T00:00:00",
+        "rolling_births": 1371.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1515,
+        "date": "1987-04-10T00:00:00",
+        "rolling_births": 1375.0,
+        "state": "CA"
+      },
+      {
+        "births": 1212,
+        "date": "1987-04-11T00:00:00",
+        "rolling_births": 1367.7,
+        "state": "CA"
+      },
+      {
+        "births": 1136,
+        "date": "1987-04-12T00:00:00",
+        "rolling_births": 1358.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1426,
+        "date": "1987-04-13T00:00:00",
+        "rolling_births": 1367.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1475,
+        "date": "1987-04-14T00:00:00",
+        "rolling_births": 1378.7,
+        "state": "CA"
+      },
+      {
+        "births": 1497,
+        "date": "1987-04-15T00:00:00",
+        "rolling_births": 1381.9,
+        "state": "CA"
+      },
+      {
+        "births": 1397,
+        "date": "1987-04-16T00:00:00",
+        "rolling_births": 1379.7,
+        "state": "CA"
+      },
+      {
+        "births": 1357,
+        "date": "1987-04-17T00:00:00",
+        "rolling_births": 1378.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1209,
+        "date": "1987-04-18T00:00:00",
+        "rolling_births": 1371.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1089,
+        "date": "1987-04-19T00:00:00",
+        "rolling_births": 1358.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1420,
+        "date": "1987-04-20T00:00:00",
+        "rolling_births": 1362.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1472,
+        "date": "1987-04-21T00:00:00",
+        "rolling_births": 1375.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1450,
+        "date": "1987-04-22T00:00:00",
+        "rolling_births": 1377.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1447,
+        "date": "1987-04-23T00:00:00",
+        "rolling_births": 1377.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1428,
+        "date": "1987-04-24T00:00:00",
+        "rolling_births": 1375.5,
+        "state": "CA"
+      },
+      {
+        "births": 1234,
+        "date": "1987-04-25T00:00:00",
+        "rolling_births": 1366.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1111,
+        "date": "1987-04-26T00:00:00",
+        "rolling_births": 1354.3,
+        "state": "CA"
+      },
+      {
+        "births": 1328,
+        "date": "1987-04-27T00:00:00",
+        "rolling_births": 1360.3,
+        "state": "CA"
+      },
+      {
+        "births": 1430,
+        "date": "1987-04-28T00:00:00",
+        "rolling_births": 1369.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1337,
+        "date": "1987-04-29T00:00:00",
+        "rolling_births": 1368.6,
+        "state": "CA"
+      },
+      {
+        "births": 1444,
+        "date": "1987-04-30T00:00:00",
+        "rolling_births": 1367.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1426,
+        "date": "1987-05-01T00:00:00",
+        "rolling_births": 1369.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1242,
+        "date": "1987-05-02T00:00:00",
+        "rolling_births": 1358.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1119,
+        "date": "1987-05-03T00:00:00",
+        "rolling_births": 1347.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1418,
+        "date": "1987-05-04T00:00:00",
+        "rolling_births": 1354.3,
+        "state": "CA"
+      },
+      {
+        "births": 1579,
+        "date": "1987-05-05T00:00:00",
+        "rolling_births": 1371.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1464,
+        "date": "1987-05-06T00:00:00",
+        "rolling_births": 1373.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1414,
+        "date": "1987-05-07T00:00:00",
+        "rolling_births": 1368.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1489,
+        "date": "1987-05-08T00:00:00",
+        "rolling_births": 1369.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1197,
+        "date": "1987-05-09T00:00:00",
+        "rolling_births": 1358.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1185,
+        "date": "1987-05-10T00:00:00",
+        "rolling_births": 1347.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1375,
+        "date": "1987-05-11T00:00:00",
+        "rolling_births": 1353.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1555,
+        "date": "1987-05-12T00:00:00",
+        "rolling_births": 1367.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1369,
+        "date": "1987-05-13T00:00:00",
+        "rolling_births": 1365.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1477,
+        "date": "1987-05-14T00:00:00",
+        "rolling_births": 1365.3,
+        "state": "CA"
+      },
+      {
+        "births": 1491,
+        "date": "1987-05-15T00:00:00",
+        "rolling_births": 1365.1,
+        "state": "CA"
+      },
+      {
+        "births": 1173,
+        "date": "1987-05-16T00:00:00",
+        "rolling_births": 1357.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1063,
+        "date": "1987-05-17T00:00:00",
+        "rolling_births": 1347.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1396,
+        "date": "1987-05-18T00:00:00",
+        "rolling_births": 1354.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1447,
+        "date": "1987-05-19T00:00:00",
+        "rolling_births": 1366.0,
+        "state": "CA"
+      },
+      {
+        "births": 1395,
+        "date": "1987-05-20T00:00:00",
+        "rolling_births": 1365.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1468,
+        "date": "1987-05-21T00:00:00",
+        "rolling_births": 1365.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1470,
+        "date": "1987-05-22T00:00:00",
+        "rolling_births": 1365.7,
+        "state": "CA"
+      },
+      {
+        "births": 1270,
+        "date": "1987-05-23T00:00:00",
+        "rolling_births": 1359.8,
+        "state": "CA"
+      },
+      {
+        "births": 1113,
+        "date": "1987-05-24T00:00:00",
+        "rolling_births": 1349.3,
+        "state": "CA"
+      },
+      {
+        "births": 1140,
+        "date": "1987-05-25T00:00:00",
+        "rolling_births": 1346.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1478,
+        "date": "1987-05-26T00:00:00",
+        "rolling_births": 1358.4,
+        "state": "CA"
+      },
+      {
+        "births": 1528,
+        "date": "1987-05-27T00:00:00",
+        "rolling_births": 1365.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1464,
+        "date": "1987-05-28T00:00:00",
+        "rolling_births": 1366.2,
+        "state": "CA"
+      },
+      {
+        "births": 1477,
+        "date": "1987-05-29T00:00:00",
+        "rolling_births": 1370.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1271,
+        "date": "1987-05-30T00:00:00",
+        "rolling_births": 1365.1,
+        "state": "CA"
+      },
+      {
+        "births": 1188,
+        "date": "1987-05-31T00:00:00",
+        "rolling_births": 1357.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1480,
+        "date": "1987-06-01T00:00:00",
+        "rolling_births": 1365.1,
+        "state": "CA"
+      },
+      {
+        "births": 1494,
+        "date": "1987-06-02T00:00:00",
+        "rolling_births": 1377.6,
+        "state": "CA"
+      },
+      {
+        "births": 1497,
+        "date": "1987-06-03T00:00:00",
+        "rolling_births": 1380.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1501,
+        "date": "1987-06-04T00:00:00",
+        "rolling_births": 1377.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1577,
+        "date": "1987-06-05T00:00:00",
+        "rolling_births": 1381.4,
+        "state": "CA"
+      },
+      {
+        "births": 1234,
+        "date": "1987-06-06T00:00:00",
+        "rolling_births": 1375.4,
+        "state": "CA"
+      },
+      {
+        "births": 1231,
+        "date": "1987-06-07T00:00:00",
+        "rolling_births": 1366.8,
+        "state": "CA"
+      },
+      {
+        "births": 1483,
+        "date": "1987-06-08T00:00:00",
+        "rolling_births": 1376.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1467,
+        "date": "1987-06-09T00:00:00",
+        "rolling_births": 1385.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1535,
+        "date": "1987-06-10T00:00:00",
+        "rolling_births": 1391.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1474,
+        "date": "1987-06-11T00:00:00",
+        "rolling_births": 1388.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1402,
+        "date": "1987-06-12T00:00:00",
+        "rolling_births": 1389.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1241,
+        "date": "1987-06-13T00:00:00",
+        "rolling_births": 1381.6,
+        "state": "CA"
+      },
+      {
+        "births": 1123,
+        "date": "1987-06-14T00:00:00",
+        "rolling_births": 1369.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1473,
+        "date": "1987-06-15T00:00:00",
+        "rolling_births": 1379.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1445,
+        "date": "1987-06-16T00:00:00",
+        "rolling_births": 1392.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1465,
+        "date": "1987-06-17T00:00:00",
+        "rolling_births": 1394.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1477,
+        "date": "1987-06-18T00:00:00",
+        "rolling_births": 1395.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1506,
+        "date": "1987-06-19T00:00:00",
+        "rolling_births": 1399.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1251,
+        "date": "1987-06-20T00:00:00",
+        "rolling_births": 1391.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1206,
+        "date": "1987-06-21T00:00:00",
+        "rolling_births": 1383.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1479,
+        "date": "1987-06-22T00:00:00",
+        "rolling_births": 1390.0,
+        "state": "CA"
+      },
+      {
+        "births": 1524,
+        "date": "1987-06-23T00:00:00",
+        "rolling_births": 1403.7,
+        "state": "CA"
+      },
+      {
+        "births": 1526,
+        "date": "1987-06-24T00:00:00",
+        "rolling_births": 1416.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1544,
+        "date": "1987-06-25T00:00:00",
+        "rolling_births": 1418.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1585,
+        "date": "1987-06-26T00:00:00",
+        "rolling_births": 1420.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1205,
+        "date": "1987-06-27T00:00:00",
+        "rolling_births": 1412.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1217,
+        "date": "1987-06-28T00:00:00",
+        "rolling_births": 1403.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1435,
+        "date": "1987-06-29T00:00:00",
+        "rolling_births": 1408.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1515,
+        "date": "1987-06-30T00:00:00",
+        "rolling_births": 1419.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1488,
+        "date": "1987-07-01T00:00:00",
+        "rolling_births": 1420.0,
+        "state": "CA"
+      },
+      {
+        "births": 1562,
+        "date": "1987-07-02T00:00:00",
+        "rolling_births": 1422.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1309,
+        "date": "1987-07-03T00:00:00",
+        "rolling_births": 1416.0,
+        "state": "CA"
+      },
+      {
+        "births": 1191,
+        "date": "1987-07-04T00:00:00",
+        "rolling_births": 1405.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1186,
+        "date": "1987-07-05T00:00:00",
+        "rolling_births": 1392.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1403,
+        "date": "1987-07-06T00:00:00",
+        "rolling_births": 1398.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1565,
+        "date": "1987-07-07T00:00:00",
+        "rolling_births": 1409.4,
+        "state": "CA"
+      },
+      {
+        "births": 1523,
+        "date": "1987-07-08T00:00:00",
+        "rolling_births": 1410.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1516,
+        "date": "1987-07-09T00:00:00",
+        "rolling_births": 1412.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1564,
+        "date": "1987-07-10T00:00:00",
+        "rolling_births": 1413.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1253,
+        "date": "1987-07-11T00:00:00",
+        "rolling_births": 1405.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1159,
+        "date": "1987-07-12T00:00:00",
+        "rolling_births": 1397.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1472,
+        "date": "1987-07-13T00:00:00",
+        "rolling_births": 1405.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1593,
+        "date": "1987-07-14T00:00:00",
+        "rolling_births": 1421.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1575,
+        "date": "1987-07-15T00:00:00",
+        "rolling_births": 1424.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1546,
+        "date": "1987-07-16T00:00:00",
+        "rolling_births": 1428.0,
+        "state": "CA"
+      },
+      {
+        "births": 1516,
+        "date": "1987-07-17T00:00:00",
+        "rolling_births": 1429.7,
+        "state": "CA"
+      },
+      {
+        "births": 1190,
+        "date": "1987-07-18T00:00:00",
+        "rolling_births": 1420.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1184,
+        "date": "1987-07-19T00:00:00",
+        "rolling_births": 1409.4,
+        "state": "CA"
+      },
+      {
+        "births": 1481,
+        "date": "1987-07-20T00:00:00",
+        "rolling_births": 1417.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1521,
+        "date": "1987-07-21T00:00:00",
+        "rolling_births": 1427.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1482,
+        "date": "1987-07-22T00:00:00",
+        "rolling_births": 1427.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1462,
+        "date": "1987-07-23T00:00:00",
+        "rolling_births": 1425.6,
+        "state": "CA"
+      },
+      {
+        "births": 1563,
+        "date": "1987-07-24T00:00:00",
+        "rolling_births": 1426.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1263,
+        "date": "1987-07-25T00:00:00",
+        "rolling_births": 1417.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1249,
+        "date": "1987-07-26T00:00:00",
+        "rolling_births": 1406.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1561,
+        "date": "1987-07-27T00:00:00",
+        "rolling_births": 1418.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1610,
+        "date": "1987-07-28T00:00:00",
+        "rolling_births": 1431.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1533,
+        "date": "1987-07-29T00:00:00",
+        "rolling_births": 1434.5,
+        "state": "CA"
+      },
+      {
+        "births": 1562,
+        "date": "1987-07-30T00:00:00",
+        "rolling_births": 1436.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1491,
+        "date": "1987-07-31T00:00:00",
+        "rolling_births": 1436.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1264,
+        "date": "1987-08-01T00:00:00",
+        "rolling_births": 1426.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1147,
+        "date": "1987-08-02T00:00:00",
+        "rolling_births": 1420.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1536,
+        "date": "1987-08-03T00:00:00",
+        "rolling_births": 1432.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1501,
+        "date": "1987-08-04T00:00:00",
+        "rolling_births": 1442.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1552,
+        "date": "1987-08-05T00:00:00",
+        "rolling_births": 1447.8,
+        "state": "CA"
+      },
+      {
+        "births": 1503,
+        "date": "1987-08-06T00:00:00",
+        "rolling_births": 1445.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1582,
+        "date": "1987-08-07T00:00:00",
+        "rolling_births": 1447.7,
+        "state": "CA"
+      },
+      {
+        "births": 1278,
+        "date": "1987-08-08T00:00:00",
+        "rolling_births": 1439.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1233,
+        "date": "1987-08-09T00:00:00",
+        "rolling_births": 1428.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1416,
+        "date": "1987-08-10T00:00:00",
+        "rolling_births": 1434.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1494,
+        "date": "1987-08-11T00:00:00",
+        "rolling_births": 1445.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1433,
+        "date": "1987-08-12T00:00:00",
+        "rolling_births": 1444.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1481,
+        "date": "1987-08-13T00:00:00",
+        "rolling_births": 1440.3,
+        "state": "CA"
+      },
+      {
+        "births": 1479,
+        "date": "1987-08-14T00:00:00",
+        "rolling_births": 1437.1,
+        "state": "CA"
+      },
+      {
+        "births": 1238,
+        "date": "1987-08-15T00:00:00",
+        "rolling_births": 1426.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1158,
+        "date": "1987-08-16T00:00:00",
+        "rolling_births": 1414.9,
+        "state": "CA"
+      },
+      {
+        "births": 1497,
+        "date": "1987-08-17T00:00:00",
+        "rolling_births": 1425.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1509,
+        "date": "1987-08-18T00:00:00",
+        "rolling_births": 1435.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1428,
+        "date": "1987-08-19T00:00:00",
+        "rolling_births": 1434.2,
+        "state": "CA"
+      },
+      {
+        "births": 1537,
+        "date": "1987-08-20T00:00:00",
+        "rolling_births": 1434.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1485,
+        "date": "1987-08-21T00:00:00",
+        "rolling_births": 1434.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1281,
+        "date": "1987-08-22T00:00:00",
+        "rolling_births": 1428.8,
+        "state": "CA"
+      },
+      {
+        "births": 1195,
+        "date": "1987-08-23T00:00:00",
+        "rolling_births": 1416.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1497,
+        "date": "1987-08-24T00:00:00",
+        "rolling_births": 1424.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1521,
+        "date": "1987-08-25T00:00:00",
+        "rolling_births": 1433.4,
+        "state": "CA"
+      },
+      {
+        "births": 1532,
+        "date": "1987-08-26T00:00:00",
+        "rolling_births": 1432.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1535,
+        "date": "1987-08-27T00:00:00",
+        "rolling_births": 1429.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1502,
+        "date": "1987-08-28T00:00:00",
+        "rolling_births": 1428.9,
+        "state": "CA"
+      },
+      {
+        "births": 1256,
+        "date": "1987-08-29T00:00:00",
+        "rolling_births": 1418.7,
+        "state": "CA"
+      },
+      {
+        "births": 1183,
+        "date": "1987-08-30T00:00:00",
+        "rolling_births": 1408.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1449,
+        "date": "1987-08-31T00:00:00",
+        "rolling_births": 1414.6,
+        "state": "CA"
+      },
+      {
+        "births": 1592,
+        "date": "1987-09-01T00:00:00",
+        "rolling_births": 1429.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1528,
+        "date": "1987-09-02T00:00:00",
+        "rolling_births": 1429.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1531,
+        "date": "1987-09-03T00:00:00",
+        "rolling_births": 1430.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1568,
+        "date": "1987-09-04T00:00:00",
+        "rolling_births": 1430.7,
+        "state": "CA"
+      },
+      {
+        "births": 1279,
+        "date": "1987-09-05T00:00:00",
+        "rolling_births": 1423.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1198,
+        "date": "1987-09-06T00:00:00",
+        "rolling_births": 1410.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1215,
+        "date": "1987-09-07T00:00:00",
+        "rolling_births": 1408.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1535,
+        "date": "1987-09-08T00:00:00",
+        "rolling_births": 1418.4,
+        "state": "CA"
+      },
+      {
+        "births": 1601,
+        "date": "1987-09-09T00:00:00",
+        "rolling_births": 1424.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1602,
+        "date": "1987-09-10T00:00:00",
+        "rolling_births": 1428.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1592,
+        "date": "1987-09-11T00:00:00",
+        "rolling_births": 1433.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1264,
+        "date": "1987-09-12T00:00:00",
+        "rolling_births": 1426.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1182,
+        "date": "1987-09-13T00:00:00",
+        "rolling_births": 1416.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1451,
+        "date": "1987-09-14T00:00:00",
+        "rolling_births": 1423.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1584,
+        "date": "1987-09-15T00:00:00",
+        "rolling_births": 1437.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1592,
+        "date": "1987-09-16T00:00:00",
+        "rolling_births": 1440.8,
+        "state": "CA"
+      },
+      {
+        "births": 1618,
+        "date": "1987-09-17T00:00:00",
+        "rolling_births": 1444.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1602,
+        "date": "1987-09-18T00:00:00",
+        "rolling_births": 1450.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1344,
+        "date": "1987-09-19T00:00:00",
+        "rolling_births": 1443.8,
+        "state": "CA"
+      },
+      {
+        "births": 1313,
+        "date": "1987-09-20T00:00:00",
+        "rolling_births": 1438.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1664,
+        "date": "1987-09-21T00:00:00",
+        "rolling_births": 1450.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1616,
+        "date": "1987-09-22T00:00:00",
+        "rolling_births": 1464.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1524,
+        "date": "1987-09-23T00:00:00",
+        "rolling_births": 1465.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1531,
+        "date": "1987-09-24T00:00:00",
+        "rolling_births": 1466.1,
+        "state": "CA"
+      },
+      {
+        "births": 1627,
+        "date": "1987-09-25T00:00:00",
+        "rolling_births": 1469.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1313,
+        "date": "1987-09-26T00:00:00",
+        "rolling_births": 1461.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1220,
+        "date": "1987-09-27T00:00:00",
+        "rolling_births": 1452.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1477,
+        "date": "1987-09-28T00:00:00",
+        "rolling_births": 1459.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1528,
+        "date": "1987-09-29T00:00:00",
+        "rolling_births": 1471.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1542,
+        "date": "1987-09-30T00:00:00",
+        "rolling_births": 1474.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1530,
+        "date": "1987-10-01T00:00:00",
+        "rolling_births": 1472.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1570,
+        "date": "1987-10-02T00:00:00",
+        "rolling_births": 1473.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1294,
+        "date": "1987-10-03T00:00:00",
+        "rolling_births": 1465.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1185,
+        "date": "1987-10-04T00:00:00",
+        "rolling_births": 1453.1,
+        "state": "CA"
+      },
+      {
+        "births": 1470,
+        "date": "1987-10-05T00:00:00",
+        "rolling_births": 1459.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1532,
+        "date": "1987-10-06T00:00:00",
+        "rolling_births": 1470.6,
+        "state": "CA"
+      },
+      {
+        "births": 1482,
+        "date": "1987-10-07T00:00:00",
+        "rolling_births": 1479.5,
+        "state": "CA"
+      },
+      {
+        "births": 1451,
+        "date": "1987-10-08T00:00:00",
+        "rolling_births": 1476.7,
+        "state": "CA"
+      },
+      {
+        "births": 1451,
+        "date": "1987-10-09T00:00:00",
+        "rolling_births": 1471.7,
+        "state": "CA"
+      },
+      {
+        "births": 1199,
+        "date": "1987-10-10T00:00:00",
+        "rolling_births": 1458.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1158,
+        "date": "1987-10-11T00:00:00",
+        "rolling_births": 1443.8,
+        "state": "CA"
+      },
+      {
+        "births": 1383,
+        "date": "1987-10-12T00:00:00",
+        "rolling_births": 1447.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1510,
+        "date": "1987-10-13T00:00:00",
+        "rolling_births": 1458.7,
+        "state": "CA"
+      },
+      {
+        "births": 1482,
+        "date": "1987-10-14T00:00:00",
+        "rolling_births": 1459.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1537,
+        "date": "1987-10-15T00:00:00",
+        "rolling_births": 1458.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1502,
+        "date": "1987-10-16T00:00:00",
+        "rolling_births": 1455.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1182,
+        "date": "1987-10-17T00:00:00",
+        "rolling_births": 1440.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1149,
+        "date": "1987-10-18T00:00:00",
+        "rolling_births": 1425.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1413,
+        "date": "1987-10-19T00:00:00",
+        "rolling_births": 1427.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1491,
+        "date": "1987-10-20T00:00:00",
+        "rolling_births": 1433.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1458,
+        "date": "1987-10-21T00:00:00",
+        "rolling_births": 1426.9,
+        "state": "CA"
+      },
+      {
+        "births": 1369,
+        "date": "1987-10-22T00:00:00",
+        "rolling_births": 1418.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1409,
+        "date": "1987-10-23T00:00:00",
+        "rolling_births": 1414.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1159,
+        "date": "1987-10-24T00:00:00",
+        "rolling_births": 1402.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1191,
+        "date": "1987-10-25T00:00:00",
+        "rolling_births": 1387.9,
+        "state": "CA"
+      },
+      {
+        "births": 1419,
+        "date": "1987-10-26T00:00:00",
+        "rolling_births": 1391.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1466,
+        "date": "1987-10-27T00:00:00",
+        "rolling_births": 1399.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1453,
+        "date": "1987-10-28T00:00:00",
+        "rolling_births": 1398.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1469,
+        "date": "1987-10-29T00:00:00",
+        "rolling_births": 1396.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1457,
+        "date": "1987-10-30T00:00:00",
+        "rolling_births": 1394.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1194,
+        "date": "1987-10-31T00:00:00",
+        "rolling_births": 1382.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1084,
+        "date": "1987-11-01T00:00:00",
+        "rolling_births": 1366.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1507,
+        "date": "1987-11-02T00:00:00",
+        "rolling_births": 1373.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1380,
+        "date": "1987-11-03T00:00:00",
+        "rolling_births": 1380.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1419,
+        "date": "1987-11-04T00:00:00",
+        "rolling_births": 1378.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1450,
+        "date": "1987-11-05T00:00:00",
+        "rolling_births": 1375.8,
+        "state": "CA"
+      },
+      {
+        "births": 1500,
+        "date": "1987-11-06T00:00:00",
+        "rolling_births": 1376.4,
+        "state": "CA"
+      },
+      {
+        "births": 1208,
+        "date": "1987-11-07T00:00:00",
+        "rolling_births": 1368.3,
+        "state": "CA"
+      },
+      {
+        "births": 1159,
+        "date": "1987-11-08T00:00:00",
+        "rolling_births": 1358.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1447,
+        "date": "1987-11-09T00:00:00",
+        "rolling_births": 1366.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1527,
+        "date": "1987-11-10T00:00:00",
+        "rolling_births": 1379.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1501,
+        "date": "1987-11-11T00:00:00",
+        "rolling_births": 1383.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1436,
+        "date": "1987-11-12T00:00:00",
+        "rolling_births": 1380.6,
+        "state": "CA"
+      },
+      {
+        "births": 1475,
+        "date": "1987-11-13T00:00:00",
+        "rolling_births": 1380.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1205,
+        "date": "1987-11-14T00:00:00",
+        "rolling_births": 1369.3,
+        "state": "CA"
+      },
+      {
+        "births": 1113,
+        "date": "1987-11-15T00:00:00",
+        "rolling_births": 1356.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1435,
+        "date": "1987-11-16T00:00:00",
+        "rolling_births": 1364.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1555,
+        "date": "1987-11-17T00:00:00",
+        "rolling_births": 1378.3,
+        "state": "CA"
+      },
+      {
+        "births": 1418,
+        "date": "1987-11-18T00:00:00",
+        "rolling_births": 1378.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1387,
+        "date": "1987-11-19T00:00:00",
+        "rolling_births": 1375.0,
+        "state": "CA"
+      },
+      {
+        "births": 1468,
+        "date": "1987-11-20T00:00:00",
+        "rolling_births": 1375.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1242,
+        "date": "1987-11-21T00:00:00",
+        "rolling_births": 1371.1,
+        "state": "CA"
+      },
+      {
+        "births": 1156,
+        "date": "1987-11-22T00:00:00",
+        "rolling_births": 1362.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1418,
+        "date": "1987-11-23T00:00:00",
+        "rolling_births": 1371.3,
+        "state": "CA"
+      },
+      {
+        "births": 1517,
+        "date": "1987-11-24T00:00:00",
+        "rolling_births": 1382.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1469,
+        "date": "1987-11-25T00:00:00",
+        "rolling_births": 1383.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1094,
+        "date": "1987-11-26T00:00:00",
+        "rolling_births": 1371.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1341,
+        "date": "1987-11-27T00:00:00",
+        "rolling_births": 1367.7,
+        "state": "CA"
+      },
+      {
+        "births": 1194,
+        "date": "1987-11-28T00:00:00",
+        "rolling_births": 1358.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1132,
+        "date": "1987-11-29T00:00:00",
+        "rolling_births": 1347.7,
+        "state": "CA"
+      },
+      {
+        "births": 1435,
+        "date": "1987-11-30T00:00:00",
+        "rolling_births": 1355.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1552,
+        "date": "1987-12-01T00:00:00",
+        "rolling_births": 1371.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1443,
+        "date": "1987-12-02T00:00:00",
+        "rolling_births": 1369.2,
+        "state": "CA"
+      },
+      {
+        "births": 1439,
+        "date": "1987-12-03T00:00:00",
+        "rolling_births": 1371.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1494,
+        "date": "1987-12-04T00:00:00",
+        "rolling_births": 1373.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1177,
+        "date": "1987-12-05T00:00:00",
+        "rolling_births": 1364.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1177,
+        "date": "1987-12-06T00:00:00",
+        "rolling_births": 1353.8,
+        "state": "CA"
+      },
+      {
+        "births": 1425,
+        "date": "1987-12-07T00:00:00",
+        "rolling_births": 1361.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1447,
+        "date": "1987-12-08T00:00:00",
+        "rolling_births": 1370.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1427,
+        "date": "1987-12-09T00:00:00",
+        "rolling_births": 1369.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1437,
+        "date": "1987-12-10T00:00:00",
+        "rolling_births": 1366.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1419,
+        "date": "1987-12-11T00:00:00",
+        "rolling_births": 1364.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1178,
+        "date": "1987-12-12T00:00:00",
+        "rolling_births": 1355.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1122,
+        "date": "1987-12-13T00:00:00",
+        "rolling_births": 1343.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1431,
+        "date": "1987-12-14T00:00:00",
+        "rolling_births": 1351.4,
+        "state": "CA"
+      },
+      {
+        "births": 1496,
+        "date": "1987-12-15T00:00:00",
+        "rolling_births": 1364.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1559,
+        "date": "1987-12-16T00:00:00",
+        "rolling_births": 1368.3,
+        "state": "CA"
+      },
+      {
+        "births": 1549,
+        "date": "1987-12-17T00:00:00",
+        "rolling_births": 1368.1,
+        "state": "CA"
+      },
+      {
+        "births": 1547,
+        "date": "1987-12-18T00:00:00",
+        "rolling_births": 1372.4,
+        "state": "CA"
+      },
+      {
+        "births": 1231,
+        "date": "1987-12-19T00:00:00",
+        "rolling_births": 1367.2,
+        "state": "CA"
+      },
+      {
+        "births": 1131,
+        "date": "1987-12-20T00:00:00",
+        "rolling_births": 1355.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1494,
+        "date": "1987-12-21T00:00:00",
+        "rolling_births": 1364.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1542,
+        "date": "1987-12-22T00:00:00",
+        "rolling_births": 1377.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1416,
+        "date": "1987-12-23T00:00:00",
+        "rolling_births": 1377.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1249,
+        "date": "1987-12-24T00:00:00",
+        "rolling_births": 1368.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1059,
+        "date": "1987-12-25T00:00:00",
+        "rolling_births": 1354.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1123,
+        "date": "1987-12-26T00:00:00",
+        "rolling_births": 1355.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1180,
+        "date": "1987-12-27T00:00:00",
+        "rolling_births": 1350.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1531,
+        "date": "1987-12-28T00:00:00",
+        "rolling_births": 1361.4,
+        "state": "CA"
+      },
+      {
+        "births": 1598,
+        "date": "1987-12-29T00:00:00",
+        "rolling_births": 1376.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1550,
+        "date": "1987-12-30T00:00:00",
+        "rolling_births": 1380.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1417,
+        "date": "1987-12-31T00:00:00",
+        "rolling_births": 1376.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1182,
+        "date": "1988-01-01T00:00:00",
+        "rolling_births": 1367.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1112,
+        "date": "1988-01-02T00:00:00",
+        "rolling_births": 1356.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1193,
+        "date": "1988-01-03T00:00:00",
+        "rolling_births": 1346.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1325,
+        "date": "1988-01-04T00:00:00",
+        "rolling_births": 1351.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1440,
+        "date": "1988-01-05T00:00:00",
+        "rolling_births": 1360.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1476,
+        "date": "1988-01-06T00:00:00",
+        "rolling_births": 1362.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1473,
+        "date": "1988-01-07T00:00:00",
+        "rolling_births": 1362.9,
+        "state": "CA"
+      },
+      {
+        "births": 1420,
+        "date": "1988-01-08T00:00:00",
+        "rolling_births": 1362.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1224,
+        "date": "1988-01-09T00:00:00",
+        "rolling_births": 1355.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1149,
+        "date": "1988-01-10T00:00:00",
+        "rolling_births": 1346.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1361,
+        "date": "1988-01-11T00:00:00",
+        "rolling_births": 1352.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1479,
+        "date": "1988-01-12T00:00:00",
+        "rolling_births": 1364.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1393,
+        "date": "1988-01-13T00:00:00",
+        "rolling_births": 1363.3,
+        "state": "CA"
+      },
+      {
+        "births": 1492,
+        "date": "1988-01-14T00:00:00",
+        "rolling_births": 1363.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1464,
+        "date": "1988-01-15T00:00:00",
+        "rolling_births": 1360.0,
+        "state": "CA"
+      },
+      {
+        "births": 1184,
+        "date": "1988-01-16T00:00:00",
+        "rolling_births": 1347.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1142,
+        "date": "1988-01-17T00:00:00",
+        "rolling_births": 1334.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1403,
+        "date": "1988-01-18T00:00:00",
+        "rolling_births": 1340.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1424,
+        "date": "1988-01-19T00:00:00",
+        "rolling_births": 1349.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1418,
+        "date": "1988-01-20T00:00:00",
+        "rolling_births": 1347.3,
+        "state": "CA"
+      },
+      {
+        "births": 1438,
+        "date": "1988-01-21T00:00:00",
+        "rolling_births": 1343.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1381,
+        "date": "1988-01-22T00:00:00",
+        "rolling_births": 1342.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1230,
+        "date": "1988-01-23T00:00:00",
+        "rolling_births": 1342.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1150,
+        "date": "1988-01-24T00:00:00",
+        "rolling_births": 1345.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1430,
+        "date": "1988-01-25T00:00:00",
+        "rolling_births": 1355.3,
+        "state": "CA"
+      },
+      {
+        "births": 1419,
+        "date": "1988-01-26T00:00:00",
+        "rolling_births": 1363.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1497,
+        "date": "1988-01-27T00:00:00",
+        "rolling_births": 1362.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1441,
+        "date": "1988-01-28T00:00:00",
+        "rolling_births": 1356.9,
+        "state": "CA"
+      },
+      {
+        "births": 1436,
+        "date": "1988-01-29T00:00:00",
+        "rolling_births": 1353.1,
+        "state": "CA"
+      },
+      {
+        "births": 1254,
+        "date": "1988-01-30T00:00:00",
+        "rolling_births": 1347.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1151,
+        "date": "1988-01-31T00:00:00",
+        "rolling_births": 1346.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1430,
+        "date": "1988-02-01T00:00:00",
+        "rolling_births": 1357.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1475,
+        "date": "1988-02-02T00:00:00",
+        "rolling_births": 1366.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1464,
+        "date": "1988-02-03T00:00:00",
+        "rolling_births": 1371.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1455,
+        "date": "1988-02-04T00:00:00",
+        "rolling_births": 1371.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1440,
+        "date": "1988-02-05T00:00:00",
+        "rolling_births": 1370.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1249,
+        "date": "1988-02-06T00:00:00",
+        "rolling_births": 1363.1,
+        "state": "CA"
+      },
+      {
+        "births": 1133,
+        "date": "1988-02-07T00:00:00",
+        "rolling_births": 1353.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1450,
+        "date": "1988-02-08T00:00:00",
+        "rolling_births": 1361.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1505,
+        "date": "1988-02-09T00:00:00",
+        "rolling_births": 1372.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1472,
+        "date": "1988-02-10T00:00:00",
+        "rolling_births": 1376.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1550,
+        "date": "1988-02-11T00:00:00",
+        "rolling_births": 1379.0,
+        "state": "CA"
+      },
+      {
+        "births": 1463,
+        "date": "1988-02-12T00:00:00",
+        "rolling_births": 1381.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1205,
+        "date": "1988-02-13T00:00:00",
+        "rolling_births": 1371.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1186,
+        "date": "1988-02-14T00:00:00",
+        "rolling_births": 1362.5,
+        "state": "CA"
+      },
+      {
+        "births": 1268,
+        "date": "1988-02-15T00:00:00",
+        "rolling_births": 1365.3,
+        "state": "CA"
+      },
+      {
+        "births": 1517,
+        "date": "1988-02-16T00:00:00",
+        "rolling_births": 1377.8,
+        "state": "CA"
+      },
+      {
+        "births": 1502,
+        "date": "1988-02-17T00:00:00",
+        "rolling_births": 1381.1,
+        "state": "CA"
+      },
+      {
+        "births": 1462,
+        "date": "1988-02-18T00:00:00",
+        "rolling_births": 1382.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1441,
+        "date": "1988-02-19T00:00:00",
+        "rolling_births": 1383.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1270,
+        "date": "1988-02-20T00:00:00",
+        "rolling_births": 1377.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1141,
+        "date": "1988-02-21T00:00:00",
+        "rolling_births": 1369.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1396,
+        "date": "1988-02-22T00:00:00",
+        "rolling_births": 1375.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1481,
+        "date": "1988-02-23T00:00:00",
+        "rolling_births": 1386.1,
+        "state": "CA"
+      },
+      {
+        "births": 1400,
+        "date": "1988-02-24T00:00:00",
+        "rolling_births": 1385.1,
+        "state": "CA"
+      },
+      {
+        "births": 1445,
+        "date": "1988-02-25T00:00:00",
+        "rolling_births": 1385.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1536,
+        "date": "1988-02-26T00:00:00",
+        "rolling_births": 1387.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1255,
+        "date": "1988-02-27T00:00:00",
+        "rolling_births": 1381.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1182,
+        "date": "1988-02-28T00:00:00",
+        "rolling_births": 1372.6,
+        "state": "CA"
+      },
+      {
+        "births": 1345,
+        "date": "1988-02-29T00:00:00",
+        "rolling_births": 1375.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1490,
+        "date": "1988-03-01T00:00:00",
+        "rolling_births": 1386.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1464,
+        "date": "1988-03-02T00:00:00",
+        "rolling_births": 1388.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1468,
+        "date": "1988-03-03T00:00:00",
+        "rolling_births": 1387.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1414,
+        "date": "1988-03-04T00:00:00",
+        "rolling_births": 1386.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1239,
+        "date": "1988-03-05T00:00:00",
+        "rolling_births": 1378.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1214,
+        "date": "1988-03-06T00:00:00",
+        "rolling_births": 1371.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1468,
+        "date": "1988-03-07T00:00:00",
+        "rolling_births": 1378.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1512,
+        "date": "1988-03-08T00:00:00",
+        "rolling_births": 1391.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1381,
+        "date": "1988-03-09T00:00:00",
+        "rolling_births": 1389.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1480,
+        "date": "1988-03-10T00:00:00",
+        "rolling_births": 1388.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1431,
+        "date": "1988-03-11T00:00:00",
+        "rolling_births": 1386.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1212,
+        "date": "1988-03-12T00:00:00",
+        "rolling_births": 1375.6,
+        "state": "CA"
+      },
+      {
+        "births": 1192,
+        "date": "1988-03-13T00:00:00",
+        "rolling_births": 1366.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1374,
+        "date": "1988-03-14T00:00:00",
+        "rolling_births": 1372.2,
+        "state": "CA"
+      },
+      {
+        "births": 1446,
+        "date": "1988-03-15T00:00:00",
+        "rolling_births": 1380.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1499,
+        "date": "1988-03-16T00:00:00",
+        "rolling_births": 1388.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1491,
+        "date": "1988-03-17T00:00:00",
+        "rolling_births": 1387.7,
+        "state": "CA"
+      },
+      {
+        "births": 1492,
+        "date": "1988-03-18T00:00:00",
+        "rolling_births": 1387.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1244,
+        "date": "1988-03-19T00:00:00",
+        "rolling_births": 1380.1,
+        "state": "CA"
+      },
+      {
+        "births": 1219,
+        "date": "1988-03-20T00:00:00",
+        "rolling_births": 1372.7,
+        "state": "CA"
+      },
+      {
+        "births": 1537,
+        "date": "1988-03-21T00:00:00",
+        "rolling_births": 1381.6,
+        "state": "CA"
+      },
+      {
+        "births": 1495,
+        "date": "1988-03-22T00:00:00",
+        "rolling_births": 1393.4,
+        "state": "CA"
+      },
+      {
+        "births": 1493,
+        "date": "1988-03-23T00:00:00",
+        "rolling_births": 1396.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1449,
+        "date": "1988-03-24T00:00:00",
+        "rolling_births": 1395.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1515,
+        "date": "1988-03-25T00:00:00",
+        "rolling_births": 1399.4,
+        "state": "CA"
+      },
+      {
+        "births": 1300,
+        "date": "1988-03-26T00:00:00",
+        "rolling_births": 1394.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1231,
+        "date": "1988-03-27T00:00:00",
+        "rolling_births": 1384.4,
+        "state": "CA"
+      },
+      {
+        "births": 1463,
+        "date": "1988-03-28T00:00:00",
+        "rolling_births": 1391.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1500,
+        "date": "1988-03-29T00:00:00",
+        "rolling_births": 1401.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1489,
+        "date": "1988-03-30T00:00:00",
+        "rolling_births": 1406.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1452,
+        "date": "1988-03-31T00:00:00",
+        "rolling_births": 1405.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1421,
+        "date": "1988-04-01T00:00:00",
+        "rolling_births": 1404.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1327,
+        "date": "1988-04-02T00:00:00",
+        "rolling_births": 1399.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1196,
+        "date": "1988-04-03T00:00:00",
+        "rolling_births": 1392.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1507,
+        "date": "1988-04-04T00:00:00",
+        "rolling_births": 1401.0,
+        "state": "CA"
+      },
+      {
+        "births": 1506,
+        "date": "1988-04-05T00:00:00",
+        "rolling_births": 1410.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1515,
+        "date": "1988-04-06T00:00:00",
+        "rolling_births": 1412.3,
+        "state": "CA"
+      },
+      {
+        "births": 1580,
+        "date": "1988-04-07T00:00:00",
+        "rolling_births": 1414.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1622,
+        "date": "1988-04-08T00:00:00",
+        "rolling_births": 1422.6,
+        "state": "CA"
+      },
+      {
+        "births": 1329,
+        "date": "1988-04-09T00:00:00",
+        "rolling_births": 1417.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1220,
+        "date": "1988-04-10T00:00:00",
+        "rolling_births": 1410.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1526,
+        "date": "1988-04-11T00:00:00",
+        "rolling_births": 1421.0,
+        "state": "CA"
+      },
+      {
+        "births": 1541,
+        "date": "1988-04-12T00:00:00",
+        "rolling_births": 1432.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1470,
+        "date": "1988-04-13T00:00:00",
+        "rolling_births": 1435.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1454,
+        "date": "1988-04-14T00:00:00",
+        "rolling_births": 1436.1,
+        "state": "CA"
+      },
+      {
+        "births": 1540,
+        "date": "1988-04-15T00:00:00",
+        "rolling_births": 1437.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1182,
+        "date": "1988-04-16T00:00:00",
+        "rolling_births": 1427.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1163,
+        "date": "1988-04-17T00:00:00",
+        "rolling_births": 1416.2,
+        "state": "CA"
+      },
+      {
+        "births": 1493,
+        "date": "1988-04-18T00:00:00",
+        "rolling_births": 1424.5,
+        "state": "CA"
+      },
+      {
+        "births": 1512,
+        "date": "1988-04-19T00:00:00",
+        "rolling_births": 1434.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1512,
+        "date": "1988-04-20T00:00:00",
+        "rolling_births": 1433.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1406,
+        "date": "1988-04-21T00:00:00",
+        "rolling_births": 1430.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1534,
+        "date": "1988-04-22T00:00:00",
+        "rolling_births": 1431.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1304,
+        "date": "1988-04-23T00:00:00",
+        "rolling_births": 1427.0,
+        "state": "CA"
+      },
+      {
+        "births": 1206,
+        "date": "1988-04-24T00:00:00",
+        "rolling_births": 1416.7,
+        "state": "CA"
+      },
+      {
+        "births": 1526,
+        "date": "1988-04-25T00:00:00",
+        "rolling_births": 1424.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1611,
+        "date": "1988-04-26T00:00:00",
+        "rolling_births": 1436.9,
+        "state": "CA"
+      },
+      {
+        "births": 1626,
+        "date": "1988-04-27T00:00:00",
+        "rolling_births": 1442.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1540,
+        "date": "1988-04-28T00:00:00",
+        "rolling_births": 1443.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1506,
+        "date": "1988-04-29T00:00:00",
+        "rolling_births": 1444.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1282,
+        "date": "1988-04-30T00:00:00",
+        "rolling_births": 1438.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1169,
+        "date": "1988-05-01T00:00:00",
+        "rolling_births": 1430.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1463,
+        "date": "1988-05-02T00:00:00",
+        "rolling_births": 1434.7,
+        "state": "CA"
+      },
+      {
+        "births": 1575,
+        "date": "1988-05-03T00:00:00",
+        "rolling_births": 1447.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1489,
+        "date": "1988-05-04T00:00:00",
+        "rolling_births": 1446.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1481,
+        "date": "1988-05-05T00:00:00",
+        "rolling_births": 1445.9,
+        "state": "CA"
+      },
+      {
+        "births": 1491,
+        "date": "1988-05-06T00:00:00",
+        "rolling_births": 1445.1,
+        "state": "CA"
+      },
+      {
+        "births": 1296,
+        "date": "1988-05-07T00:00:00",
+        "rolling_births": 1435.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1224,
+        "date": "1988-05-08T00:00:00",
+        "rolling_births": 1422.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1511,
+        "date": "1988-05-09T00:00:00",
+        "rolling_births": 1428.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1630,
+        "date": "1988-05-10T00:00:00",
+        "rolling_births": 1442.1,
+        "state": "CA"
+      },
+      {
+        "births": 1597,
+        "date": "1988-05-11T00:00:00",
+        "rolling_births": 1444.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1593,
+        "date": "1988-05-12T00:00:00",
+        "rolling_births": 1446.2,
+        "state": "CA"
+      },
+      {
+        "births": 1506,
+        "date": "1988-05-13T00:00:00",
+        "rolling_births": 1447.4,
+        "state": "CA"
+      },
+      {
+        "births": 1266,
+        "date": "1988-05-14T00:00:00",
+        "rolling_births": 1441.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1306,
+        "date": "1988-05-15T00:00:00",
+        "rolling_births": 1433.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1561,
+        "date": "1988-05-16T00:00:00",
+        "rolling_births": 1445.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1566,
+        "date": "1988-05-17T00:00:00",
+        "rolling_births": 1459.4,
+        "state": "CA"
+      },
+      {
+        "births": 1604,
+        "date": "1988-05-18T00:00:00",
+        "rolling_births": 1463.1,
+        "state": "CA"
+      },
+      {
+        "births": 1484,
+        "date": "1988-05-19T00:00:00",
+        "rolling_births": 1462.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1646,
+        "date": "1988-05-20T00:00:00",
+        "rolling_births": 1466.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1322,
+        "date": "1988-05-21T00:00:00",
+        "rolling_births": 1463.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1293,
+        "date": "1988-05-22T00:00:00",
+        "rolling_births": 1455.8,
+        "state": "CA"
+      },
+      {
+        "births": 1500,
+        "date": "1988-05-23T00:00:00",
+        "rolling_births": 1462.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1667,
+        "date": "1988-05-24T00:00:00",
+        "rolling_births": 1477.7,
+        "state": "CA"
+      },
+      {
+        "births": 1583,
+        "date": "1988-05-25T00:00:00",
+        "rolling_births": 1479.6,
+        "state": "CA"
+      },
+      {
+        "births": 1571,
+        "date": "1988-05-26T00:00:00",
+        "rolling_births": 1478.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1510,
+        "date": "1988-05-27T00:00:00",
+        "rolling_births": 1474.4,
+        "state": "CA"
+      },
+      {
+        "births": 1333,
+        "date": "1988-05-28T00:00:00",
+        "rolling_births": 1467.5,
+        "state": "CA"
+      },
+      {
+        "births": 1186,
+        "date": "1988-05-29T00:00:00",
+        "rolling_births": 1456.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1230,
+        "date": "1988-05-30T00:00:00",
+        "rolling_births": 1455.1,
+        "state": "CA"
+      },
+      {
+        "births": 1537,
+        "date": "1988-05-31T00:00:00",
+        "rolling_births": 1467.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1515,
+        "date": "1988-06-01T00:00:00",
+        "rolling_births": 1469.1,
+        "state": "CA"
+      },
+      {
+        "births": 1627,
+        "date": "1988-06-02T00:00:00",
+        "rolling_births": 1470.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1590,
+        "date": "1988-06-03T00:00:00",
+        "rolling_births": 1474.2,
+        "state": "CA"
+      },
+      {
+        "births": 1286,
+        "date": "1988-06-04T00:00:00",
+        "rolling_births": 1467.7,
+        "state": "CA"
+      },
+      {
+        "births": 1210,
+        "date": "1988-06-05T00:00:00",
+        "rolling_births": 1458.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1508,
+        "date": "1988-06-06T00:00:00",
+        "rolling_births": 1465.4,
+        "state": "CA"
+      },
+      {
+        "births": 1549,
+        "date": "1988-06-07T00:00:00",
+        "rolling_births": 1476.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1528,
+        "date": "1988-06-08T00:00:00",
+        "rolling_births": 1476.8,
+        "state": "CA"
+      },
+      {
+        "births": 1555,
+        "date": "1988-06-09T00:00:00",
+        "rolling_births": 1474.3,
+        "state": "CA"
+      },
+      {
+        "births": 1528,
+        "date": "1988-06-10T00:00:00",
+        "rolling_births": 1472.0,
+        "state": "CA"
+      },
+      {
+        "births": 1341,
+        "date": "1988-06-11T00:00:00",
+        "rolling_births": 1463.6,
+        "state": "CA"
+      },
+      {
+        "births": 1187,
+        "date": "1988-06-12T00:00:00",
+        "rolling_births": 1452.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1469,
+        "date": "1988-06-13T00:00:00",
+        "rolling_births": 1459.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1633,
+        "date": "1988-06-14T00:00:00",
+        "rolling_births": 1470.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1607,
+        "date": "1988-06-15T00:00:00",
+        "rolling_births": 1472.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1514,
+        "date": "1988-06-16T00:00:00",
+        "rolling_births": 1470.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1577,
+        "date": "1988-06-17T00:00:00",
+        "rolling_births": 1469.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1256,
+        "date": "1988-06-18T00:00:00",
+        "rolling_births": 1461.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1275,
+        "date": "1988-06-19T00:00:00",
+        "rolling_births": 1449.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1508,
+        "date": "1988-06-20T00:00:00",
+        "rolling_births": 1455.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1533,
+        "date": "1988-06-21T00:00:00",
+        "rolling_births": 1463.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1543,
+        "date": "1988-06-22T00:00:00",
+        "rolling_births": 1465.2,
+        "state": "CA"
+      },
+      {
+        "births": 1603,
+        "date": "1988-06-23T00:00:00",
+        "rolling_births": 1463.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1564,
+        "date": "1988-06-24T00:00:00",
+        "rolling_births": 1462.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1312,
+        "date": "1988-06-25T00:00:00",
+        "rolling_births": 1453.8,
+        "state": "CA"
+      },
+      {
+        "births": 1191,
+        "date": "1988-06-26T00:00:00",
+        "rolling_births": 1443.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1529,
+        "date": "1988-06-27T00:00:00",
+        "rolling_births": 1449.7,
+        "state": "CA"
+      },
+      {
+        "births": 1651,
+        "date": "1988-06-28T00:00:00",
+        "rolling_births": 1465.2,
+        "state": "CA"
+      },
+      {
+        "births": 1527,
+        "date": "1988-06-29T00:00:00",
+        "rolling_births": 1475.1,
+        "state": "CA"
+      },
+      {
+        "births": 1596,
+        "date": "1988-06-30T00:00:00",
+        "rolling_births": 1477.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1606,
+        "date": "1988-07-01T00:00:00",
+        "rolling_births": 1480.1,
+        "state": "CA"
+      },
+      {
+        "births": 1349,
+        "date": "1988-07-02T00:00:00",
+        "rolling_births": 1470.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1252,
+        "date": "1988-07-03T00:00:00",
+        "rolling_births": 1459.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1193,
+        "date": "1988-07-04T00:00:00",
+        "rolling_births": 1456.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1520,
+        "date": "1988-07-05T00:00:00",
+        "rolling_births": 1466.8,
+        "state": "CA"
+      },
+      {
+        "births": 1584,
+        "date": "1988-07-06T00:00:00",
+        "rolling_births": 1469.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1549,
+        "date": "1988-07-07T00:00:00",
+        "rolling_births": 1469.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1592,
+        "date": "1988-07-08T00:00:00",
+        "rolling_births": 1471.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1346,
+        "date": "1988-07-09T00:00:00",
+        "rolling_births": 1464.5,
+        "state": "CA"
+      },
+      {
+        "births": 1278,
+        "date": "1988-07-10T00:00:00",
+        "rolling_births": 1456.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1523,
+        "date": "1988-07-11T00:00:00",
+        "rolling_births": 1462.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1616,
+        "date": "1988-07-12T00:00:00",
+        "rolling_births": 1476.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1518,
+        "date": "1988-07-13T00:00:00",
+        "rolling_births": 1478.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1540,
+        "date": "1988-07-14T00:00:00",
+        "rolling_births": 1475.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1604,
+        "date": "1988-07-15T00:00:00",
+        "rolling_births": 1474.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1357,
+        "date": "1988-07-16T00:00:00",
+        "rolling_births": 1469.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1338,
+        "date": "1988-07-17T00:00:00",
+        "rolling_births": 1461.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1492,
+        "date": "1988-07-18T00:00:00",
+        "rolling_births": 1469.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1582,
+        "date": "1988-07-19T00:00:00",
+        "rolling_births": 1479.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1594,
+        "date": "1988-07-20T00:00:00",
+        "rolling_births": 1482.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1597,
+        "date": "1988-07-21T00:00:00",
+        "rolling_births": 1484.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1543,
+        "date": "1988-07-22T00:00:00",
+        "rolling_births": 1484.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1276,
+        "date": "1988-07-23T00:00:00",
+        "rolling_births": 1473.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1246,
+        "date": "1988-07-24T00:00:00",
+        "rolling_births": 1463.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1542,
+        "date": "1988-07-25T00:00:00",
+        "rolling_births": 1471.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1621,
+        "date": "1988-07-26T00:00:00",
+        "rolling_births": 1485.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1571,
+        "date": "1988-07-27T00:00:00",
+        "rolling_births": 1486.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1567,
+        "date": "1988-07-28T00:00:00",
+        "rolling_births": 1483.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1578,
+        "date": "1988-07-29T00:00:00",
+        "rolling_births": 1485.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1366,
+        "date": "1988-07-30T00:00:00",
+        "rolling_births": 1478.0,
+        "state": "CA"
+      },
+      {
+        "births": 1211,
+        "date": "1988-07-31T00:00:00",
+        "rolling_births": 1464.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1535,
+        "date": "1988-08-01T00:00:00",
+        "rolling_births": 1471.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1551,
+        "date": "1988-08-02T00:00:00",
+        "rolling_births": 1481.0,
+        "state": "CA"
+      },
+      {
+        "births": 1496,
+        "date": "1988-08-03T00:00:00",
+        "rolling_births": 1491.1,
+        "state": "CA"
+      },
+      {
+        "births": 1568,
+        "date": "1988-08-04T00:00:00",
+        "rolling_births": 1492.7,
+        "state": "CA"
+      },
+      {
+        "births": 1551,
+        "date": "1988-08-05T00:00:00",
+        "rolling_births": 1491.6,
+        "state": "CA"
+      },
+      {
+        "births": 1376,
+        "date": "1988-08-06T00:00:00",
+        "rolling_births": 1485.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1255,
+        "date": "1988-08-07T00:00:00",
+        "rolling_births": 1474.6,
+        "state": "CA"
+      },
+      {
+        "births": 1650,
+        "date": "1988-08-08T00:00:00",
+        "rolling_births": 1484.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1628,
+        "date": "1988-08-09T00:00:00",
+        "rolling_births": 1496.4,
+        "state": "CA"
+      },
+      {
+        "births": 1649,
+        "date": "1988-08-10T00:00:00",
+        "rolling_births": 1500.6,
+        "state": "CA"
+      },
+      {
+        "births": 1643,
+        "date": "1988-08-11T00:00:00",
+        "rolling_births": 1501.5,
+        "state": "CA"
+      },
+      {
+        "births": 1658,
+        "date": "1988-08-12T00:00:00",
+        "rolling_births": 1506.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1382,
+        "date": "1988-08-13T00:00:00",
+        "rolling_births": 1500.9,
+        "state": "CA"
+      },
+      {
+        "births": 1295,
+        "date": "1988-08-14T00:00:00",
+        "rolling_births": 1490.6,
+        "state": "CA"
+      },
+      {
+        "births": 1534,
+        "date": "1988-08-15T00:00:00",
+        "rolling_births": 1496.5,
+        "state": "CA"
+      },
+      {
+        "births": 1594,
+        "date": "1988-08-16T00:00:00",
+        "rolling_births": 1505.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1655,
+        "date": "1988-08-17T00:00:00",
+        "rolling_births": 1510.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1633,
+        "date": "1988-08-18T00:00:00",
+        "rolling_births": 1512.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1676,
+        "date": "1988-08-19T00:00:00",
+        "rolling_births": 1514.9,
+        "state": "CA"
+      },
+      {
+        "births": 1416,
+        "date": "1988-08-20T00:00:00",
+        "rolling_births": 1508.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1318,
+        "date": "1988-08-21T00:00:00",
+        "rolling_births": 1501.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1583,
+        "date": "1988-08-22T00:00:00",
+        "rolling_births": 1511.6,
+        "state": "CA"
+      },
+      {
+        "births": 1654,
+        "date": "1988-08-23T00:00:00",
+        "rolling_births": 1525.2,
+        "state": "CA"
+      },
+      {
+        "births": 1627,
+        "date": "1988-08-24T00:00:00",
+        "rolling_births": 1528.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1684,
+        "date": "1988-08-25T00:00:00",
+        "rolling_births": 1530.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1663,
+        "date": "1988-08-26T00:00:00",
+        "rolling_births": 1533.2,
+        "state": "CA"
+      },
+      {
+        "births": 1352,
+        "date": "1988-08-27T00:00:00",
+        "rolling_births": 1526.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1331,
+        "date": "1988-08-28T00:00:00",
+        "rolling_births": 1517.8,
+        "state": "CA"
+      },
+      {
+        "births": 1538,
+        "date": "1988-08-29T00:00:00",
+        "rolling_births": 1523.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1671,
+        "date": "1988-08-30T00:00:00",
+        "rolling_births": 1538.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1604,
+        "date": "1988-08-31T00:00:00",
+        "rolling_births": 1541.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1604,
+        "date": "1988-09-01T00:00:00",
+        "rolling_births": 1542.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1740,
+        "date": "1988-09-02T00:00:00",
+        "rolling_births": 1551.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1387,
+        "date": "1988-09-03T00:00:00",
+        "rolling_births": 1545.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1317,
+        "date": "1988-09-04T00:00:00",
+        "rolling_births": 1537.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1354,
+        "date": "1988-09-05T00:00:00",
+        "rolling_births": 1536.5,
+        "state": "CA"
+      },
+      {
+        "births": 1653,
+        "date": "1988-09-06T00:00:00",
+        "rolling_births": 1549.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1671,
+        "date": "1988-09-07T00:00:00",
+        "rolling_births": 1550.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1635,
+        "date": "1988-09-08T00:00:00",
+        "rolling_births": 1550.7,
+        "state": "CA"
+      },
+      {
+        "births": 1659,
+        "date": "1988-09-09T00:00:00",
+        "rolling_births": 1551.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1340,
+        "date": "1988-09-10T00:00:00",
+        "rolling_births": 1540.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1318,
+        "date": "1988-09-11T00:00:00",
+        "rolling_births": 1529.6,
+        "state": "CA"
+      },
+      {
+        "births": 1588,
+        "date": "1988-09-12T00:00:00",
+        "rolling_births": 1536.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1710,
+        "date": "1988-09-13T00:00:00",
+        "rolling_births": 1550.3,
+        "state": "CA"
+      },
+      {
+        "births": 1712,
+        "date": "1988-09-14T00:00:00",
+        "rolling_births": 1556.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1715,
+        "date": "1988-09-15T00:00:00",
+        "rolling_births": 1560.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1779,
+        "date": "1988-09-16T00:00:00",
+        "rolling_births": 1564.4,
+        "state": "CA"
+      },
+      {
+        "births": 1463,
+        "date": "1988-09-17T00:00:00",
+        "rolling_births": 1558.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1400,
+        "date": "1988-09-18T00:00:00",
+        "rolling_births": 1549.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1710,
+        "date": "1988-09-19T00:00:00",
+        "rolling_births": 1559.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1701,
+        "date": "1988-09-20T00:00:00",
+        "rolling_births": 1572.1,
+        "state": "CA"
+      },
+      {
+        "births": 1684,
+        "date": "1988-09-21T00:00:00",
+        "rolling_births": 1575.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1659,
+        "date": "1988-09-22T00:00:00",
+        "rolling_births": 1575.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1692,
+        "date": "1988-09-23T00:00:00",
+        "rolling_births": 1577.8,
+        "state": "CA"
+      },
+      {
+        "births": 1423,
+        "date": "1988-09-24T00:00:00",
+        "rolling_births": 1569.1,
+        "state": "CA"
+      },
+      {
+        "births": 1371,
+        "date": "1988-09-25T00:00:00",
+        "rolling_births": 1559.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1646,
+        "date": "1988-09-26T00:00:00",
+        "rolling_births": 1569.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1773,
+        "date": "1988-09-27T00:00:00",
+        "rolling_births": 1583.9,
+        "state": "CA"
+      },
+      {
+        "births": 1655,
+        "date": "1988-09-28T00:00:00",
+        "rolling_births": 1587.8,
+        "state": "CA"
+      },
+      {
+        "births": 1702,
+        "date": "1988-09-29T00:00:00",
+        "rolling_births": 1588.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1755,
+        "date": "1988-09-30T00:00:00",
+        "rolling_births": 1593.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1382,
+        "date": "1988-10-01T00:00:00",
+        "rolling_births": 1586.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1330,
+        "date": "1988-10-02T00:00:00",
+        "rolling_births": 1572.8,
+        "state": "CA"
+      },
+      {
+        "births": 1577,
+        "date": "1988-10-03T00:00:00",
+        "rolling_births": 1579.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1660,
+        "date": "1988-10-04T00:00:00",
+        "rolling_births": 1590.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1578,
+        "date": "1988-10-05T00:00:00",
+        "rolling_births": 1598.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1649,
+        "date": "1988-10-06T00:00:00",
+        "rolling_births": 1597.9,
+        "state": "CA"
+      },
+      {
+        "births": 1554,
+        "date": "1988-10-07T00:00:00",
+        "rolling_births": 1594.0,
+        "state": "CA"
+      },
+      {
+        "births": 1350,
+        "date": "1988-10-08T00:00:00",
+        "rolling_births": 1584.5,
+        "state": "CA"
+      },
+      {
+        "births": 1302,
+        "date": "1988-10-09T00:00:00",
+        "rolling_births": 1572.6,
+        "state": "CA"
+      },
+      {
+        "births": 1661,
+        "date": "1988-10-10T00:00:00",
+        "rolling_births": 1583.3,
+        "state": "CA"
+      },
+      {
+        "births": 1597,
+        "date": "1988-10-11T00:00:00",
+        "rolling_births": 1592.6,
+        "state": "CA"
+      },
+      {
+        "births": 1579,
+        "date": "1988-10-12T00:00:00",
+        "rolling_births": 1592.3,
+        "state": "CA"
+      },
+      {
+        "births": 1531,
+        "date": "1988-10-13T00:00:00",
+        "rolling_births": 1586.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1522,
+        "date": "1988-10-14T00:00:00",
+        "rolling_births": 1580.0,
+        "state": "CA"
+      },
+      {
+        "births": 1330,
+        "date": "1988-10-15T00:00:00",
+        "rolling_births": 1567.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1256,
+        "date": "1988-10-16T00:00:00",
+        "rolling_births": 1549.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1642,
+        "date": "1988-10-17T00:00:00",
+        "rolling_births": 1555.7,
+        "state": "CA"
+      },
+      {
+        "births": 1647,
+        "date": "1988-10-18T00:00:00",
+        "rolling_births": 1563.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1581,
+        "date": "1988-10-19T00:00:00",
+        "rolling_births": 1559.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1593,
+        "date": "1988-10-20T00:00:00",
+        "rolling_births": 1556.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1518,
+        "date": "1988-10-21T00:00:00",
+        "rolling_births": 1550.5,
+        "state": "CA"
+      },
+      {
+        "births": 1315,
+        "date": "1988-10-22T00:00:00",
+        "rolling_births": 1539.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1251,
+        "date": "1988-10-23T00:00:00",
+        "rolling_births": 1524.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1557,
+        "date": "1988-10-24T00:00:00",
+        "rolling_births": 1528.8,
+        "state": "CA"
+      },
+      {
+        "births": 1537,
+        "date": "1988-10-25T00:00:00",
+        "rolling_births": 1534.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1591,
+        "date": "1988-10-26T00:00:00",
+        "rolling_births": 1532.5,
+        "state": "CA"
+      },
+      {
+        "births": 1523,
+        "date": "1988-10-27T00:00:00",
+        "rolling_births": 1524.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1546,
+        "date": "1988-10-28T00:00:00",
+        "rolling_births": 1520.5333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1260,
+        "date": "1988-10-29T00:00:00",
+        "rolling_births": 1505.8,
+        "state": "CA"
+      },
+      {
+        "births": 1227,
+        "date": "1988-10-30T00:00:00",
+        "rolling_births": 1488.2,
+        "state": "CA"
+      },
+      {
+        "births": 1393,
+        "date": "1988-10-31T00:00:00",
+        "rolling_births": 1488.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1653,
+        "date": "1988-11-01T00:00:00",
+        "rolling_births": 1499.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1517,
+        "date": "1988-11-02T00:00:00",
+        "rolling_births": 1497.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1494,
+        "date": "1988-11-03T00:00:00",
+        "rolling_births": 1491.8,
+        "state": "CA"
+      },
+      {
+        "births": 1549,
+        "date": "1988-11-04T00:00:00",
+        "rolling_births": 1490.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1336,
+        "date": "1988-11-05T00:00:00",
+        "rolling_births": 1480.4,
+        "state": "CA"
+      },
+      {
+        "births": 1252,
+        "date": "1988-11-06T00:00:00",
+        "rolling_births": 1470.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1550,
+        "date": "1988-11-07T00:00:00",
+        "rolling_births": 1477.0,
+        "state": "CA"
+      },
+      {
+        "births": 1564,
+        "date": "1988-11-08T00:00:00",
+        "rolling_births": 1485.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1539,
+        "date": "1988-11-09T00:00:00",
+        "rolling_births": 1481.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1534,
+        "date": "1988-11-10T00:00:00",
+        "rolling_births": 1479.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1565,
+        "date": "1988-11-11T00:00:00",
+        "rolling_births": 1479.1,
+        "state": "CA"
+      },
+      {
+        "births": 1318,
+        "date": "1988-11-12T00:00:00",
+        "rolling_births": 1472.0,
+        "state": "CA"
+      },
+      {
+        "births": 1249,
+        "date": "1988-11-13T00:00:00",
+        "rolling_births": 1462.9,
+        "state": "CA"
+      },
+      {
+        "births": 1514,
+        "date": "1988-11-14T00:00:00",
+        "rolling_births": 1469.0333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1587,
+        "date": "1988-11-15T00:00:00",
+        "rolling_births": 1480.0666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1539,
+        "date": "1988-11-16T00:00:00",
+        "rolling_births": 1476.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1574,
+        "date": "1988-11-17T00:00:00",
+        "rolling_births": 1474.2,
+        "state": "CA"
+      },
+      {
+        "births": 1573,
+        "date": "1988-11-18T00:00:00",
+        "rolling_births": 1473.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1286,
+        "date": "1988-11-19T00:00:00",
+        "rolling_births": 1463.7,
+        "state": "CA"
+      },
+      {
+        "births": 1193,
+        "date": "1988-11-20T00:00:00",
+        "rolling_births": 1452.8666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1594,
+        "date": "1988-11-21T00:00:00",
+        "rolling_births": 1462.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1616,
+        "date": "1988-11-22T00:00:00",
+        "rolling_births": 1474.3333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1517,
+        "date": "1988-11-23T00:00:00",
+        "rolling_births": 1473.0,
+        "state": "CA"
+      },
+      {
+        "births": 1220,
+        "date": "1988-11-24T00:00:00",
+        "rolling_births": 1462.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1393,
+        "date": "1988-11-25T00:00:00",
+        "rolling_births": 1455.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1272,
+        "date": "1988-11-26T00:00:00",
+        "rolling_births": 1447.4666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1181,
+        "date": "1988-11-27T00:00:00",
+        "rolling_births": 1435.3,
+        "state": "CA"
+      },
+      {
+        "births": 1546,
+        "date": "1988-11-28T00:00:00",
+        "rolling_births": 1444.8333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1613,
+        "date": "1988-11-29T00:00:00",
+        "rolling_births": 1457.7,
+        "state": "CA"
+      },
+      {
+        "births": 1551,
+        "date": "1988-11-30T00:00:00",
+        "rolling_births": 1462.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1519,
+        "date": "1988-12-01T00:00:00",
+        "rolling_births": 1458.5,
+        "state": "CA"
+      },
+      {
+        "births": 1568,
+        "date": "1988-12-02T00:00:00",
+        "rolling_births": 1460.2,
+        "state": "CA"
+      },
+      {
+        "births": 1284,
+        "date": "1988-12-03T00:00:00",
+        "rolling_births": 1453.2,
+        "state": "CA"
+      },
+      {
+        "births": 1190,
+        "date": "1988-12-04T00:00:00",
+        "rolling_births": 1441.2333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1438,
+        "date": "1988-12-05T00:00:00",
+        "rolling_births": 1444.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1544,
+        "date": "1988-12-06T00:00:00",
+        "rolling_births": 1454.3666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1542,
+        "date": "1988-12-07T00:00:00",
+        "rolling_births": 1454.1,
+        "state": "CA"
+      },
+      {
+        "births": 1521,
+        "date": "1988-12-08T00:00:00",
+        "rolling_births": 1452.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1510,
+        "date": "1988-12-09T00:00:00",
+        "rolling_births": 1451.7,
+        "state": "CA"
+      },
+      {
+        "births": 1233,
+        "date": "1988-12-10T00:00:00",
+        "rolling_births": 1441.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1219,
+        "date": "1988-12-11T00:00:00",
+        "rolling_births": 1430.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1551,
+        "date": "1988-12-12T00:00:00",
+        "rolling_births": 1437.9,
+        "state": "CA"
+      },
+      {
+        "births": 1534,
+        "date": "1988-12-13T00:00:00",
+        "rolling_births": 1447.4,
+        "state": "CA"
+      },
+      {
+        "births": 1552,
+        "date": "1988-12-14T00:00:00",
+        "rolling_births": 1448.6666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1464,
+        "date": "1988-12-15T00:00:00",
+        "rolling_births": 1444.5666666666666,
+        "state": "CA"
+      },
+      {
+        "births": 1556,
+        "date": "1988-12-16T00:00:00",
+        "rolling_births": 1445.1333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1240,
+        "date": "1988-12-17T00:00:00",
+        "rolling_births": 1434.0,
+        "state": "CA"
+      },
+      {
+        "births": 1201,
+        "date": "1988-12-18T00:00:00",
+        "rolling_births": 1421.6,
+        "state": "CA"
+      },
+      {
+        "births": 1513,
+        "date": "1988-12-19T00:00:00",
+        "rolling_births": 1429.1666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1690,
+        "date": "1988-12-20T00:00:00",
+        "rolling_births": 1445.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1515,
+        "date": "1988-12-21T00:00:00",
+        "rolling_births": 1443.1,
+        "state": "CA"
+      },
+      {
+        "births": 1457,
+        "date": "1988-12-22T00:00:00",
+        "rolling_births": 1437.8,
+        "state": "CA"
+      },
+      {
+        "births": 1395,
+        "date": "1988-12-23T00:00:00",
+        "rolling_births": 1433.7333333333333,
+        "state": "CA"
+      },
+      {
+        "births": 1196,
+        "date": "1988-12-24T00:00:00",
+        "rolling_births": 1432.9333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1124,
+        "date": "1988-12-25T00:00:00",
+        "rolling_births": 1423.9666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1176,
+        "date": "1988-12-26T00:00:00",
+        "rolling_births": 1420.7666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1586,
+        "date": "1988-12-27T00:00:00",
+        "rolling_births": 1434.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1551,
+        "date": "1988-12-28T00:00:00",
+        "rolling_births": 1434.4333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1638,
+        "date": "1988-12-29T00:00:00",
+        "rolling_births": 1435.2666666666667,
+        "state": "CA"
+      },
+      {
+        "births": 1562,
+        "date": "1988-12-30T00:00:00",
+        "rolling_births": 1435.6333333333334,
+        "state": "CA"
+      },
+      {
+        "births": 1283,
+        "date": "1988-12-31T00:00:00",
+        "rolling_births": 1427.7666666666667,
+        "state": "CA"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "births",
+          "type": "quantitative"
+        }
+      },
+      "height": 250,
+      "mark": "line",
+      "selection": {
+        "selector005": {
+          "bind": "scales",
+          "encodings": [
+            "x",
+            "y"
+          ],
+          "type": "interval"
+        }
+      },
+      "width": 600
+    },
+    {
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "rolling_births",
+          "type": "quantitative"
+        }
+      },
+      "height": 250,
+      "mark": {
+        "color": "red",
+        "type": "line"
+      },
+      "selection": {
+        "selector006": {
+          "bind": "scales",
+          "encodings": [
+            "x",
+            "y"
+          ],
+          "type": "interval"
+        }
+      },
+      "width": 600
+    }
+  ]
+}

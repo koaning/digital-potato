@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>Scikit-Learn Pipeline Visualisations</title>
+
+<meta name="title" content="Scikit-Learn Pipeline Visualisations">
+<meta name="description" content="In this short introduction we're doing to demonstrate how to use Fancy Diagrams.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calmcode.io/">
+<meta property="og:title" content="Scikit-Learn Pipeline Visualisations">
+<meta property="og:description" content="Scikit-Learn can make pretty diagrams of your pipelines in Jupyter.">
+<meta property="og:image" content="https://calmcode.io/images/ml.png">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://calmcode.io/">
+<meta property="twitter:title" content="Scikit-Learn Pipeline Visualisations">
+<meta property="twitter:description" content="Scikit-Learn can make pretty diagrams of your pipelines in Jupyter.">
+<meta property="twitter:image" content="https://calmcode.io/images/ml.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/python.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+<div class="">
+    <br>
+    <div class="rounded-xl border-gray-400">
+        <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+            <a href="/tils.html" class="text-left">Back to TILs.</a>
+            <div class="text-center">
+                <h3 class="uppercase text-lg leading-6 font-bold text-gray-500">
+                    Calmcode TIL
+                </h3>
+                <h1 class="text-2xl md:text-4xl font-bold py-2">
+                    <img class="w-8 md:w-12 lg:w-18 inline-block" src="/images/ml.svg" alt="Fancy Diagrams logo"><span class="pl-4">Fancy Diagrams</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="pb-6">
+            <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+                <article class="prose">
+                    <div class="md:text-md">
+                        <p>Scikit-Learn recently implemented a new diagram that can render your pipelines. To activate it, you'll need to run:</p>
+<pre><code class="lang-python">from sklearn import set_config
+
+set_config(display=&quot;diagram&quot;)
+</code></pre>
+<p>To repeat what's mentioned on <a href="https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_pipeline_display.html">the official docs</a>, here's an elaborate example;</p>
+<pre><code class="lang-python">from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler, PolynomialFeatures
+from sklearn.linear_model import LogisticRegression
+from sklearn import set_config
+
+steps = [
+    (&quot;standard_scaler&quot;, StandardScaler()),
+    (&quot;polynomial&quot;, PolynomialFeatures(degree=3)),
+    (&quot;classifier&quot;, LogisticRegression(C=2.0)),
+]
+
+pipe = Pipeline(steps)
+</code></pre>
+<p>When you set the config and evaluate the <code>pipe</code>-variable ...</p>
+<pre><code class="lang-python">set_config(display=&quot;diagram&quot;)
+
+pipe
+</code></pre>
+<p>... you'll get something that looks like this.</p>
+<div class="lm-Widget p-Widget jp-OutputArea jp-Cell-outputArea"><div class="lm-Widget p-Widget lm-Panel p-Panel jp-OutputArea-child jp-OutputArea-executeResult"><div class="lm-Widget p-Widget jp-OutputPrompt jp-OutputArea-prompt"></div><div class="lm-Widget p-Widget jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output" data-mime-type="text/html"><style>#sk-ebe5c562-7652-4312-aedb-f586043a1046 {color: black;background-color: white;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 pre{padding: 0;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-toggleable {background-color: white;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-estimator:hover {background-color: #d4ebff;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-item {z-index: 1;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-parallel-item:only-child::after {width: 0;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-ebe5c562-7652-4312-aedb-f586043a1046 div.sk-text-repr-fallback {display: none;}</style><div id="sk-ebe5c562-7652-4312-aedb-f586043a1046" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[('standard_scaler', StandardScaler()),
+                ('polynomial', PolynomialFeatures(degree=3)),
+                ('classifier', LogisticRegression(C=2.0))])</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden=""><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="80f0d829-dda9-4d27-872f-db310405bcab" type="checkbox"><label for="80f0d829-dda9-4d27-872f-db310405bcab" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('standard_scaler', StandardScaler()),
+                ('polynomial', PolynomialFeatures(degree=3)),
+                ('classifier', LogisticRegression(C=2.0))])</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="0133d599-cb42-413e-bae4-957b0e6bb228" type="checkbox"><label for="0133d599-cb42-413e-bae4-957b0e6bb228" class="sk-toggleable__label sk-toggleable__label-arrow">StandardScaler</label><div class="sk-toggleable__content"><pre>StandardScaler()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="9b20f301-630d-4496-a555-0e422c1ef2a3" type="checkbox"><label for="9b20f301-630d-4496-a555-0e422c1ef2a3" class="sk-toggleable__label sk-toggleable__label-arrow">PolynomialFeatures</label><div class="sk-toggleable__content"><pre>PolynomialFeatures(degree=3)</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="731b7af7-bef7-4fc2-bd70-42ff2bbd4267" type="checkbox"><label for="731b7af7-bef7-4fc2-bd70-42ff2bbd4267" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression(C=2.0)</pre></div></div></div></div></div></div></div></div></div></div><p>Note, you can click around there!</p>
+<h2>Benefits</h2>
+<p>The diagrams can display settings, nested pipelines <em>and</em> custom components too! Suppose we take a pipeline from scikit-lego docs:</p>
+<pre><code class="lang-python">from sklearn.linear_model import LinearRegression
+from sklearn.pipeline import Pipeline, FeatureUnion
+from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklego.preprocessing import ColumnSelector
+
+
+feature_pipeline = Pipeline([
+    (&quot;datagrab&quot;, FeatureUnion([
+         (&quot;discrete&quot;, Pipeline([
+             (&quot;grab&quot;, ColumnSelector(&quot;diet&quot;)),
+             (&quot;encode&quot;, OneHotEncoder(categories=&quot;auto&quot;, sparse=False))
+         ])),
+         (&quot;continuous&quot;, Pipeline([
+             (&quot;grab&quot;, ColumnSelector(&quot;time&quot;)),
+             (&quot;standardize&quot;, StandardScaler())
+         ]))
+    ]))
+])
+
+pipe = Pipeline([
+    (&quot;transform&quot;, feature_pipeline),
+    (&quot;model&quot;, LinearRegression())
+])
+</code></pre>
+<p>Here's what the pipeline looks like:</p>
+<div class="lm-Widget p-Widget jp-RenderedHTMLCommon jp-RenderedHTML jp-mod-trusted jp-OutputArea-output" data-mime-type="text/html"><style>#sk-6d490256-2755-4361-89ef-084bb3bf98bf {color: black;background-color: white;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf pre{padding: 0;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-toggleable {background-color: white;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-estimator:hover {background-color: #d4ebff;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-item {z-index: 1;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-parallel-item:only-child::after {width: 0;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-6d490256-2755-4361-89ef-084bb3bf98bf div.sk-text-repr-fallback {display: none;}</style><div id="sk-6d490256-2755-4361-89ef-084bb3bf98bf" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[('transform',
+                 Pipeline(steps=[('datagrab',
+                                  FeatureUnion(transformer_list=[('discrete',
+                                                                  Pipeline(steps=[('grab',
+                                                                                   ColumnSelector(columns='diet')),
+                                                                                  ('custom',
+                                                                                   &lt;__main__.Custom object at 0x7f8c58c70a60&gt;),
+                                                                                  ('encode',
+                                                                                   OneHotEncoder(sparse=False))])),
+                                                                 ('continuous',
+                                                                  Pipeline(steps=[('grab',
+                                                                                   ColumnSelector(columns='time')),
+                                                                                  ('standardize',
+                                                                                   StandardScaler())]))]))])),
+                ('model', LinearRegression())])</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden=""><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="b3687487-6376-4feb-bb7e-1e2c7c51a07d" type="checkbox"><label for="b3687487-6376-4feb-bb7e-1e2c7c51a07d" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('transform',
+                 Pipeline(steps=[('datagrab',
+                                  FeatureUnion(transformer_list=[('discrete',
+                                                                  Pipeline(steps=[('grab',
+                                                                                   ColumnSelector(columns='diet')),
+                                                                                  ('custom',
+                                                                                   &lt;__main__.Custom object at 0x7f8c58c70a60&gt;),
+                                                                                  ('encode',
+                                                                                   OneHotEncoder(sparse=False))])),
+                                                                 ('continuous',
+                                                                  Pipeline(steps=[('grab',
+                                                                                   ColumnSelector(columns='time')),
+                                                                                  ('standardize',
+                                                                                   StandardScaler())]))]))])),
+                ('model', LinearRegression())])</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a0e57006-4a5e-4f16-9dd9-dbb655bb747f" type="checkbox"><label for="a0e57006-4a5e-4f16-9dd9-dbb655bb747f" class="sk-toggleable__label sk-toggleable__label-arrow">transform: Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[('datagrab',
+                 FeatureUnion(transformer_list=[('discrete',
+                                                 Pipeline(steps=[('grab',
+                                                                  ColumnSelector(columns='diet')),
+                                                                 ('custom',
+                                                                  &lt;__main__.Custom object at 0x7f8c58c70a60&gt;),
+                                                                 ('encode',
+                                                                  OneHotEncoder(sparse=False))])),
+                                                ('continuous',
+                                                 Pipeline(steps=[('grab',
+                                                                  ColumnSelector(columns='time')),
+                                                                 ('standardize',
+                                                                  StandardScaler())]))]))])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="a6e1f1ff-bb98-4a93-8ce1-ecb44e2b79ec" type="checkbox"><label for="a6e1f1ff-bb98-4a93-8ce1-ecb44e2b79ec" class="sk-toggleable__label sk-toggleable__label-arrow">datagrab: FeatureUnion</label><div class="sk-toggleable__content"><pre>FeatureUnion(transformer_list=[('discrete',
+                                Pipeline(steps=[('grab',
+                                                 ColumnSelector(columns='diet')),
+                                                ('custom',
+                                                 &lt;__main__.Custom object at 0x7f8c58c70a60&gt;),
+                                                ('encode',
+                                                 OneHotEncoder(sparse=False))])),
+                               ('continuous',
+                                Pipeline(steps=[('grab',
+                                                 ColumnSelector(columns='time')),
+                                                ('standardize',
+                                                 StandardScaler())]))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>discrete</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="6eed294c-baa6-4b29-bec8-f1e6dcbf46a7" type="checkbox"><label for="6eed294c-baa6-4b29-bec8-f1e6dcbf46a7" class="sk-toggleable__label sk-toggleable__label-arrow">ColumnSelector</label><div class="sk-toggleable__content"><pre>ColumnSelector(columns='diet')</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="fbca88cf-6bb1-4fd9-a4f4-d29b65e185fe" type="checkbox"><label for="fbca88cf-6bb1-4fd9-a4f4-d29b65e185fe" class="sk-toggleable__label sk-toggleable__label-arrow">Custom</label><div class="sk-toggleable__content"><pre>&lt;__main__.Custom object at 0x7f8c58c70a60&gt;</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="72e09c49-bda0-41c9-aaf7-dd0633a4ccb3" type="checkbox"><label for="72e09c49-bda0-41c9-aaf7-dd0633a4ccb3" class="sk-toggleable__label sk-toggleable__label-arrow">OneHotEncoder</label><div class="sk-toggleable__content"><pre>OneHotEncoder(sparse=False)</pre></div></div></div></div></div></div></div></div><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><label>continuous</label></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="73cb83e1-7b07-43ef-804f-02475412e497" type="checkbox"><label for="73cb83e1-7b07-43ef-804f-02475412e497" class="sk-toggleable__label sk-toggleable__label-arrow">ColumnSelector</label><div class="sk-toggleable__content"><pre>ColumnSelector(columns='time')</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="ecbe3369-5301-4d53-8a1c-11fc9f0bee33" type="checkbox"><label for="ecbe3369-5301-4d53-8a1c-11fc9f0bee33" class="sk-toggleable__label sk-toggleable__label-arrow">StandardScaler</label><div class="sk-toggleable__content"><pre>StandardScaler()</pre></div></div></div></div></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="93295e3b-9e9d-4fb1-96b2-b00d37e37183" type="checkbox"><label for="93295e3b-9e9d-4fb1-96b2-b00d37e37183" class="sk-toggleable__label sk-toggleable__label-arrow">LinearRegression</label><div class="sk-toggleable__content"><pre>LinearRegression()</pre></div></div></div></div></div></div></div></div><p>If you want to get the best results with these custom components, we recommend making sure that you build on top of the <code>BaseEstimator</code> that comes from scikit-learn when you construct your custom classes. That way, the parameters will render nicely. An example of an implementation can be found on the <a href="https://github.com/koaning/scikit-lego/blob/main/sklego/dummy.py#L12">scikit-lego GitHub repo</a>.</p>
+
+                    </div>
+                    <br>
+                    <a href="/tils.html" class="text-left">Back to TILs.</a>
+                    <br>
+                </article>
+            </div>
+        </div>
+        <br>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code.lang-python').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            });
+        </script>
+    </div>
+</div>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

@@ -1,0 +1,47 @@
+---
+idx: 2
+name: First Demo
+seo_desc: Let's explore Playwright in Python. We will have it open a website
+and retreive some information for us.
+seo_title: Playwright in Python
+tags:
+- science
+video_url: https://player.vimeo.com/video/648089492
+---
+
+Given that everything is installed, let's give playwright a spin! 
+
+```python
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    # Load the Chrome browser and see it
+    browser = p.chromium.launch(headless=False)
+    page = browser.new_page()
+    page.goto("https://calmcode.io")
+    # Grab the title
+    print(page.title())
+    # Make a screenshot 
+    page.screenshot(path="example.png")
+    browser.close()
+```
+
+When you run this script, you'll see a browser open up. It's
+brief, just long enough for playwright to make a screenshot
+and then it closes. You can choose to run playwright without
+this browser popup by setting `headless=True`, which is the
+default setting. 
+
+
+```python
+from playwright.sync_api import sync_playwright
+
+with sync_playwright() as p:
+    # Headless mode turned on
+    browser = p.chromium.launch(headless=True)
+    page = browser.new_page()
+    page.goto("https://calmcode.io")
+    print(page.title())
+    page.screenshot(path="example.png")
+    browser.close()
+```

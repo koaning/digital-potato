@@ -1,0 +1,935 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>CalmCode Blog: An Inverse Turing Test</title>
+
+<meta name="title" content="CalmCode Blog: An Inverse Turing Test">
+<meta name="description" content="Let&#39;s see if we can gain an appreciation of probability theory by just confronting you with how hard it is to be a robot.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calmcode.io/">
+<meta property="og:title" content="CalmCode Blog: An Inverse Turing Test">
+<meta property="og:description" content="Let&#39;s see if we can gain an appreciation of probability theory by just confronting you with how hard it is to be a robot.">
+<meta property="og:image" content="https://calmcode.io/images/cheat.png">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://calmcode.io/">
+<meta property="twitter:title" content="CalmCode Blog: An Inverse Turing Test">
+<meta property="twitter:description" content="Let&#39;s see if we can gain an appreciation of probability theory by just confronting you with how hard it is to be a robot.">
+<meta property="twitter:image" content="https://calmcode.io/images/cheat.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/python.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+<div class="">
+    <br>
+    <div class="rounded-xl border-gray-400">
+        <div class="bg-white max-w-3xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+            <a href="/blog" class="text-left">Back to blog.</a><br>
+        </div>
+
+        <div class="pb-6">
+            <div class="bg-white max-w-3xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+                <article class="prose">
+                    <p class="text-center">June 24th, 2022</p>
+                    <div class="md:text-md">
+                        <script defer src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script src="https://cdn.jsdelivr.net/npm/jstat@1.9.5/dist/jstat.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+
+
+<div x-data="{
+    seq: []
+}">
+    <h1>An Inverse Turing Test</h1>
+    <p>This blogpost is a bit ... different. Normally, a blogpost is a static document and the direction of communication is from the screen to the user. But this piece requires you to interact. You're not just reading the content, you'll actually change the story of the blogpost as you interact with it. This makes the piece a bit more experimental, but hopefully, also much more intersting!</p>
+    <p>A small warning: the experience is <i>way</i> better on desktop. It's certainly possible to play around while on a mobile phone, but it's a much better experience to explore this piece when you have access to a keyboard.</p>
+    <h2>Experiment</h2>
+    <p>We are going to try to figure out if you are a human or a bot. In order to figure this out, we are going to ask you to give us a sequence of random numbers.</p>
+    <div x-data="{active: false}" @click="active = ! active">
+        <div class="cursor-pointer flex justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-none h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+            </svg>
+            <b class="text-md">You're going to use maths aren't you?</b>
+        </div>
+        <div class="cursor-pointer flex justify-center">
+            <p x-show="active"
+            x-transition:enter="transition ease-out duration-500"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-500"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">In a very interactive experience, yes.</p>
+        </div>
+    </div>
+    <p>There are two buttons below. One for heads. One for tails.</p>
+    <div class="flex justify-center">
+        <span class="relative z-0 inline-flex shadow-sm rounded-md m-auto center-items">
+            <button @keydown.window.1="seq.push(1); update(seq);" @click="seq.push(1); update(seq);" type="button" class="relative inline-flex items-center px-8 py-2 rounded-l-md border border-gray-300 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">Heads</button>
+            <button @keydown.window.0="seq.push(0); update(seq);" @click="seq.push(0); update(seq);" type="button" class="-ml-px relative inline-flex items-center px-8 py-2 rounded-r-md border border-gray-300 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">Tails</button>
+            <button @click="seq = []; update(seq);" type="button" class="inline-flex items-center mx-4 px-4 py-2 border border-gray-300 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Reset</button>
+        </span>
+    </div>
+    <p>Please click the heads/tails button as randomly as you can. If you're using a laptop you may also use the 1 (heads) or 0 (tails) keys on your keyboard. That's usually a whole lot faster.</p>
+    <p>The rest of the article will appear once you've done 10 "coinflips", but the results will be better if you generate 100. Give it a try!</p>
+    <div x-show="seq.length > 0" x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90">
+        <label for="comment" class="block text-sm font-medium text-gray-700">This is the data sofar.</label>
+        <div class="my-2">
+            <div x-text="seq.map(d => d).reverse().join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+        </div>
+    </div>
+    <p>You've sampled <span x-text="seq.length"></span>/100 coin tosses.</p>
+    <div x-show="seq.length >= 10" x-transition:enter="transition ease-out duration-1000"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90">
+        <h2>An Inverse Turing Test</h2>
+        <p>We now have <span x-text="seq.length"></span> coin tosses. So what does this say about you?</p>
+        <p>Technically, we now have data that allows us to do an "inverse-Turing"-test. During a normal <a href="https://en.wikipedia.org/wiki/Turing_test">Turing test</a> you would test if a machine is indistinguishable from a human. In this case we're doing the opposite. We're going to be testing if the input is indistinguisable from something a machine might generate. As you may learn, humans are usually pretty bad at generating random numbers ... </p>
+        <div class="flex justify-center">
+            <div>
+                <b>So given our sequence of coin flips ...</b><br>
+                <b>when are the numbers not random enough to be made by a machine?</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-person.png"/>
+        <br>
+        <p>We could calculate some statistics from our long 0/1 series. One place to start is to just count how many ones and zeros that we have. If we have way more zeros than ones, then we might be able to claim that we weren't using a good random sampling method.</p>
+        <p>In our case, we have <b><span x-text="seq.filter(d => d == 1).length"></span> heads</b> and <b><span x-text="seq.filter(d => d == 0).length"></span> tails</b>. If there's a big difference between these two numbers then that might indicate that we're dealing with a human. But when is the difference so big that it starts getting suspicious?
+        </p>
+        <p>You could argue that, for example, 4 times heads and 6 times tails isn't that strange. But then again, 400 heads and 600 tails feels fishy. So it's not just the ratio of heads and tails that matters, the total numbers need to be taken into account! </p>
+        <p>This is where we can use a bit of probability theory to help us. If the numbers are actually <i>random</i> then we have maths that can tell us what we might expect. The chart below will do just that. Note, that it's an interactive chart that updates when you press 0/1 on your keyboard. Feel free to play around!</p>
+        <div x-data="{active: false}" @click="active = ! active">
+            <div class="cursor-pointer flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                </svg>
+                <b class="text-md">But wait. Where does this curve come from?</b>
+            </div>
+            <div class="cursor-pointer flex justify-center">
+                <p x-show="active"
+                x-transition:enter="transition ease-out duration-500"
+                x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-500"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90">Because we're dealing with a binary dataset, we can assume a <b>beta distribution</b>. It's an amazing probability distribution with many applications in AB testing. If you'd like to learn more, we recommend checking the <a href="https://www.youtube.com/watch?v=8idr1WZ1A7Q&ab_channel=3Blue1Brown">3b1b series on Youtube</a>.</p>
+            </div>
+        </div>
+        <br>
+        <div class="grid grid-cols-2">
+            <div>
+                <br>
+                <div id="beta"></div>
+            </div>
+            <div>
+                <p>The blue line represents the belief of the "heads" probability if the numbers were generated randomly. The dotted line is what we actually saw. If the dotted line is further from the center, we might argue it's statistically different. You'll notice that the more numbers we have, the tinner the peak will be. That's because the more numbers we have, the closer the heads/tails ratio needs to be around 0.5.</p>
+            </div>
+        </div>
+        <p>If this data was generated by a machine, with it's random number generator, then we can expect that it wouldn't stray too far from the middle of the distribution. At the moment, the line is at the <span x-text="quantile(1, '1', seq, 0.5)"></span>% quantile of the distribution. Weather or not this is fine depends on your appetite for risk but this article will assume that we want to remain in the 90% most likely quantile. That means in this case, we have a test that <b>does <span x-show="!testPass(1, '1', seq, 0.5)">not</span> pass</b>.</p>
+        <h2>Enough?</h2>
+        <p>We hope the example sofar is pretty interesting ... but you might be thinking ...</p>
+        <div class="flex justify-center">
+            <div>
+                <b>But this is a single test ...</b><br>
+                <b>is that enough to account for all human bias?</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-person.png"/>
+        <p>After all, let's pretend that we have the following sequence:</p>
+        <div class="w-full text-lg text-black-700 font-mono text-center">
+            00000001111111
+        </div>
+        <p>Theoretically, this is exactly 7 "heads" and 7 "tails", so it would pass our test. But look at it, it doesn't look random at all! Sure the total number of ones and zeros is equal, but if this series was random we'd expect the next number to be unpredictable. And here, there seems to be a clear pattern.</p>
+        <p>So maybe, we need to extend our original test by also taking the order the sequence into account. So let's consider the pairs in the sequence in order.</p>
+        <div x-show="seq.length > 0" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">
+            <label for="comment" class="block text-sm font-medium text-gray-700">Again, this is the data sofar.</label>
+            <div class="my-2">
+                <div x-text="seq.map(d => d).reverse().join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <label for="comment" class="block text-sm font-medium text-gray-700 py-2">But we can also consider pairs of numbers in sequence. Here's seven:</label>
+                <div x-text="seq.map(d => d).reverse().slice(0, 2).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;' + seq.map(d => d).reverse().slice(1, 3).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(2, 4).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(3, 5).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(4, 6).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(5, 7).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(6, 8).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+            </div>
+            <label for="comment" class="block text-sm font-medium text-gray-700 py-2">If have a sliding window of size two, then these are all the pairs we've observed.</label>
+            <div class="my-2">
+                <div x-text="sliding(seq).reverse().map(d => `[${d.reverse()}]`).join(' ')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+            </div>
+        </div>
+        <p>We can count all of these pairs of numbers and put them in a table.</p>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                <th>Pattern</th>
+                <th>Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">0,0</td>
+                <td x-text="count(seq, size=2)['0,0']">0</td>
+                </tr>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">0,1</td>
+                <td x-text="count(seq, size=2)['0,1']">0</td>
+                </tr>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">1,0</td>
+                <td x-text="count(seq, size=2)['1,0']">0</td>
+                </tr>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">1,1</td>
+                <td x-text="count(seq, size=2)['1,1']">0</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="flex justify-center">
+            <div>
+                <b>This is similar to what we had before ...</b><br>
+                <b>but instead of one number, we're tracking four!</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-person.png"/>
+        <p>We are now tracking each pair of numbers, which might allow us to detect that there are more 0-1 pairs than there are 1-1 pairs. That also means that we can use the same method of testing again! We can again use a beta distribution to describe what we would expect from the sequence and we can once again perform a test.</p>
+        <div class="flex">
+            <div class="flex-auto">
+                <p class="text-center">Distrbution for <span class="w-full text-md text-green-700 font-mono">0,0</span></p>
+                <div id="beta_00"></div>
+            </div>
+            <div class="flex-auto">
+                <p class="text-center">Distrbution for <span class="w-full text-md text-green-700 font-mono">0,1</span></p>
+                <div id="beta_01"></div>
+            </div>
+            <div class="flex-auto">
+                <p class="text-center">Distrbution for <span class="w-full text-md text-green-700 font-mono">1,0</span></p>
+                <div id="beta_10"></div>
+            </div>
+            <div class="flex-auto">
+                <p class="text-center">Distrbution for <span class="w-full text-md text-green-700 font-mono">1,1</span></p>
+                <div id="beta_11"></div>
+            </div>
+        </div>
+        <div x-data="{active: false}" @click="active = ! active">
+            <div class="cursor-pointer flex justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="flex-none h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                </svg>
+                <b class="text-md">But wait. Why do these charts look different?</b>
+            </div>
+            <div class="cursor-pointer flex justify-center">
+                <p x-show="active"
+                x-transition:enter="transition ease-out duration-500"
+                x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100"
+                x-transition:leave="transition ease-in duration-500"
+                x-transition:leave-start="opacity-100 scale-100"
+                x-transition:leave-end="opacity-0 scale-90">Before we were dealing with just comparing the ones versus the zeros. Now we are comparing "0,0" versus the rest, then "0,1" versus the rest, etc. That means that we no longer expect the center of mass to be in the middle at 50% but instead we expect it to be around the 25% mark. If you're curious about more details, we recommend watching the <a href="https://www.youtube.com/watch?v=8idr1WZ1A7Q&ab_channel=3Blue1Brown">3b1b series on Youtube</a> about the Beta distribution.</p>
+            </div>
+        </div>
+        <p>Given that we can use a similar trick, let's add some more numbers to our table.</p>
+        <table class="table-auto">
+            <thead>
+                <tr>
+                <th>Pattern</th>
+                <th>Count</th>
+                <th>Expected</th>
+                <th>Quantile</th>
+                <th>Test Pass</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">0,0</td>
+                <td x-text="count(seq, size=2)['0,0']">0</td>
+                <td x-text="Math.round((seq.length - 1) / 4)">0</td>
+                <td x-text="quantile(2, '0,0', seq, 0.25)"></td>
+                <td x-text="testPass(2, '0,0', seq, 0.25) ? 'yes' : 'no'" :class="testPass(2, '0,0', seq, 0.25) ? 'text-green-500' : 'text-red-400'"></td>
+                </tr>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">0,1</td>
+                <td x-text="count(seq, size=2)['0,1']">0</td>
+                <td x-text="Math.round((seq.length - 1) / 4)">0</td>
+                <td x-text="quantile(2, '0,1', seq, 0.25)"></td>
+                <td x-text="testPass(2, '0,1', seq, 0.25) ? 'yes' : 'no'" :class="testPass(2, '0,1', seq, 0.25) ? 'text-green-500' : 'text-red-400'"></td>
+                </tr>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">1,0</td>
+                <td x-text="count(seq, size=2)['1,0']">0</td>
+                <td x-text="Math.round((seq.length - 1) / 4)">0</td>
+                <td x-text="quantile(2, '1,0', seq, 0.25)"></td>
+                <td x-text="testPass(2, '1,0', seq, 0.25) ? 'yes' : 'no'" :class="testPass(2, '1,0', seq, 0.25) ? 'text-green-500' : 'text-red-400'"></td>
+                </tr>
+                <tr>
+                <td class="w-full text-md text-green-700 font-mono">1,1</td>
+                <td x-text="count(seq, size=2)['1,1']">0</td>
+                <td x-text="Math.round((seq.length - 1) / 4)">0</td>
+                <td x-text="quantile(2, '1,1', seq, 0.25)"></td>
+                <td x-text="testPass(2, '1,1', seq, 0.25) ? 'yes' : 'no'" :class="testPass(2, '1,1', seq, 0.25) ? 'text-green-500' : 'text-red-400'"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Do all the tests pass? If not, feel free to cheat a little here and try to make the entire series "more random" by adding some more numbers now.</p>
+        <h2>Random Enough?</h2>
+        <p>In the previous segment we saw that we might be able to come up with better tests by looking at the pairs in the sequence.However, you may have been able to play around with the numbers such that the tests pass anyway. So it's only natural if you might be thinking ... </p>
+        <div class="flex justify-center">
+            <div>
+                <b>But hang on ...</b><br>
+                <b>can't we fool these tests too? Just like before?</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-person.png"/>
+        <p>But here comes a cool insight. Maybe we should just look at the pairs in a sequence. Maybe we should look at the triplets too!</p>
+        <div x-show="seq.length > 0" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 scale-90"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-90">
+            <label for="comment" class="block text-sm font-medium text-gray-700">Again, this is the data sofar.</label>
+            <div class="my-2">
+                <div x-text="seq.map(d => d).reverse().join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <label for="comment" class="block text-sm font-medium text-gray-700 py-2">But we can also consider the triplets of numbers in the sequence. Here's a few:</label>
+                <div x-text="seq.map(d => d).reverse().slice(0, 3).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;' + seq.map(d => d).reverse().slice(1, 4).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(2, 5).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(3, 6).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(4, 7).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(5, 8).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                <div x-text="'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' + seq.map(d => d).reverse().slice(6, 9).join('')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+            </div>
+            <div x-data="{active: false}" @click="active = ! active">
+                <div class="cursor-pointer flex justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="flex-none h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+                    </svg>
+                    <b class="text-md">Click here if you want to see all triplets sofar.</b>
+                </div>
+                <div class="cursor-pointer flex justify-center">
+                    <div x-show="active"
+                    x-transition:enter="transition ease-out duration-500"
+                    x-transition:enter-start="opacity-0 scale-90"
+                    x-transition:enter-end="opacity-100 scale-100"
+                    x-transition:leave="transition ease-in duration-500"
+                    x-transition:leave-start="opacity-100 scale-100"
+                    x-transition:leave-end="opacity-0 scale-90">
+                        <label for="comment" class="block text-sm font-medium text-gray-700 py-2">If have a sliding window of size three, then these are all the pairs we've observed.</label>
+                        <div class="my-2">
+                            <div x-text="sliding(seq, 3).reverse().map(d => `[${d.reverse()}]`).join(' ')" readonly class="w-full text-lg text-green-700 font-mono" x-transition:enter="transition ease-out duration-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p>That means we can make another table with more tests!</p>
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                    <th>Pattern</th>
+                    <th>Count</th>
+                    <th>Expected</th>
+                    <th>Quantile</th>
+                    <th>Test Pass</th>
+                    </tr>
+                </thead>
+                <tbody x-data="{ keys: ['0,0,0', '0,0,1', '0,1,0', '0,1,1', '1,0,0', '1,0,1', '1,1,0', '1,1,1'] }">
+                    <template x-for="key in keys">
+                        <tr>
+                            <td class="w-full text-md text-green-700 font-mono" x-text="key"></td>
+                            <td x-text="count(seq, size=3)[key]">0</td>
+                            <td x-text="Math.round((seq.length - 2) / 8)">0</td>
+                            <td x-text="quantile(3, key, seq, 0.125)"></td>
+                            <td x-text="testPass(3, key, seq, 0.125) ? 'yes' : 'no'" :class="testPass(3, key, seq, 0.125) ? 'text-green-500' : 'text-red-400'"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </div>
+        <p>We are now counting over eight groups. Again, you can try to cheat, but you'll notice it's starting to get harder.</p>
+        <h2>Repeat</h2>
+        <p>You may recognize something at this point.</p>
+        <div class="flex justify-center">
+            <div>
+                <b>I'm starting to see a pattern here ...</b><br>
+                <b>We can keep looking at bigger sequences if we want to be more critical!</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-person.png"/>
+        <p>To make this point clear, let's have a look at a histogram of counts for sequences of size 4.</p>
+        <div class="grid grid-cols-2">
+            <div id="vis4"></div>
+            <div>
+                <b>What to expect</b>
+                <p>The chart on the left is a histogram that counts how often certain sequences have occured. There is also a dashed line that shows where the bar is expected to be if the sequence was randomly generated.</p>
+                <p>When you look at this chart you can wonder what you should expect to see. If the data was really random then each bar should be about the same length. There might be some variance, if there were two spikes then that'd be suspicious.</p>
+            </div>
+        </div>
+        <p>For completeness, let's have a look at sequences of size 5.</p>
+        <div class="grid grid-cols-2">
+            <div id="vis5"></div>
+            <div>
+                <b>What to expect</b>
+                <p>Just like before, if this was a random sequence we'd expect to see a uniform distribution. The further a bar is away from the uniform expectation, the higher the odds that one of our tests would catch it!</p>
+            </div>
+        </div>
+        <h2>Many Many Tests </h2>
+        <p>We're getting close to a moment of truth, when we look at your sequence of random numbers ... are they random enough that they could have been made by a machine?</p>
+        <div class="flex justify-center">
+            <div>
+                <b>So what do all of the tests say?</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-person.png"/>
+        <p>Let's make an inventory of all the tests that we can generate for sequences up until size 5. </p>
+        <div class="grid grid-cols-2">
+            <div>
+                <b>Tests that pass.</b>
+            </div>
+            <div>
+                <b>Tests that fail.</b>
+            </div>
+            <div>
+                <div x-data="{ keys: ['0,0', '0,1', '1,0', '1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="testPass(2, key, seq, 0.25)" class="text-green-600 font-mono text-md testpass"></span>
+                    </template>
+                </div>
+                <div x-data="{ keys: ['0,0,0', '0,0,1', '0,1,0', '0,1,1', '1,0,0', '1,0,1', '1,1,0', '1,1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="testPass(3, key, seq, 0.125)" class="text-green-600 font-mono text-md testpass"></span>
+                    </template>
+                </div>
+                <div x-data="{ keys: ['0,0,0,0', '0,0,0,1', '0,0,1,0', '0,0,1,1', '0,1,0,0', '0,1,0,1', '0,1,1,0', '0,1,1,1', '1,0,0,0', '1,0,0,1', '1,0,1,0', '1,0,1,1', '1,1,0,0', '1,1,0,1', '1,1,1,0', '1,1,1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="testPass(4, key, seq, 0.0625)" class="text-green-600 font-mono text-md testpass"></span>
+                    </template>
+                </div>
+                <div x-data="{ keys: ['0,0,0,0,0', '0,0,0,0,1', '0,0,0,1,0', '0,0,0,1,1', '0,0,1,0,0', '0,0,1,0,1', '0,0,1,1,0', '0,0,1,1,1', '0,1,0,0,0', '0,1,0,0,1', '0,1,0,1,0', '0,1,0,1,1', '0,1,1,0,0', '0,1,1,0,1', '0,1,1,1,0', '0,1,1,1,1', '1,0,0,0,0', '1,0,0,0,1', '1,0,0,1,0', '1,0,0,1,1', '1,0,1,0,0', '1,0,1,0,1', '1,0,1,1,0', '1,0,1,1,1', '1,1,0,0,0', '1,1,0,0,1', '1,1,0,1,0', '1,1,0,1,1', '1,1,1,0,0', '1,1,1,0,1', '1,1,1,1,0', '1,1,1,1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="testPass(5, key, seq, 0.03125)" class="text-green-600 font-mono text-md testpass"></span>
+                    </template>
+                </div>
+            </div>
+            <div>
+                <div x-data="{ keys: ['0,0', '0,1', '1,0', '1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="!testPass(2, key, seq, 0.25)" class="text-red-600 font-mono text-md testfail"></span>
+                    </template>
+                </div>
+                <div x-data="{ keys: ['0,0,0', '0,0,1', '0,1,0', '0,1,1', '1,0,0', '1,0,1', '1,1,0', '1,1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="!testPass(3, key, seq, 0.125)" class="text-red-600 font-mono text-md testfail"></span>
+                    </template>
+                </div>
+                <div x-data="{ keys: ['0,0,0,0', '0,0,0,1', '0,0,1,0', '0,0,1,1', '0,1,0,0', '0,1,0,1', '0,1,1,0', '0,1,1,1', '1,0,0,0', '1,0,0,1', '1,0,1,0', '1,0,1,1', '1,1,0,0', '1,1,0,1', '1,1,1,0', '1,1,1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="!testPass(4, key, seq, 0.0625)" class="text-red-600 font-mono text-md testfail"></span>
+                    </template>
+                </div>
+                <div x-data="{ keys: ['0,0,0,0,0', '0,0,0,0,1', '0,0,0,1,0', '0,0,0,1,1', '0,0,1,0,0', '0,0,1,0,1', '0,0,1,1,0', '0,0,1,1,1', '0,1,0,0,0', '0,1,0,0,1', '0,1,0,1,0', '0,1,0,1,1', '0,1,1,0,0', '0,1,1,0,1', '0,1,1,1,0', '0,1,1,1,1', '1,0,0,0,0', '1,0,0,0,1', '1,0,0,1,0', '1,0,0,1,1', '1,0,1,0,0', '1,0,1,0,1', '1,0,1,1,0', '1,0,1,1,1', '1,1,0,0,0', '1,1,0,0,1', '1,1,0,1,0', '1,1,0,1,1', '1,1,1,0,0', '1,1,1,0,1', '1,1,1,1,0', '1,1,1,1,1'] }">
+                    <template x-for="key in keys">
+                        <span x-text="'[' + key + ']'" x-show="!testPass(5, key, seq, 0.03125)" class="text-red-600 font-mono text-md testfail"></span>
+                    </template>
+                </div>
+            </div>
+        </div>
+        <p>Does it feel like a lot of tests have failed? At the moment <span id="nfail" class="text-red-600"></span> tests fail while <span id="npass" class="text-green-600"></span> tests pass. </p>
+        <p>You can compare against what an actual random number generator would do. You can either press the buttons or use the "q"/"w" keyboard shortcuts. You'll notice that some of the tests fail for the random tests too. This is totally normal! There's always a chance that a test fails because of randomness, but usually the human sequence will have more failing tests.</p>
+        <div class="flex justify-center">
+            <span class="relative z-0 inline-flex shadow-sm rounded-md m-auto center-items">
+                <button @keydown.window.q="seq = Array.from(Array(100).keys()).map(_ => Number(Math.random() < 0.5)); update(seq);" @click="seq = Array.from(Array(100).keys()).map(_ => Number(Math.random() < 0.5)); update(seq);" type="button" class="relative inline-flex items-center px-8 py-2 rounded-l-md border border-gray-300 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">Random 100x [q]</button>
+                <button @keydown.window.w="seq = Array.from(Array(500).keys()).map(_ => Number(Math.random() < 0.5)); update(seq);" @click="seq = Array.from(Array(500).keys()).map(_ => Number(Math.random() < 0.5)); update(seq);" type="button" class="-ml-px relative inline-flex items-center px-8 py-2 rounded-r-md border border-gray-300 bg-white text-lg font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">Random 500x [w]</button>
+            </span>
+        </div>
+        <p>As before, the entire piece updates when you hit the button. So you can scroll back up to compare.</p>
+        <h2>Conclusion</h2>
+        <p>I hope that by playing around with the random sequence you've gotten some intuition out of it. Maybe you even feel like: </p>
+        <div class="flex justify-center">
+            <div>
+                <b>This was pretty interesting.</b>
+            </div>
+        </div>
+        <img style="margin-top: 0px; margin-bottom: 0px;" src="imgs/human-entropy-happy.png"/>
+        <p>You may have noticed that it's pretty hard to generate a properly random sequence of numbers. Typically, but not always, humans generate too many sequences that alternate like "0,1" and "1,0" and don't sample enough longer sequences of the same value. By making sure that we look at sliding windows over the sequence, we may be able to detect these non-random patterns. </p>
+        <p>But maybe if we take a step back, we can <i>also</i> appreciate what probability theory has allowed us to do here. Because we have probability theory at our disposal we have methods at our disposal to help describe when something is random and when it might not be. <i>That</i> is why probability theory is such a popular topic to study in data science! If we can detect a non-random pattern, then we may be able to re-use that pattern for a prediction!</p>
+        <h3>Appendix</h3>
+        <p>This piece was part of the <a href="https://www.youtube.com/watch?v=hZuYICAEN9Y&ab_channel=3Blue1Brown">second Summer of Math Exposition</a>. I made this to challenge myself to build something I normally wouldn't make and, if you have the time, I highly recommend you giving it a try yourself. I taught myself <a href="https://alpinejs.dev/">aline.js</a> while building this, and I very much feel like it's been a great learning experience.</p>
+    </div>
+</div>
+
+<script>
+[4, 5].forEach(function(d){
+    let data = Object.entries(dict(d, value=0)).map(d => ({'key': d[0], 'count': d[1]}));
+    console.log(data);
+    var spec = {
+        data: {"name": `table${d}`, "values": data},
+        layer: [
+            {
+                mark: "bar",
+                encoding: {
+                    x: {field: "count", type: "quantitative"},
+                    y: {field: "key", type: "ordinal"}
+                }
+            },{
+                mark: {
+                    type: "rule",
+                    color: "black",
+                    strokeWidth: 2,
+                    strokeDash: [8, 8],
+                },
+                encoding: {
+                    x: {
+                        aggregate: "mean",
+                        field: "count"
+                    }
+                }
+            }
+        ]
+    };
+    vegaEmbed(`#vis${d}`, spec).then(function(p){
+        window[`view${d}`] = p.view;
+        document.querySelector('[title="Click to view actions"]').remove()
+    });
+})
+
+document.onload = function(d){
+    beta_chart(0, 0);
+}
+
+function beta_chart(heads, tails, id, expected=0.5, width=200, height=200){
+    let h0 = (heads + tails) * expected
+    let h1 = (heads + tails) * (1-expected);
+    let values = [...Array(200).keys()].map(d => ({'p' : d/200, 'pdf': betaPDF(d/200, h0, h1)}));
+    let max_pdf = Math.max(...values.map(d => d.pdf));
+    var spec_beta = {
+        "width": width,
+        "height": height,
+        data: {
+            "name": `beta`,
+            "values": values
+        },
+        layer: [
+            {
+                mark: "line",
+                encoding: {
+                    x: {field: "p", type: "quantitative"},
+                    y: {field: "pdf", type: "quantitative"}
+                }
+            },{
+                mark: {
+                    type: "area",
+                    opacity: 0.25
+                },
+                encoding: {
+                    x: {field: "p", type: "quantitative"},
+                    y: {field: "pdf", type: "quantitative"}
+                }
+            },{
+                mark: {
+                    type: "rule",
+                    color: "black",
+                    strokeWidth: 2,
+                    strokeDash: [8, 8],
+                },
+                encoding: {
+                    x: {
+                        datum: heads/(heads+tails),
+                        type: "quantitative",
+                        scale: {domain: [0, 1]}
+                    }
+                }
+            }
+        ]
+    };
+    vegaEmbed(`#${id}`, spec_beta).then(function(p){
+        window[id] = p.view;
+        document.querySelector('[title="Click to view actions"]').remove()
+    });
+}
+
+function nTestPass(){
+    return Array.from(document.getElementsByClassName('testpass'))
+                .map(el => window.getComputedStyle(el).display)
+                .filter(_ => _ != 'none')
+                .length;
+}
+
+function nTestFail(){
+    return Array.from(document.getElementsByClassName('testfail'))
+                .map(el => window.getComputedStyle(el).display)
+                .filter(_ => _ != 'none')
+                .length;
+}
+
+function sliding(arr, size=2){
+    let result = [];
+    for (var i = 0; i < arr.length - size + 1; i++) {
+        result[i] = arr.slice(i, i + size);
+    }
+    return result
+}
+
+function count(arr, size=2){
+    let sliding_arr = sliding(arr, size=size);
+    let counts = dict(size=size);
+    for (var i = sliding_arr.length - 1; i >= 0; i--) {
+        let key = sliding_arr[i].join(',');
+        if(typeof counts[key] === 'undefined'){
+            counts[key] = 1;
+        }else{
+            counts[key] = counts[key] + 1;
+        }
+    }
+    return counts
+}
+
+function expected(seq, size=2){
+    let n_combos = combinations(size=size).length
+    return dict(size=size, value=(seq.length - size)/n_combos)
+}
+
+function combinations(size=2){
+    let options = [[]]
+    for (let index = 0; index < size; index++) {
+        let zeros = options.map(_ => _.concat([0]));
+        let ones = options.map(_ => _.concat([1]));
+        options = zeros.concat(ones);
+    }
+    return options
+}
+
+function dict(size, value=0){
+    let combos = combinations(size);
+    let result = {};
+    for (let index = 0; index < combos.length; index++) {
+        result[combos[index]] = 0;
+    }
+    return result
+}
+
+function update_chart(seq, size=4){
+    let count_blob = count(seq, size=size);
+    let data = Object.entries(count_blob).map(d => ({'key': d[0], 'count': d[1]}));
+    let keys = data.map(function(d){d['key']})
+    let changeset = vega.changeset().remove(vega.truthy).insert(data);
+    window[`view${size}`].change(`table${size}`, changeset).run();
+}
+
+function update_beta(seq){
+    var heads = seq.filter(d => d == 1).length;
+    var tails = seq.filter(d => d == 0).length;
+    beta_chart(heads, tails, "beta");
+}
+
+function update(seq){
+    update_chart(seq, size=4);
+    update_chart(seq, size=5);
+    update_beta(seq);
+    let c2 = count(seq, depth=2);
+    beta_chart(c2["0,0"], seq.length - c2["0,0"], "beta_00", expected=0.25, width=110, height=110);
+    beta_chart(c2["0,1"], seq.length - c2["0,1"], "beta_01", expected=0.25, width=110, height=110);
+    beta_chart(c2["1,0"], seq.length - c2["1,0"], "beta_10", expected=0.25, width=110, height=110);
+    beta_chart(c2["1,1"], seq.length - c2["1,1"], "beta_11", expected=0.25, width=110, height=110);
+
+    setTimeout(function(){
+        document.getElementById("npass").innerHTML = nTestPass()
+        document.getElementById("nfail").innerHTML = nTestFail()
+    }, 500)
+    // let c3 = count(seq, depth=3);
+    // beta_chart(c3["0,0,0"], seq.length - c3["0,0,0"], "beta_000", expected=0.125, width=110, height=110);
+    // beta_chart(c3["0,0,1"], seq.length - c3["0,0,1"], "beta_001", expected=0.125, width=110, height=110);
+    // beta_chart(c3["0,1,0"], seq.length - c3["0,1,0"], "beta_010", expected=0.125, width=110, height=110);
+    // beta_chart(c3["0,1,1"], seq.length - c3["0,1,1"], "beta_011", expected=0.125, width=110, height=110);
+    // beta_chart(c3["1,0,0"], seq.length - c3["1,0,0"], "beta_100", expected=0.125, width=110, height=110);
+    // beta_chart(c3["1,0,1"], seq.length - c3["1,0,1"], "beta_101", expected=0.125, width=110, height=110);
+    // beta_chart(c3["1,1,0"], seq.length - c3["1,1,0"], "beta_110", expected=0.125, width=110, height=110);
+    // beta_chart(c3["1,1,1"], seq.length - c3["1,1,1"], "beta_111", expected=0.125, width=110, height=110);
+
+}
+
+function betaPDF(x, a, b) {
+    // Beta probability density function impementation
+    // using logarithms, no factorials involved.
+    // Overcomes the problem with large integers
+    return Math.exp(lnBetaPDF(x, a, b))
+}
+function lnBetaPDF(x, a, b) {
+        // Log of the Beta Probability Density Function
+    return ((a-1)*Math.log(x) + (b-1)*Math.log(1-x)) - lnBetaFunc(a,b)
+}
+function lnBetaFunc(a, b) {
+        // Log Beta Function
+      // ln(Beta(x,y))
+    foo = 0.0;
+
+    for (i=0; i<a-2; i++) {
+        foo += Math.log(a-1-i);
+    }
+    for (i=0; i<b-2; i++) {
+        foo += Math.log(b-1-i);
+    }
+    for (i=0; i<a+b-2; i++) {
+        foo -= Math.log(a+b-1-i);
+    }
+    return foo
+}
+
+function quantile(depth, bucket, seq, expected){
+    // depth: 1 maps to {0, 1}, 2 maps to {00, 01, 10, 11}, etc
+    // bucket: which bucket to grab from countdict. like "0,1"
+    // seq: the 01 sequence
+    // expected: the expected cdf for the beta distribution
+    let c = count(seq, depth);
+    let heads = c[bucket];
+    let tails = seq.length - (depth - 1) - heads;
+    return 100 - Math.round(jStat.beta.cdf(expected, heads, tails)*100);
+}
+
+function testPass(depth, bucket, seq, expected){
+    let q = quantile(depth, bucket, seq, expected);
+    let p1 = q > 4;
+    let p2 = q < 96;
+    return p1 && p2;
+}
+</script>
+                    </div>
+                    <br>
+                    <a href="/blog" class="text-left">Back to blog.</a>
+                    <br>
+                </article>
+            </div>
+        </div>
+        <br>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code.lang-python').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            });
+        </script>
+    </div>
+</div>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

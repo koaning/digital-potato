@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>calmcode - learn code calmly</title>
+<meta name="keywords" content="Code,Calmly,Python,Videos,Learn">
+<meta name="description" content="Fun and educational dataset about birthdays hosted on calmcode.">
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Code. Simply. Clearly. Calmly." />
+<meta name="twitter:description" content="Short and simple video lessons that start from scratch. Tools and thoughts that might make your professional life more enjoyable."/>
+<meta name="twitter:image" content="https://calmcode.io/images/logo.png" />
+<meta property='og:title' content='Code. Simply. Clearly. Calmly.'/>
+<meta property='og:image' content="https://calmcode.io/images/logo.png"/>
+<meta property='og:description' content="Short and simple video lessons that start from scratch. Tools and thoughts that might make your professional life more enjoyable."/>
+<meta property='og:url' content='//www.calmcode.io'/>
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+<div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 pt-4 text-center">
+    <h1 class="text-2xl md:text-7xl font-bold py-2">
+        <img class="w-8 md:w-12 lg:w-16 inline-block" src="/images/birthday.svg" alt="birthdays logo"><span class="pl-4">Birthdays.</span>
+    </h1>
+    <h2 class="text-xl md:text-4xl text-gray-500">
+        <span>When are people born?</span>
+    </h2>
+</div>
+
+<div class="pb-6">
+    <div class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+        <div class="mt-5 border-t border-gray-200">
+  <dl class="sm:divide-y sm:divide-gray-200">
+    <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-2">
+      <dt class="text-lg font-medium text-gray-500">
+        Purpose
+      </dt>
+      <dd class="mt-1 text-lg text-gray-900 sm:mt-0 sm:col-span-2">
+        A datasets that contains births across the united states per state. The goal is
+to try and find interesting patterns in the data.
+
+      </dd>
+    </div>
+    
+      <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-2">
+        <dt class="text-lg font-medium text-gray-500">
+          Links
+        </dt>
+        <dd class="mt-1 text-lg text-gray-900 sm:mt-0 sm:col-span-2">
+          <p>This dataset is used in a number of places on our website.</p><br>
+          <article>
+            <ul>
+            
+              <a href="/altair/introduction.html">Altair Tutorial</a>
+            
+            </ul>
+          </article>
+        </dd>
+      </div>
+    
+    <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-2">
+      <dt class="text-lg font-medium text-gray-500">
+        Source
+      </dt>
+      <dd class="mt-1 text-lg text-gray-900 sm:mt-0 sm:col-span-2">
+        This dataset was originally found in <a href="https://r-data.pmagunia.com/dataset/r-dataset-package-mosaicdata-birthdays">an R package</a>.
+      </dd>
+    </div>
+    <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-2">
+      <dt class="text-lg font-medium text-gray-500">
+        Contents
+      </dt>
+
+      <dd class="mt-1 text-lg text-gray-900 sm:mt-0 sm:col-span-2">
+        <p></p>
+        <div class="flex flex-col">
+          <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+              <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
+                <table class="min-w-full divide-y divide-gray-200">
+                  <thead class="bg-gray-50">
+                    <tr>
+                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Name
+                      </th>
+                      <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        Description
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody class="bg-white divide-y divide-gray-200">
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        state
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The US state somebody was born in.
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        year
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The year.
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        month
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The month.
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        day
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The day of the month.
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        date
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The date.
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        wday
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The day of the week.
+                      </td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg font-medium text-gray-900">
+                        births
+                      </td>
+                      <td class="px-6 py-4 whitespace-nowrap text-lg text-gray-500">
+                        The number of people born.
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </dd>
+    </div>
+    <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-2">
+      <dt class="text-lg font-medium text-gray-500">
+        Download
+      </dt>
+      <dd class="mt-1 text-lg text-gray-900 sm:mt-0 sm:col-span-2">
+        <p>You can download the dataset from the commandline.</p>
+        <pre><code>wget https://calmcode.io/datasets/birthdays.csv</code></pre>
+        <p>You can also download it directly.</p>
+        <br>
+        <a href="/datasets/birthdays.csv">
+          <button type="button" onclick="copy()" class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-lg leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd" />
+            </svg><br>
+            <span class="px-1">Download birthdays.csv</span>
+          </button>
+        </a>
+      </dd>
+    </div>
+    
+    <div class="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-2">
+      <dt class="text-lg font-medium text-gray-500">
+        Explore
+      </dt>
+      <dd class="mt-1 text-lg text-gray-900 sm:mt-0 sm:col-span-2">
+        <p>This dataset is available for exploration on our datasette instance.</p>
+        <br>
+        <a href="https://calmcode-datasette.fly.dev/calmcode/birthdays">
+          <button type="button" onclick="copy()" class="inline-flex items-center px-3 py-2 border border-gray-300 shadow-sm text-lg leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+              <path stroke="#374151" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8V4m0 0h4M3 4l4 4m8 0V4m0 0h-4m4 0l-4 4m-8 4v4m0 0h4m-4 0l4-4m8 4l-4-4m4 4v-4m0 4h-4" />
+            </svg><br>
+            <span class="px-1">Explore birthdays.csv</span>
+          </button>
+        </a>
+      </dd>
+    </div>
+    
+  </dl>
+</div>
+    </div>
+</div>
+<br>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

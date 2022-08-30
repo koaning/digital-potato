@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+<title>Pandas Dataframe to Latex</title>
+
+<meta name="title" content="Pandas Dataframe to Latex">
+<meta name="description" content="In this short introduction we're doing to demonstrate how to use Pandas to Latex.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://calmcode.io/">
+<meta property="og:title" content="Pandas Dataframe to Latex">
+<meta property="og:description" content="You can render Pandas DataFrames as Latex tables.">
+<meta property="og:image" content="https://calmcode.io/images/pandas.png">
+
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://calmcode.io/">
+<meta property="twitter:title" content="Pandas Dataframe to Latex">
+<meta property="twitter:description" content="You can render Pandas DataFrames as Latex tables.">
+<meta property="twitter:image" content="https://calmcode.io/images/pandas.png">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/highlight.min.js"></script>
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/languages/python.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="ahrefs-site-verification" content="f77ddfb426fd9bed439f4c38a319d416b1d0df2e33f0a1da56ff6d31c13b1c33">
+    <link rel="icon" type="image/png" href="/images/logo.png"/>
+    <link rel="shortcut icon" type="image/png" href="/images/logo.png"/>
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/htmx.org@1.8.0"></script>
+    <script async defer data-domain="calmcode.io" src="https://plausible.io/js/plausible.js"></script>
+</head>
+
+<body>
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div class="relative flex justify-between h-16">
+                <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" "><img class="block h-8 w-auto" src="/images/logo.png" alt="Logo" /></a>
+                        <div class="hidden sm:ml-12 sm:flex sm:space-x-8">
+                            <a href="/search.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Explore </a>
+                            <a href="/tracks.html" class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Course Tracks </a>
+                            <a href="/labs.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Labs </a>
+                            <a href="/tils.html"   class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> TIL </a>
+                            <a href="/blog/"       class="border-transparent text-gray-700 hover:text-green-500 inline-flex items-center px-2 pt-1 border-b-2 text-md font-medium"> Blog </a>
+                        </div>
+                    </div>
+                    <div class="flex-grow h-16">
+                    </div>
+                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <!-- <p>Login</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        
+<div class="">
+    <br>
+    <div class="rounded-xl border-gray-400">
+        <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+            <a href="/tils.html" class="text-left">Back to TILs.</a>
+            <div class="text-center">
+                <h3 class="uppercase text-lg leading-6 font-bold text-gray-500">
+                    Calmcode TIL
+                </h3>
+                <h1 class="text-2xl md:text-4xl font-bold py-2">
+                    <img class="w-8 md:w-12 lg:w-18 inline-block" src="/images/pandas.svg" alt="Pandas to Latex logo"><span class="pl-4">Pandas to Latex</span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="pb-6">
+            <div class="bg-white max-w-4xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+                <article class="prose">
+                    <div class="md:text-md">
+                        <p>If you're studying to be an academic, odds are that you'll need
+to write your thesis in latex. And if you're writing your thesis
+in latex, odds are that you'll need to share experiment results
+in a table.</p>
+<p>It can be very tedious to do manually, but thankfully you can
+use pandas to automatically generate the latex for you!</p>
+<pre><code class="lang-python">import pandas as pd
+
+df = pd.read_csv(&quot;https://calmcode.io/datasets/stocks.csv&quot;)
+
+print(df.head(10).to_latex(index=False))
+</code></pre>
+<p>This generates the following output.</p>
+<pre><code>\begin{tabular}{lrrrr}
+\toprule
+      Date &amp;  MSFT &amp;  KLM &amp;   ING &amp;   MOS \\
+\midrule
+2000-01-20 &amp; 34.35 &amp; 0.35 &amp; 14.06 &amp; 14.09 \\
+2000-01-21 &amp; 34.33 &amp; 0.35 &amp; 13.92 &amp; 13.79 \\
+2000-01-24 &amp; 33.30 &amp; 0.35 &amp; 13.56 &amp; 13.79 \\
+2000-01-25 &amp; 32.40 &amp; 0.35 &amp; 13.22 &amp; 13.45 \\
+2000-01-26 &amp; 32.86 &amp; 0.35 &amp; 13.33 &amp; 13.59 \\
+2000-01-27 &amp; 32.05 &amp; 0.35 &amp; 13.28 &amp; 13.25 \\
+2000-01-28 &amp; 31.48 &amp; 0.35 &amp; 13.09 &amp; 13.00 \\
+2000-01-31 &amp; 31.32 &amp; 0.35 &amp; 12.79 &amp; 13.30 \\
+2000-02-01 &amp; 31.60 &amp; 0.35 &amp; 12.78 &amp; 13.59 \\
+2000-02-02 &amp; 32.86 &amp; 0.35 &amp; 12.70 &amp; 13.45 \\
+\bottomrule
+\end{tabular}
+</code></pre>
+<p>If you've savvy with Latex, you can even expand the syntax by
+leveraging styles.</p>
+<pre><code class="lang-python">print(df
+  .head(10)
+  .style
+  .set_properties(
+     **{&quot;Huge&quot;: &quot;--latex--rwrap&quot;}
+  ).to_latex()
+)
+</code></pre>
+<p>This decorates the table with the <code>Huge</code> style.</p>
+<pre><code>\begin{tabular}{llrrrr}
+ &amp; Date &amp; MSFT &amp; KLM &amp; ING &amp; MOS \\
+0 &amp; \Huge{2000-01-20} &amp; \Huge{34.350000} &amp; \Huge{0.350000} &amp; \Huge{14.060000} &amp; \Huge{14.090000} \\
+1 &amp; \Huge{2000-01-21} &amp; \Huge{34.330000} &amp; \Huge{0.350000} &amp; \Huge{13.920000} &amp; \Huge{13.790000} \\
+2 &amp; \Huge{2000-01-24} &amp; \Huge{33.300000} &amp; \Huge{0.350000} &amp; \Huge{13.560000} &amp; \Huge{13.790000} \\
+3 &amp; \Huge{2000-01-25} &amp; \Huge{32.400000} &amp; \Huge{0.350000} &amp; \Huge{13.220000} &amp; \Huge{13.450000} \\
+4 &amp; \Huge{2000-01-26} &amp; \Huge{32.860000} &amp; \Huge{0.350000} &amp; \Huge{13.330000} &amp; \Huge{13.590000} \\
+5 &amp; \Huge{2000-01-27} &amp; \Huge{32.050000} &amp; \Huge{0.350000} &amp; \Huge{13.280000} &amp; \Huge{13.250000} \\
+6 &amp; \Huge{2000-01-28} &amp; \Huge{31.480000} &amp; \Huge{0.350000} &amp; \Huge{13.090000} &amp; \Huge{13.000000} \\
+7 &amp; \Huge{2000-01-31} &amp; \Huge{31.320000} &amp; \Huge{0.350000} &amp; \Huge{12.790000} &amp; \Huge{13.300000} \\
+8 &amp; \Huge{2000-02-01} &amp; \Huge{31.600000} &amp; \Huge{0.350000} &amp; \Huge{12.780000} &amp; \Huge{13.590000} \\
+9 &amp; \Huge{2000-02-02} &amp; \Huge{32.860000} &amp; \Huge{0.350000} &amp; \Huge{12.700000} &amp; \Huge{13.450000} \\
+\end{tabular}
+</code></pre>
+<p>You can even go a step further and translate some css in.</p>
+<pre><code class="lang-python">print(df
+  .head(10)
+  .style
+  .set_properties(
+     **{&quot;font-weight&quot;: &quot;bold&quot;, &quot;Huge&quot;: &quot;--latex--rwrap&quot;}
+  ).to_latex(convert_css=True)
+)
+</code></pre>
+
+                    </div>
+                    <br>
+                    <a href="/tils.html" class="text-left">Back to TILs.</a>
+                    <br>
+                </article>
+            </div>
+        </div>
+        <br>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelectorAll('pre code.lang-python').forEach((block) => {
+                    hljs.highlightBlock(block);
+                });
+            });
+        </script>
+    </div>
+</div>
+
+    </div>
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <footer style="background-color: #f8f9fa;" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Footer</h2>
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Foundation</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/index.html" class="text-base text-gray-500 hover:text-green-400"> Home </a>
+                                </li>
+                                <li>
+                                    <a href="/story.html" class="text-base text-gray-500 hover:text-green-400"> Story </a>
+                                </li>
+                                <li>
+                                    <a href="/faq.html" class="text-base text-gray-500 hover:text-green-400"> FAQ </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Content</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/labs.html" class="text-base text-gray-500 hover:text-green-400">Labs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tils.html" class="text-base text-gray-500 hover:text-green-400">TILs</a>
+                                </li>
+
+                                <li>
+                                    <a href="/tracks.html" class="text-base text-gray-500 hover:text-green-400">Tracks</a>
+                                </li>
+
+                                <li>
+                                    <a href="/datasets.html" class="text-base text-gray-500 hover:text-green-400">Datasets</a>
+                                </li>
+
+                                <li>
+                                    <a href="/deprecated.html" class="text-base text-gray-500 hover:text-green-400">Old Content</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 underline">Resources</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="/blog/" class="text-base text-gray-500 hover:text-green-400"> Blog </a>
+                                </li>
+
+                                <li>
+                                    <a href="/testimonials.html" class="text-base text-gray-500 hover:text-green-400"> Testimonials </a>
+                                </li>
+
+                                <li>
+                                    <a href="/privacy.html" class="text-base text-gray-500 hover:text-green-400"> Privacy </a>
+                                </li>
+
+                                <li>
+                                    <a href="/terms.html" class="text-base text-gray-500 hover:text-green-400"> Terms </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://plausible.io/calmcode.io" class="text-base text-gray-500 hover:text-green-400"> Statistics </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-base font-medium text-gray-900 underline">Contact</h3>
+                            <ul role="list" class="mt-4 space-y-4">
+                                <li>
+                                    <a href="https://twitter.com/fishnets88" class="text-base text-gray-500 hover:text-green-400"> Twitter </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://tinyletter.com/calmcode" class="text-base text-gray-500 hover:text-green-400"> Newsletter </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 xl:col-span-1">
+                    <img class="hidden xl:flex" src="/images/calmcode-logo.webp"/>
+                    <p class="text-gray-500 text-base">Made by people who want to remedy the skill anxiety. Tools and thoughts that might make your professional life more enjoyable.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+<style>
+    .copy-code-button {
+        position: absolute;
+        top: .5rem;
+        right: .5rem;
+        cursor: pointer;
+    }
+
+    .copy-code-button:hover {
+        cursor: pointer;
+        background-color: #F2F2F2;
+    }
+
+    .copy-code-button:focus {
+        background-color: #E6E6E6;
+        outline: 0;
+    }
+
+    .copy-code-button:active {
+        background-color: #D9D9D9;
+    }
+
+    .prose pre {
+        position: relative;
+    }
+</style>
+<script>
+    function addCopyButtons(clipboard) {
+        document.querySelectorAll('pre > code').forEach(function (codeBlock) {
+            var button = document.createElement('button');
+            button.className = 'copy-code-button';
+            button.type = 'button';
+            button.style.backgroundImage = "/images/copy.svg"
+            var img = document.createElement('img')
+            img.src = "/images/copy.svg"
+            img.style.opacity = 0.75;
+            img.height = 24
+            img.width = 24
+            img.style.margin = 0;
+            button.appendChild(img)
+
+            button.addEventListener('click', function () {
+                clipboard.writeText(codeBlock.innerText).then(function () {
+                    button.blur();
+                }, function (error) {
+                    button.innerText = 'Error';
+                });
+            });
+
+            var pre = codeBlock;
+            if (pre.parentNode.classList.contains('hljs')) {
+                var highlight = pre.parentNode;
+                highlight.parentNode.insertBefore(button, highlight);
+            } else {
+                pre.parentNode.insertBefore(button, pre);
+            }
+        });
+    }
+
+    addCopyButtons(navigator.clipboard);
+</script>
+</html>

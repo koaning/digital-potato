@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100pt" height="100pt" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5">
+  <path transform="translate(370 -248.28)" d="m-316.14 273.01l6.25-7.9922 7.2578 7.9922 9.25-6.9688v16.68h-45.633v-16.68l9.25 6.9688 7.2617-7.9922z"/>
+  <path transform="translate(370 -248.28)" d="m-339.01 282.94c-3.1719 7.7812-6.4922 19.094 3.2656 23.133"/>
+  <path transform="translate(370 -248.28)" d="m-293.35 282.94c3.1719 7.7812 6.4922 19.094-3.2656 23.133"/>
+  <path transform="translate(370 -248.28)" d="m-333.21 290.96s5.957 12.5 36.57 4.75v14.371c0 10.75-8.8008 19.551-19.551 19.551s-19.551-8.8008-19.551-19.551v-10.926"/>
+ </g>
+</svg>
